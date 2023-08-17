@@ -1,0 +1,26 @@
+.specialtiesList{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+.spe{
+    height: 460px;
+    padding: 25px;
+    text-align: center;
+}
+.spe .title{
+    font-size: 20px;
+    font-weight: 450;
+    margin: 30px 0;
+}
+.title{
+    margin: 20px 0;
+}
+.definition{
+    margin: 50px 0;
+    color: var(--gray);
+}
+.nnn{
+    width: 100%;
+}

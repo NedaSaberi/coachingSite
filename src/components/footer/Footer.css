@@ -1,0 +1,24 @@
+.footer{
+    background-color: #41484E;
+    height: 530px;
+}
+.footer .social-media span{
+    padding: 9px 13px;
+    margin: 2px;
+    border-radius: 50%;
+    background-color: #32383E;
+}
+.footer .social-media span i{
+    color: #fff;
+    font-size: 13px;
+}
+.footer .social-media span:hover{
+    background-color: #fff;
+}
+.footer .social-media span:hover i{
+    color: #32383E;
+}
+.footer .middle a, .footer .right a{
+    color: var(--gray);
+    text-decoration: none;
+}

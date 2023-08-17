@@ -1,6 +1,7 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.css";
-import Navbar from "./components/Navbar";
+import "bootstrap/js/dist/dropdown";
+import Navbar from "./components/navbar/Navbar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomeV1 from "./pages/home-v1/Home-v1";
 import HomeV2 from "./pages/home-v2/Home-v2";
@@ -18,7 +19,6 @@ function App() {
       <BrowserRouter>
         <ThemeProvider>
           <Navbar />
-
         </ThemeProvider>
 
         <Routes>

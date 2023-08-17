@@ -1,0 +1,45 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+li, ul{
+    list-style: none;
+}
+
+/*  utilities */
+
+.text-orange{
+    color:#D9945D;
+}
+.bg-orange{
+    background-color: #D9945D;
+}
+.text-gray{
+    color: #9DA3A8;
+}
+.bg-gray{
+    background-color: #9DA3A8;
+}
+.p-7{
+    padding: 70px;
+}
+.mb-7{
+    margin-bottom: 70px;
+}
+.my-9{
+    margin-top: 90px;
+    margin-bottom: 90px;
+}
+.pb-7{
+    padding-bottom: 70px;
+}
+
+/*  */
+:root{
+    --gray: #9DA3A8;
+}

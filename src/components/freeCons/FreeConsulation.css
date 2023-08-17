@@ -1,0 +1,13 @@
+.free-consulation .left{
+    width: 60%;
+}
+.free-consulation .right{
+    width: 40%;
+}
+.free-consulation .right button{
+    background-color: #41484E;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 15px 40px;
+}

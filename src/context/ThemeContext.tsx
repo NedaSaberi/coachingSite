@@ -18,7 +18,7 @@ interface ThemeProviderProps {
 }
 
 export function ThemeProvider({ children }: ThemeProviderProps) {
-  let [color, setColor] = useState('rgba(0, 0, 255, .3)');
+  let [color, setColor] = useState('rgba(0, 0, 0, 0.1)');
 
   const theme: Theme = { color: color };
   const themeContextValue: ThemeContextType = { theme };

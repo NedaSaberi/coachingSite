@@ -1,0 +1,15 @@
+.first-view{
+    background-image: url('/public/images/bg-top.jpg');
+    background-position: top center;
+    background-size: cover;
+}
+.first-view-content{
+    min-height: 515px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
