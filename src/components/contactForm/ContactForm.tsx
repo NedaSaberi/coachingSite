@@ -1,6 +1,6 @@
-import './QuestionForm.css';
+import './ContactForm.css';
 
-const  QuestionForm= ()=> {
+const  ContactForm= ()=> {
   return (
     <div className="form-container text-center p-7">
         <div className="top-title text-orange">HAVE ANY QUESTION?</div>
@@ -17,4 +17,4 @@ const  QuestionForm= ()=> {
   )
 }
 
-export default QuestionForm;
+export default ContactForm;
