@@ -7,8 +7,8 @@
 .form-container .title{
     font-size: 35px;
 }
-.form-container form{
-    margin: 20px;
+
+.form-container form input{
     width: 75%;
 }
 .form-container form *{

@@ -4,23 +4,23 @@
     display: flex;
     justify-content: space-around;
 }
-.spe{
+.specialtiesList .spe{
     height: 460px;
     padding: 25px;
     text-align: center;
 }
-.spe .title{
+.specialtiesList .spe .title{
     font-size: 20px;
     font-weight: 450;
     margin: 30px 0;
 }
-.title{
+.specialtiesList .title{
     margin: 20px 0;
 }
-.definition{
+.specialtiesList .definition{
     margin: 50px 0;
     color: var(--gray);
 }
-.nnn{
+.specialtiesList .nnn{
     width: 100%;
 }
