@@ -1,26 +1,5 @@
-.specialtiesList{
-    width: 90%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-around;
-}
-.specialtiesList .spe{
-    height: 460px;
-    padding: 25px;
-    text-align: center;
-}
-.specialtiesList .spe .title{
-    font-size: 20px;
-    font-weight: 450;
-    margin: 30px 0;
-}
-.specialtiesList .title{
-    margin: 20px 0;
-}
-.specialtiesList .definition{
-    margin: 50px 0;
-    color: var(--gray);
-}
-.specialtiesList .nnn{
+
+.coaching-video{
     width: 100%;
+    height: 500px;
 }

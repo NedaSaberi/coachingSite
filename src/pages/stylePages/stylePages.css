@@ -13,3 +13,11 @@
     justify-content: center;
     align-items: center;
 }
+.free-consulation{
+    background-color:#D9945D;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 15px 40px;
+    border: none;
+}
