@@ -36,7 +36,7 @@ const HomeV1= ()=> {
                 <br />
                 with Meghdad
               </div>
-              <button className="bg-orange text-white">FREE CONSULATION</button>
+              <button className="bg-orange text-white free-consulation">FREE CONSULATION</button>
             </div>
             <div className="col-6 right">
               <div className="text-end h-100 d-flex flex-column justify-content-center">
