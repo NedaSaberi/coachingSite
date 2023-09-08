@@ -1,4 +1,6 @@
-
+.first-view{
+    background-image: url('/public/images/bg-top.jpg');
+}
 .aboutPart .aboutBody{
     max-width: 850px;
     margin: 0 auto;

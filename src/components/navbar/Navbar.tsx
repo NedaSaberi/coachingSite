@@ -63,17 +63,17 @@ function Navbar() {
                     aria-labelledby="homeDropdown"
                   >
                     <li>
-                      <a className="dropdown-item" href="http://google.com">
+                      <a className="dropdown-item" href="/">
                         Home V1
                       </a>
                     </li>
                     <li>
-                      <a className="dropdown-item" href="h">
+                      <a className="dropdown-item" href="/home-v2">
                         Home V2
                       </a>
                     </li>
                   </ul>
-                </li>
+                </li> 
                 <li className="nav-item active">
                   <Link to="/about" className="nav-link">
                     About

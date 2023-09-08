@@ -12,7 +12,10 @@ li, ul{
 }
 
 /*  utilities */
-
+.h0{
+    font-size: 55px;
+    font-weight: 700;
+}
 .text-orange{
     color:#D9945D;
 }
@@ -26,7 +29,32 @@ li, ul{
     background-color: #9DA3A8;
 }
 .p-7{
-    padding: 70px;
+   padding: 70px;
+}
+.pt-7{
+    padding-top: 70px;
+}
+.pr-7{
+    padding-right: 70px;
+}
+.pb-7{
+    padding-bottom: 70px;
+}
+.py-7{
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.m-7{
+    margin: 70px;
+}
+.ml-7{
+    margin-left: 70px;
+}
+.mt-7{
+    margin-top: 70px;
+}
+.mr-7{
+    margin-right: 70px;
 }
 .mb-7{
     margin-bottom: 70px;
@@ -35,11 +63,11 @@ li, ul{
     margin-top: 90px;
     margin-bottom: 90px;
 }
-.pb-7{
-    padding-bottom: 70px;
-}
+
+
 
 /*  */
 :root{
     --gray: #9DA3A8;
+    --orange: #D9945D;
 }
