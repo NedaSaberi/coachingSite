@@ -1,3 +1,4 @@
+import "../stylePages/stylePages.css";
 import './Home-v1.css';
 import Map from '../../components/map/Map';
 import Footer from '../../components/footer/Footer';
@@ -6,30 +7,30 @@ import Specialties from '../../components/specialties/Specialties';
 const HomeV1= ()=> {
     
     setTimeout(()=>{
-      let leftElement = document.querySelector(".v1-first-view .left") as HTMLElement;
+      let leftElement = document.querySelector(".home-first-view .left") as HTMLElement;
       leftElement.style.transform = "translateY(0)";
       leftElement.style.opacity = "1";
     }, 2000);
 
     setTimeout(()=>{
-      let rightElement = document.querySelector(".v1-first-view .right") as HTMLElement;
-      rightElement.style.transform = "translateX(0)";
+      let rightElement = document.querySelector(".home-first-view .right") as HTMLElement;
+      rightElement.style.transform = "translate(-100px, -50%)";
       rightElement.style.opacity= "1"
     }, 3000);
 
     window.addEventListener("scroll", ()=>{
       if(document.body.getBoundingClientRect().top < 0){
-        let leftElement = document.querySelector(".v1-second-view .left") as HTMLElement;
+        let leftElement = document.querySelector(".home-second-view .left") as HTMLElement;
         leftElement.style.transform = "translateX(0)";
-        let rightElement = document.querySelector(".v1-second-view .right") as HTMLElement;
+        let rightElement = document.querySelector(".home-second-view .right") as HTMLElement;
         rightElement.style.transform = "translateX(0)";
       }
     })
     return (
-      <div className="home-v1">
-        <div className="v1-first-view">
+      <div className="home v1">
+        <div className="home-first-view">
           <div className="row">
-            <div className="col-6 left">
+            <div className="left">
               <h5 className="text-orange">PROFESSIONAL LIFE COACH & ADVISOR</h5>
               <div className="h0 my-5">
                 Life Coaching
@@ -38,7 +39,7 @@ const HomeV1= ()=> {
               </div>
               <button className="bg-orange text-white free-consulation">FREE CONSULATION</button>
             </div>
-            <div className="col-6 right">
+            <div className="right">
               <div className="text-end h-100 d-flex flex-column justify-content-center">
                 <i className="fa-brands fa-twitter"></i>
                 <i className="fa-brands fa-facebook"></i>
@@ -48,7 +49,7 @@ const HomeV1= ()=> {
             </div>
           </div>
         </div>
-        <div className="v1-second-view p-5 m-5">
+        <div className="home-second-view p-5 m-5">
           <div className="row">
             <div className="col-7 left h-100">
               <div className="row h-100">

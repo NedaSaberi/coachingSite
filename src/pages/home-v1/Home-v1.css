@@ -1,76 +1,42 @@
-.home-v1 .v1-first-view{
+.v1 .home-first-view{
     background-image: url("/public/images/home-v1-top.jpg");
-    position: relative;
-    background-position: top center;
-    background-size: cover;
-    width: 100%; /* Set the width according to your layout */
-    height: 100vh; /* Set the height according to your layout */
 }
 
-.home-v1 .v1-first-view .row{
-    height: 100vh;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 120px;
-    z-index: 0;
-}
-
-
-
-.home-v1 .v1-first-view .row .right i{
-    margin: 10px;    
-}
-
-.home-v1 .v1-first-view .row .left{
-    transform: translateY(600px);
-    opacity: 0;
-    transition: all 2s ease;
-}
-.home-v1 .v1-first-view .row .right{
-    transform: translateX(140px);
-    transition: all 2s ease;
-    opacity: 0;
-}
-
-.home-v1 .v1-second-view .row{
+.v1 .home-second-view .row{
     width: 100%;
     height: 500px;
     position: relative;
     z-index: 1;
 }
-.home-v1 .v1-second-view .left{
+.v1 .home-second-view .left{
     transform: translateX(-520px);
     transition: all 1s ease-in-out;
 }
-.home-v1 .v1-second-view .right{
+.v1 .home-second-view .right{
     transform: translateX(520px);
     transition: all 1s ease-in-out;
 }
-.home-v1 .v1-second-view .right .title{
+.v1 .home-second-view .right .title{
     color: #595959;
 }
-.home-v1 .v1-second-view .right .body{
+.v1 .home-second-view .right .body{
     color: #757474;
 }
-.home-v1 .v1-second-view .right ul li span{
+.v1 .home-second-view .right ul li span{
     color: #757474;
     margin-left: 10px;
 }
-.home-v1 .v1-second-view .right .autho img{
+.v1 .home-second-view .right .autho img{
     margin: 30px 10px 0;
 }
-.home-v1 .v1-second-view .right .pic{
+.v1 .home-second-view .right .pic{
     width: 75px;
 }
-.home-v1 .v1-second-view .right .signature{
+.v1 .home-second-view .right .signature{
     width: 150px;
 }
 
-.home-v1 .excel{
+.v1 .excel{
     /* height: 550px; */
 }
 .excel .left{
@@ -78,30 +44,30 @@
     /* position: relative; */
 }
 
-.home-v1 .excel .right{
+.v1 .excel .right{
     background-color: #585757;
     padding: 70px 60px;
 }
-.home-v1 .excel .progress{
+.v1 .excel .progress{
     height: 7px;
 }
-.home-v1 .excel .progress .progress-bar{
+.v1 .excel .progress .progress-bar{
     background-color: var(--orange);
     
 }
-.home-v1 .experts .pics{
+.v1 .experts .pics{
     width: 85%;
     margin: 0 auto;
 }
-.home-v1 .experts .pics .pic{
+.v1 .experts .pics .pic{
     width: 30%;
     position: relative;
     padding: 15px;
 }
-.home-v1 .experts .pics .pic img{
+.v1 .experts .pics .pic img{
     width: 100%;
 }
-.home-v1 .experts .pics .pic .alt{
+.v1 .experts .pics .pic .alt{
     background-color: #fff;
     width: 70%;
     padding: 10px;
@@ -111,12 +77,12 @@
     transform: translateX(-50%);
 
 }
-.home-v1 .experts .pics .pic i{
+.v1 .experts .pics .pic i{
     margin: 0 5px;
     font-size: 12px;
 }
 
-.home-v1 .life-coaching{
+.v1 .life-coaching{
     background-image: url("/public/images/life-coaching.jpg");
     position: relative;
     background-position: top center;

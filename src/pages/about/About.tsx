@@ -1,6 +1,5 @@
-import { useState } from "react";
+import "../stylePages/stylePages.css";
 import "./About.css";
-import { Link } from "react-router-dom";
 import Footer from "../../components/footer/Footer";
 import FreeConsulation from "../../components/freeCons/FreeConsulation";
 
