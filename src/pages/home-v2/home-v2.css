@@ -1,3 +1,20 @@
 .v2 .home-first-view{
     background-image: url("/public/images/home-v2-top.jpg");
 }
+.v2 .introduction{
+    width: 100%;
+    height: 100vh;
+    padding: 100px 130px;
+}
+.v2 .introduction .row .left{
+    border-right: 4px solid #D9945D;
+}
+.v2 .introduction .row .right{
+    padding-left: 50px;
+}
+.v2 .introduction ul li{
+    margin: 10px 0;
+}
+.v2 .introduction ul li i{
+    margin-right: 10px;
+}
