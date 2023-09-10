@@ -3,7 +3,7 @@
 }
 .v2 .introduction{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     padding: 100px 130px;
 }
 .v2 .introduction .row .left{
@@ -17,4 +17,53 @@
 }
 .v2 .introduction ul li i{
     margin-right: 10px;
+}
+.v2 .pricing-plans .wall{
+    background-image: url('/public/images/wallpaper.jpg');
+    min-height: 450px; 
+    width: 100%;
+    padding: 140px; 
+}
+.v2 .pricing-plans .prices-wrapper{
+    padding-left: 140px; 
+    padding-right: 140px; 
+    margin-top: -170px;
+}
+.v2 .pricing-plans .prices-wrapper .card{
+    min-height: 350px;
+    padding: 50px 0;
+    align-items: center;
+    color: #6c6c6c;
+}
+.v2 .pricing-plans .prices-wrapper .card .title{
+    font-size: 14px;
+}
+.v2 .pricing-plans .prices-wrapper .card .price{
+    color: #505050;
+}
+.v2 .pricing-plans .prices-wrapper .card.mid .price{
+    color: #D9945D;
+}
+.v2 .pricing-plans .prices-wrapper ul{
+    border-top: 1px solid #bababa;
+    margin: 25px 0;
+    padding: 25px 0;
+    font-size: 13px;
+}
+/* .v2 .pricing-plans .prices-wrapper ul li{
+    align-items: center;
+} */
+.v2 .pricing-plans .prices-wrapper ul li i{
+    margin: 10px 12px 0 0;
+}
+.v2 .pricing-plans .prices-wrapper .card button{
+    background-color: #636363;
+    color: #fff;
+    font-size: 13px;
+    padding: 7px 25px;
+    border: none;
+    font-weight: 500;
+}
+.v2 .pricing-plans .prices-wrapper .card.mid button{
+    background-color: #D9945D;
 }

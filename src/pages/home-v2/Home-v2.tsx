@@ -48,13 +48,16 @@ export default function HomeV2(){
       <Elementor />
       <div className="introduction">
         <div className="row">
-          <div className="col-6 left">
+          <div className="col-12 col-lg-6 left">
             <div className="title text-orange">OUR INTRODUCTION</div>
-            <h1 className="my-4">It's Time for a<br/>Change in your Life</h1>
+            <h1 className="my-4">
+              It's Time for a<br />
+              Change in your Life
+            </h1>
             <p className="text-muted">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Deleniti, necessitatiam expedita maiores magnam provident?
-              Aut eligendi numquam perspiciatis voluptas.
+              Deleniti, necessitatiam expedita maiores magnam provident? Aut
+              eligendi numquam perspiciatis voluptas.
             </p>
             <ul className="my-4">
               <li>
@@ -82,8 +85,111 @@ export default function HomeV2(){
             </ul>
             <button className="free-consulation my-4">FREE CONSULATION</button>
           </div>
-          <div className="col-6 right">
-            <img className="w-100 h-100" src="/images/businessman-and-businesswomen-working-on-business-S5PJZ55.jpg" alt="" />
+          <div className="col-12 col-lg-6 right">
+            <img
+              className="w-100 h-100"
+              src="/images/businessman-and-businesswomen-working-on-business-S5PJZ55.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div className="pricing-plans">
+        <div className="row wall text-white">
+          <div className="col-5">
+            <div className="title">WHAT WE OFFER</div>
+            <h2>Pricing Plans</h2>
+          </div>
+          <div className="col-7">
+            <p>
+              There are many variations of passag of Lorem ipsum dolor sit amet,
+              consectetur adipisicing elit. Quibusdam officiis voluptatem sunt
+              nam ipsa, repudiandae distinctio repellendus similique incidunt
+              enim, vel autem dicta possimus blanditiis animi provident
+              assumenda qui quis.
+            </p>
+          </div>
+        </div>
+
+        <div className="prices-wrapper row">
+          <div className="col-12 col-md-4 p-3">
+            <div className="card">
+              <div className="title">SINGLE SESSION</div>
+              <h1 className="price">$200</h1>
+              <ul>
+                <li>
+                  <i className="fa-solid fa-check"></i>
+                  <span>ipsum dolor svit elit</span>
+                </li>
+                <li>
+                  <i className="fa-solid fa-check"></i>
+                  <span>Piscing elit sed eiusi et</span>
+                </li>
+                <li>
+                  <i className="fa-solid fa-check"></i>
+                  <span>Mepor indunt ut labor</span>
+                </li>
+                <li>
+                  <i className="fa-solid fa-check"></i>
+                  <span>Unt sit randome</span>
+                </li>
+              </ul>
+              <button>CONTACT US</button>
+            </div>
+          </div>
+          <div className="col-12 col-md-4 p-3">
+            <div className="card mid">
+              <div className="title text-orange">RECOMMENDED</div>
+              <h1 className="price text-orange">$650</h1>
+              <ul>
+                <li>
+                  <i className="text-orange fa-solid fa-check"></i>
+                  <span>ipsum dolor svit elit</span>
+                </li>
+                <li>
+                  <i className="text-orange fa-solid fa-check"></i>
+                  <span>Piscing elit sed eiusi et</span>
+                </li>
+                <li>
+                  <i className="text-orange fa-solid fa-check"></i>
+                  <span>Mepor indunt ut labor</span>
+                </li>
+                <li>
+                  <i className="text-orange fa-solid fa-check"></i>
+                  <span>Unt sit randome</span>
+                </li>
+                <li>
+                  <i className="text-orange fa-solid fa-check"></i>
+                  <span>Piscing elit sed eius</span>
+                </li>
+              </ul>
+              <button>CONTACT US</button>
+            </div>
+          </div>
+          <div className="col-12 col-md-4 p-3">
+            <div className="card">
+              <div className="title">PREMIERE PACKAGE</div>
+              <h1 className="price">$1,200</h1>
+              <ul>
+                <li>
+                  <i className="fa-solid fa-check"></i>
+                  <span>ipsum dolor svit elit</span>
+                </li>
+                <li>
+                  <i className="fa-solid fa-check"></i>
+                  <span>Piscing elit sed eiusi et</span>
+                </li>
+                <li>
+                  <i className="fa-solid fa-check"></i>
+                  <span>Mepor indunt ut labor</span>
+                </li>
+                <li>
+                  <i className="fa-solid fa-check"></i>
+                  <span>Unt sit randome</span>
+                </li>
+              </ul>
+              <button>CONTACT US</button>
+            </div>
           </div>
         </div>
       </div>
