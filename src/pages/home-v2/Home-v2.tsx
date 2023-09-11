@@ -111,7 +111,6 @@ export default function HomeV2(){
             </p>
           </div>
         </div>
-
         <div className="prices-wrapper row">
           <div className="col-12">test</div>
           <div className="col-12 col-md-4 p-3">
@@ -209,10 +208,28 @@ export default function HomeV2(){
         <div className="row location">
           <div className="context col-12 col-md-6">
             <div className="text-orange">OUR LOCATION</div>
-            <h1 className="mt-3">Trusted by<br/>Millions of People</h1>
-            <p className="text-muted mt-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum minima, itaque consequatur laudantium natus exercitationem, quam sunt dolores vitae deleniti ex sapiente voluptas, totam cupiditate. Dignissimos doloribus quam explicabo iusto.</p>
+            <h1 className="mt-3">
+              Trusted by
+              <br />
+              Millions of People
+            </h1>
+            <p className="text-muted mt-4">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum
+              minima, itaque consequatur laudantium natus exercitationem, quam
+              sunt dolores vitae deleniti ex sapiente voluptas, totam
+              cupiditate. Dignissimos doloribus quam explicabo iusto.
+            </p>
           </div>
           <div className="map col-12 col-md-6"></div>
+        </div>
+      </div>
+      <div className="advisors-video">
+        <video
+          src="/videos/pexels-zen-chung-5530410 (2160p).mp4"
+          autoPlay
+        ></video>
+        <div className="context position-absolute text-center">
+          <h1 className="text-white">Experienced Advisors<br/>Committed to Your Life Goals</h1>
         </div>
       </div>
     </div>
