@@ -113,6 +113,7 @@ export default function HomeV2(){
         </div>
 
         <div className="prices-wrapper row">
+          <div className="col-12">test</div>
           <div className="col-12 col-md-4 p-3">
             <div className="card">
               <div className="title">SINGLE SESSION</div>
@@ -201,7 +202,7 @@ export default function HomeV2(){
               modi nam eos ipsa doloribus.
             </p>
           </div>
-          <div className="col-md-4">
+          <div className="col-12 col-md-4">
             <img className="w-100" src="/images/mission.jpg" alt="" />
           </div>
         </div>

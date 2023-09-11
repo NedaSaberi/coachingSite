@@ -18,6 +18,10 @@
 .v2 .introduction ul li i{
     margin-right: 10px;
 }
+.v2 .pricing-plans{
+    width: 100%;
+    padding: 100px 12px;
+}
 .v2 .pricing-plans .wall{
     background-image: url('/public/images/wallpaper.jpg');
     min-height: 450px; 
@@ -34,7 +38,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color:rgba(217, 148, 93, 0.6) ;  /* the RGB representation of "#D9945D" is (217, 148, 93). */
+    background-color:rgba(217, 148, 93, 0.6) ; /* the RGB representation of "#D9945D" is (217, 148, 93). */
 }
 .v2 .pricing-plans .prices-wrapper{
     padding-left: 140px; 
@@ -80,10 +84,8 @@
 }
 .v2  .card.mid button{
     background-color: #D9945D;
-}
-.v2 .pricing-plans .prices-wrapper .mission{
-    
-}
+} 
+
 .v2 .mission h3{
     padding-top: 50px;
     border-top: 1px solid #d7d7d7;
@@ -97,5 +99,5 @@
     padding: 100px;
 }
 .v2 .location .map{
-    background-image: url('/public/images/map-layout-600x290.jpg');
+    background-image: url(/public/images/map-layout-600x290.jpg);
 }
