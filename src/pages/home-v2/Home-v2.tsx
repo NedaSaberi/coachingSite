@@ -3,6 +3,7 @@ import Elementor from "../../components/elementor/Elementor";
 import Footer from "../../components/footer/Footer";
 import FreeConsulation from "../../components/freeCons/FreeConsulation";
 import Logoipsum from "../../components/logoipsum/Logoipsum";
+import Pricesplans from "../../components/pricesplans/Pricesplans";
 import "../stylePages/stylePages.css";
 import "./home-v2.css";
 
@@ -115,99 +116,18 @@ export default function HomeV2(){
             </p>
           </div>
         </div>
-        <div className="prices-wrapper row">
-          <div className="col-12">test</div>
-          <div className="col-12 col-md-4 p-3">
-            <div className="card">
-              <div className="title">SINGLE SESSION</div>
-              <h1 className="price">$200</h1>
-              <ul>
-                <li>
-                  <i className="fa-solid fa-check"></i>
-                  <span>ipsum dolor svit elit</span>
-                </li>
-                <li>
-                  <i className="fa-solid fa-check"></i>
-                  <span>Piscing elit sed eiusi et</span>
-                </li>
-                <li>
-                  <i className="fa-solid fa-check"></i>
-                  <span>Mepor indunt ut labor</span>
-                </li>
-                <li>
-                  <i className="fa-solid fa-check"></i>
-                  <span>Unt sit randome</span>
-                </li>
-              </ul>
-              <button>CONTACT US</button>
-            </div>
-          </div>
-          <div className="col-12 col-md-4 p-3">
-            <div className="card mid">
-              <div className="title text-orange">RECOMMENDED</div>
-              <h1 className="price text-orange">$650</h1>
-              <ul>
-                <li>
-                  <i className="text-orange fa-solid fa-check"></i>
-                  <span>ipsum dolor svit elit</span>
-                </li>
-                <li>
-                  <i className="text-orange fa-solid fa-check"></i>
-                  <span>Piscing elit sed eiusi et</span>
-                </li>
-                <li>
-                  <i className="text-orange fa-solid fa-check"></i>
-                  <span>Mepor indunt ut labor</span>
-                </li>
-                <li>
-                  <i className="text-orange fa-solid fa-check"></i>
-                  <span>Unt sit randome</span>
-                </li>
-                <li>
-                  <i className="text-orange fa-solid fa-check"></i>
-                  <span>Piscing elit sed eius</span>
-                </li>
-              </ul>
-              <button>CONTACT US</button>
-            </div>
-          </div>
-          <div className="col-12 col-md-4 p-3">
-            <div className="card">
-              <div className="title">PREMIERE PACKAGE</div>
-              <h1 className="price">$1,200</h1>
-              <ul>
-                <li>
-                  <i className="fa-solid fa-check"></i>
-                  <span>ipsum dolor svit elit</span>
-                </li>
-                <li>
-                  <i className="fa-solid fa-check"></i>
-                  <span>Piscing elit sed eiusi et</span>
-                </li>
-                <li>
-                  <i className="fa-solid fa-check"></i>
-                  <span>Mepor indunt ut labor</span>
-                </li>
-                <li>
-                  <i className="fa-solid fa-check"></i>
-                  <span>Unt sit randome</span>
-                </li>
-              </ul>
-              <button>CONTACT US</button>
-            </div>
-          </div>
-          <div className="col-12 col-md-8 mission">
-            <h3>What I live for and how I can be useful to you</h3>
-            <p className="text-muted">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatum, fugit. Voluptates eaque repellat maxime soluta id
-              ratione ipsum. Nihil iure totam cum ducimus corporis, veritatis
-              modi nam eos ipsa doloribus.
-            </p>
-          </div>
-          <div className="col-12 col-md-4">
-            <img className="w-100" src="/images/mission.jpg" alt="" />
-          </div>
+        <Pricesplans />
+        <div className="col-12 col-md-8 mission">
+          <h3>What I live for and how I can be useful to you</h3>
+          <p className="text-muted">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum,
+            fugit. Voluptates eaque repellat maxime soluta id ratione ipsum.
+            Nihil iure totam cum ducimus corporis, veritatis modi nam eos ipsa
+            doloribus.
+          </p>
+        </div>
+        <div className="col-12 col-md-4">
+          <img className="w-100" src="/images/mission.jpg" alt="" />
         </div>
         <div className="row location">
           <div className="context col-12 col-md-6">
@@ -227,10 +147,10 @@ export default function HomeV2(){
           <div className="map col-12 col-md-6"></div>
         </div>
       </div>
-      <Advvid/>
-      <Logoipsum/>
-      <FreeConsulation/>
-      <Footer/>
+      <Advvid />
+      <Logoipsum />
+      <FreeConsulation />
+      <Footer />
     </div>
   );
 }
