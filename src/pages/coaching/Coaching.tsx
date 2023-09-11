@@ -1,3 +1,4 @@
+import Advvid from '../../components/advisors-video/Advvid';
 import Footer from '../../components/footer/Footer';
 import FreeConsulation from '../../components/freeCons/FreeConsulation';
 import Logoipsum from '../../components/logoipsum/Logoipsum';
@@ -17,7 +18,8 @@ export default function Coaching() {
       <Specialties/>
       <Logoipsum/>
       <FreeConsulation />
-      <video className='coaching-video' src="/public/videos/pexels-zen-chung-5530410 (2160p).mp4" controls>Your browser doesn't support the video tag.</video>
+      <Advvid/>
+      {/* <video className='coaching-video' src="/public/videos/pexels-zen-chung-5530410 (2160p).mp4" controls>Your browser doesn't support the video tag.</video> */}
       <Footer />
     </>
   );

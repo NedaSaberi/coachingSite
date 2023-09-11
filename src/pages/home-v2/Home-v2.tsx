@@ -1,3 +1,4 @@
+import Advvid from "../../components/advisors-video/Advvid";
 import Elementor from "../../components/elementor/Elementor";
 import Footer from "../../components/footer/Footer";
 import FreeConsulation from "../../components/freeCons/FreeConsulation";
@@ -226,15 +227,7 @@ export default function HomeV2(){
           <div className="map col-12 col-md-6"></div>
         </div>
       </div>
-      <div className="advisors-video">
-        <video
-          src="/videos/pexels-zen-chung-5530410 (2160p).mp4"
-          autoPlay
-        ></video>
-        <div className="context position-absolute text-center">
-          <h1 className="text-white">Experienced Advisors<br/>Committed to Your Life Goals</h1>
-        </div>
-      </div>
+      <Advvid/>
       <Logoipsum/>
       <FreeConsulation/>
       <Footer/>

@@ -2,7 +2,7 @@ import './Experts.css'
 
 export default function Experts() {
   return (
-    <div className="experts text-center mt-7">
+    <div className="experts text-center">
       <div className="text-orange">MEET OUR EXPERTS</div>
       <h2 className="mt-3 mb-5">We can Advise you</h2>
       <div className="pics d-flex justify-content-between">

@@ -101,21 +101,3 @@
 .v2 .location .map{
     background-image: url(/public/images/map-layout-600x290.jpg);
 }
-.v2 .advisors-video{
-    width: 100%;
-    padding: 12px;
-    height: 450px;
-    position: relative;
-    overflow: hidden;
-    display: block;
-}
-.v2 .advisors-video video{
-    width: 100%;
-    position: absolute;
-    top: -40%;
-}
-.v2 .advisors-video .context{
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
