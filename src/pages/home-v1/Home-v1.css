@@ -36,9 +36,6 @@
     width: 150px;
 }
 
-.v1 .excel{
-    /* height: 550px; */
-}
 .excel .left{
     padding: 0;
     /* position: relative; */
@@ -55,32 +52,7 @@
     background-color: var(--orange);
     
 }
-.v1 .experts .pics{
-    width: 85%;
-    margin: 0 auto;
-}
-.v1 .experts .pics .pic{
-    width: 30%;
-    position: relative;
-    padding: 15px;
-}
-.v1 .experts .pics .pic img{
-    width: 100%;
-}
-.v1 .experts .pics .pic .alt{
-    background-color: #fff;
-    width: 70%;
-    padding: 10px;
-    position: absolute;
-    bottom: -45px;
-    left: 50%;
-    transform: translateX(-50%);
 
-}
-.v1 .experts .pics .pic i{
-    margin: 0 5px;
-    font-size: 12px;
-}
 
 .v1 .life-coaching{
     background-image: url("/public/images/life-coaching.jpg");

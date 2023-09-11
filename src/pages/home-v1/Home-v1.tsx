@@ -3,6 +3,7 @@ import './Home-v1.css';
 import Map from '../../components/map/Map';
 import Footer from '../../components/footer/Footer';
 import Specialties from '../../components/specialties/Specialties';
+import Experts from "../../components/experts/Experts";
 
 const HomeV1= ()=> {
     
@@ -141,51 +142,7 @@ const HomeV1= ()=> {
             </div>
           </div>
         </div>
-        <div className="experts text-center mt-7">
-          <div className="text-orange">MEET OUR EXPERTS</div>
-          <h2 className="mt-3 mb-5">We can Advise you</h2>
-          <div className="pics d-flex justify-content-between">
-            <div className="pic">
-              <img src="/images/jesica-rose.jpg" alt="" />
-              <div className="alt">
-                <h5>Jesicaa Rose</h5>
-                <p>Consultant</p>
-                <div className="social">
-                  <i className="fa-brands fa-twitter"></i>
-                  <i className="fa-brands fa-facebook"></i>
-                  <i className="fa-brands fa-linkedin"></i>
-                  <i className="fa-brands fa-instagram"></i>
-                </div>
-              </div>
-            </div>
-            <div className="pic">
-              <img src="/images/christine-eve.jpg" alt="" />
-              <div className="alt">
-                <h5>Cristina Eve</h5>
-                <p>Founder</p>
-                <div className="social">
-                  <i className="fa-brands fa-twitter"></i>
-                  <i className="fa-brands fa-facebook"></i>
-                  <i className="fa-brands fa-linkedin"></i>
-                  <i className="fa-brands fa-instagram"></i>
-                </div>
-              </div>
-            </div>
-            <div className="pic">
-              <img src="/images/Meghdad.jpg" alt="" />
-              <div className="alt">
-                <h5>Meghdad Hadidi</h5>
-                <p>Consultant</p>
-                <div className="social">
-                  <i className="fa-brands fa-twitter"></i>
-                  <i className="fa-brands fa-facebook"></i>
-                  <i className="fa-brands fa-linkedin"></i>
-                  <i className="fa-brands fa-instagram"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+       <Experts/>
         <div className="life-coaching p-5">
           <div className="content col-5 m-7">
             <h1>
