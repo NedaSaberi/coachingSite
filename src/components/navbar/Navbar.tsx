@@ -6,14 +6,21 @@ import { useState } from "react";
 function Navbar() {
   const { color } = useTheme();
 
-  const [show, setShow] = useState(false);
-  const showDropdown = () => {
-    setShow(!show);
+  const [showHome, setShowHome] = useState(false);
+  const showHomeDropdown = () => {
+    setShowHome(!showHome);
   };
-  const hideDropdown = () => {
-    setShow(false);
+  const hideHomeDropdown = () => {
+    setShowHome(false);
   };
-
+  
+  const [showPages, setShowPages] = useState(false);
+  const showPagesDropdown = () => {
+    setShowPages(!showPages);
+  };
+  const hidePagesDropdown = () => {
+    setShowPages(false);
+  };
   return (
     <nav
       className="navbar navbar-expand-lg navbar-light"
@@ -43,9 +50,9 @@ function Navbar() {
             >
               <ul className="navbar-nav d-flex justify-content-between w-100">
                 <li
-                  className={`nav-item dropdown ${show ? "show" : ""}`}
-                  onMouseEnter={showDropdown}
-                  onMouseLeave={hideDropdown}
+                  className={`nav-item dropdown ${showHome ? "show" : ""}`}
+                  onMouseEnter={showHomeDropdown}
+                  onMouseLeave={hideHomeDropdown}
                 >
                   <Link
                     to="/"
@@ -54,12 +61,12 @@ function Navbar() {
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-haspopup="true"
-                    aria-expanded={show}
+                    aria-expanded={showHome}
                   >
                     Home
                   </Link>
                   <ul
-                    className={`dropdown-menu ${show ? "show" : ""}`}
+                    className={`dropdown-menu ${showHome ? "show" : ""}`}
                     aria-labelledby="homeDropdown"
                   >
                     <li>
@@ -73,7 +80,7 @@ function Navbar() {
                       </a>
                     </li>
                   </ul>
-                </li> 
+                </li>
                 <li className="nav-item active">
                   <Link to="/about" className="nav-link">
                     About
@@ -84,33 +91,47 @@ function Navbar() {
                     Coaching
                   </Link>
                 </li>
-                <li className="nav-item dropdown">
+                <li
+                  className={`nav-item dropdown ${showPages ? "show" : ""}`}
+                  onMouseEnter={showPagesDropdown}
+                  onMouseLeave={hidePagesDropdown}
+                >
                   <Link
                     to="/pages"
                     className="nav-link dropdown-toggle"
-                    id="navbarDropdown"
+                    id="pagesDropdown"
                     role="button"
                     data-toggle="dropdown"
                     aria-haspopup="true"
-                    aria-expanded="false"
+                    aria-expanded={showPages}
                   >
                     Pages
                   </Link>
-                  <div
-                    className="dropdown-menu"
-                    aria-labelledby="navbarDropdown"
+                  <ul
+                    className={`dropdown-menu ${showPages ? "show" : ""}`}
+                    aria-labelledby="pagesDropdown"
                   >
-                    <a className="dropdown-item" href="h">
-                      Action
-                    </a>
-                    <a className="dropdown-item" href="h">
-                      Another action
-                    </a>
-                    <div className="dropdown-divider"></div>
-                    <a className="dropdown-item" href="h">
-                      Something else here
-                    </a>
-                  </div>
+                    <li>
+                      <a className="dropdown-item" href="/about">
+                        About
+                      </a>
+                    </li>
+                    <li>
+                      <a className="dropdown-item" href="/aboutus">
+                        About us
+                      </a>
+                    </li>
+                    <li>
+                      <a className="dropdown-item" href="/coachingsingle">
+                        Coaching Single
+                      </a>
+                    </li>
+                    <li>
+                      <a className="dropdown-item" href="/pricingplans">
+                        Pricing Plans
+                      </a>
+                    </li>
+                  </ul>
                 </li>
                 <li className="nav-item">
                   <Link to="/news" className="nav-link">

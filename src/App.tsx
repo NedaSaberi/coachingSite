@@ -6,11 +6,14 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomeV1 from "./pages/home-v1/Home-v1";
 import HomeV2 from "./pages/home-v2/Home-v2";
 import About from "./pages/about/About";
+import Aboutus from "./pages/aboutus/Aboutus";
 import News from "./pages/news/News";
 import Shop from "./pages/shop/Shop";
 import Pages from "./pages/pages/Pages";
 import Coaching from "./pages/coaching/Coaching";
+import Coachingsingle from "./pages/coachingsingle/Coachingsingle";
 import Contact from "./pages/contact/Contact";
+import Pricingplans from "./pages/pricingplans/Pricingplans";
 import { ThemeProvider } from "./context/ThemeContext";
 
 function App() {
@@ -30,6 +33,9 @@ function App() {
           <Route path="/news" element={<News />} />
           <Route path="/pages" element={<Pages />} />
           <Route path="/shop" element={<Shop />} />
+          <Route path="/aboutus" element={<Aboutus />} />
+          <Route path="/coachingsingle" element={<Coachingsingle />} />
+          <Route path="/pricingplans" element={<Pricingplans />} />
         </Routes>
       </BrowserRouter>{" "}
     </div>
