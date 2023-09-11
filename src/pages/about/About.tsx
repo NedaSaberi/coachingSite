@@ -3,6 +3,7 @@ import "./About.css";
 import Footer from "../../components/footer/Footer";
 import FreeConsulation from "../../components/freeCons/FreeConsulation";
 import Stats from "../../components/stats/Stats";
+import Logoipsum from "../../components/logoipsum/Logoipsum";
 
 export default function About() {
    
@@ -47,7 +48,7 @@ export default function About() {
           FREE CONSULATION
         </button>
       </div>
-      <div className="logoipsum">???</div>
+      <Logoipsum/>
 
       <div className="testimonials p-5">
         <h5 className="text-orange my-3 text-center">OUR TESTIMONIALS</h5>

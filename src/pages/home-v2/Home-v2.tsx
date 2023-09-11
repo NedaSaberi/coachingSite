@@ -1,4 +1,5 @@
 import Elementor from "../../components/elementor/Elementor";
+import Logoipsum from "../../components/logoipsum/Logoipsum";
 import "../stylePages/stylePages.css";
 import "./home-v2.css";
 
@@ -232,6 +233,7 @@ export default function HomeV2(){
           <h1 className="text-white">Experienced Advisors<br/>Committed to Your Life Goals</h1>
         </div>
       </div>
+      <Logoipsum/>
     </div>
   );
 }
