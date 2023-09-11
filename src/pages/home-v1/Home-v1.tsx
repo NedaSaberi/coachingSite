@@ -4,6 +4,7 @@ import Map from '../../components/map/Map';
 import Footer from '../../components/footer/Footer';
 import Specialties from '../../components/specialties/Specialties';
 import Experts from "../../components/experts/Experts";
+import Autho from "../../components/autho/Autho";
 
 const HomeV1= ()=> {
     
@@ -91,14 +92,7 @@ const HomeV1= ()=> {
                   <span>Entum estibulum dignissim posuere.</span>
                 </li>
               </ul>
-              <div className="autho">
-                <img
-                  className="pic rounded-circle"
-                  src="/images/Meghdad.jpg"
-                  alt=""
-                />
-                <img className="signature" src="/images/signature.png" alt="" />
-              </div>
+             <Autho/>
             </div>
           </div>
         </div>
