@@ -1,4 +1,6 @@
 import Elementor from "../../components/elementor/Elementor";
+import Footer from "../../components/footer/Footer";
+import FreeConsulation from "../../components/freeCons/FreeConsulation";
 import Logoipsum from "../../components/logoipsum/Logoipsum";
 import "../stylePages/stylePages.css";
 import "./home-v2.css";
@@ -234,6 +236,8 @@ export default function HomeV2(){
         </div>
       </div>
       <Logoipsum/>
+      <FreeConsulation/>
+      <Footer/>
     </div>
   );
 }
