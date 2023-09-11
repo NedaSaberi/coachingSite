@@ -1,0 +1,52 @@
+.coaching-single .body{
+    padding: 70px 110px;
+}
+.coaching-single .imgs{
+    width: 100%;
+}
+.coaching-single .body .left img{
+    width: 100%;
+}
+.coaching-single .body .left ul span{
+    color: #222222;
+}
+.coaching-single .body .right .first{
+    color: #fff;
+    background-color: #D9945D;
+}
+.coaching-single .body .right ul li{
+    background-color: rgb(235, 234, 249);
+    margin-bottom: 7px;
+    padding: 20px;
+    color: #000;
+    font-size: 15px;
+}
+.coaching-single .body .right ul li:hover{
+    color: #fff;
+    background-color: #D9945D;
+}
+.coaching-single .body .row .right ul li i{
+    margin-right: 10px;
+    font-size: 12px;
+}
+.coaching-single .body .right .link-no-underline{
+  text-decoration: none;
+}
+.coaching-single .body .right .call-box{
+    width: 100%;
+    background-color: rgb(110, 110, 125);
+    margin-left: 32px;
+    padding: 50px;
+}
+.coaching-single .body .right .call-box .phone-wrapper{
+    background-color:#D9945D;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    padding: 24px;
+    margin: 0 auto;
+}
+.coaching-single .body .right .call-box .phone-wrapper i{
+    color: #fff;
+    font-size: 20px;
+}

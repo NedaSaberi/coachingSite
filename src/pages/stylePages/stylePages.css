@@ -12,6 +12,9 @@
     justify-content: center;
     align-items: center;
 }
+.first-view-content p{
+    color: #ffffffb3;
+}
 .free-consulation{
     background-color:#D9945D;
     color: #fff;
