@@ -1,0 +1,11 @@
+.loginform-wrapper{
+    width: 100%;    
+}
+.loginform-wrapper .loginform{
+    background-color: #efefef;
+    padding: 30px;
+    margin-top: 35px;
+}
+.loginform-wrapper .loginform .input-group{
+    margin-top: 30px;
+}

@@ -18,6 +18,10 @@ import Worklifebalance from "./pages/worklifebalance/Worklifebalance";
 import { ThemeProvider } from "./context/ThemeContext";
 import Importantdecisions from "./pages/importantdecisions/Importantdecisions";
 import Oneononesession from "./pages/oneononesession/Oneononesession";
+import Myaccount from "./pages/myaccount/Myaccount";
+import Cart from "./pages/cart/Cart";
+import Checkout from "./pages/checkout/Checkout";
+
 
 function App() {
   return (
@@ -42,6 +46,9 @@ function App() {
           <Route path="/worklifebalance" element={<Worklifebalance />} />
           <Route path="/importantdecisions" element={<Importantdecisions />} />
           <Route path="/oneononesession" element={<Oneononesession />} />
+          <Route path="/myaccount" element={<Myaccount />} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/checkout" element={<Checkout />} />
         </Routes>
       </BrowserRouter>{" "}
     </div>

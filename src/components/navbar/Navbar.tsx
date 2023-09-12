@@ -21,6 +21,15 @@ function Navbar() {
   const hidePagesDropdown = () => {
     setShowPages(false);
   };
+
+  const [showShop, setShowShop] = useState(false);
+  const showShopDropdown = () => {
+    setShowShop(!showShop);
+  };
+  const hideShopDropdown = () => {
+    setShowShop(false);
+  };
+
   return (
     <nav
       className="navbar navbar-expand-lg navbar-light"
@@ -138,33 +147,29 @@ function Navbar() {
                     News
                   </Link>
                 </li>
-                <li className="nav-item dropdown">
+                <li className={`nav-item dropdown ${showShop? "show" : ""}`} onMouseEnter={showShopDropdown} onMouseLeave={hideShopDropdown}> 
                   <Link
                     to="/shop"
                     className="nav-link dropdown-toggle"
-                    id="navbarDropdown"
+                    id="shopDropdown"
                     role="button"
                     data-toggle="dropdown"
                     aria-haspopup="true"
-                    aria-expanded="false"
+                    aria-expanded={showShop}
                   >
                     Shop
                   </Link>
-                  <div
-                    className="dropdown-menu"
-                    aria-labelledby="navbarDropdown"
-                  >
-                    <a className="dropdown-item" href="h">
-                      Action
-                    </a>
-                    <a className="dropdown-item" href="h">
-                      Another action
-                    </a>
-                    <div className="dropdown-divider"></div>
-                    <a className="dropdown-item" href="h">
-                      Something else here
-                    </a>
-                  </div>
+                  <ul className={`dropdown-menu ${showShop? "show": ""}`} aria-labelledby="shopDropdown">
+                    <li>
+                      <a className="dropdown-item" href="/myaccount">My account</a>
+                    </li>
+                    <li>
+                      <a className="dropdown-item" href="/cart">Cart</a>
+                    </li>
+                    <li>
+                      <a className="dropdown-item" href="/checkout">Checkout</a>
+                    </li>
+                  </ul>
                 </li>
                 <li className="nav-item">
                   <Link to="/contact" className="nav-link">
