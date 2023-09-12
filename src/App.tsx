@@ -16,6 +16,8 @@ import Contact from "./pages/contact/Contact";
 import Pricingplans from "./pages/pricingplans/Pricingplans";
 import Worklifebalance from "./pages/worklifebalance/Worklifebalance";
 import { ThemeProvider } from "./context/ThemeContext";
+import Importantdecisions from "./pages/importantdecisions/Importantdecisions";
+import Oneononesession from "./pages/oneononesession/Oneononesession";
 
 function App() {
   return (
@@ -38,6 +40,8 @@ function App() {
           <Route path="/coachingsingle" element={<Coachingsingle />} />
           <Route path="/pricingplans" element={<Pricingplans />} />
           <Route path="/worklifebalance" element={<Worklifebalance />} />
+          <Route path="/importantdecisions" element={<Importantdecisions />} />
+          <Route path="/oneononesession" element={<Oneononesession />} />
         </Routes>
       </BrowserRouter>{" "}
     </div>

@@ -1,0 +1,11 @@
+.importantdecisions .body{
+    padding: 70px 110px;
+}
+
+.importantdecisions .body .left img{
+    width: 100%;
+}
+.importantdecisions .body .left ul span{
+    color: #222222;
+    margin-left: 10px;
+}

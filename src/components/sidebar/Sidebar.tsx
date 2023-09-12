@@ -17,13 +17,13 @@ export default function Sidebar() {
             <span>Work & Life Balance</span>
           </li>
         </Link>
-        <Link className="link-no-underline" to="/">
+        <Link className="link-no-underline" to="/importantdecisions">
           <li>
             <i className="fa-solid fa-caret-right"></i>
             <span>Important Decisions</span>
           </li>
         </Link>
-        <Link className="link-no-underline" to="/">
+        <Link className="link-no-underline" to="/oneononesession">
           <li>
             <i className="fa-solid fa-caret-right"></i>
             <span>One-on-one Sessions</span>
