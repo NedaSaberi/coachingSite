@@ -14,6 +14,7 @@ import Coaching from "./pages/coaching/Coaching";
 import Coachingsingle from "./pages/coachingsingle/Coachingsingle";
 import Contact from "./pages/contact/Contact";
 import Pricingplans from "./pages/pricingplans/Pricingplans";
+import Worklifebalance from "./pages/worklifebalance/Worklifebalance";
 import { ThemeProvider } from "./context/ThemeContext";
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
           <Route path="/aboutus" element={<Aboutus />} />
           <Route path="/coachingsingle" element={<Coachingsingle />} />
           <Route path="/pricingplans" element={<Pricingplans />} />
+          <Route path="/worklifebalance" element={<Worklifebalance />} />
         </Routes>
       </BrowserRouter>{" "}
     </div>

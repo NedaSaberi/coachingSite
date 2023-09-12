@@ -1,23 +1,21 @@
 import Footer from '../../components/footer/Footer';
-import './Coachingsingle.css';
-import { Link } from 'react-router-dom';
-import '../../App.css';
 import Sidebar from '../../components/sidebar/Sidebar';
+import './Worklifebalance.css';
 
-export default function Coachingsingle() {
+export default function Worklifebalance() {
   return (
-    <div className="coaching-single">
+    <div className="worklifebalance">
       <div className="first-view">
         <div className="first-view-content bg-orange">
-          <h1>Career Mentoring</h1>
+          <h1>Work & Life Balance</h1>
           <p>Excelling Your Professional Career</p>
         </div>
       </div>
       <div className="body">
         <div className="row">
           <div className="col-12 col-lg-8 left">
-            <img src="/images/about-right.jpg" alt="" />
-            <h1 className="my-5">Career Mentoring</h1>
+            <img src="/images/about-left.jpg" alt="" />
+            <h1 className="my-5">Work & Life Balance</h1>
             <p className="text-muted">
               Lorem ipsum is simply free text used by copytyping refreshing.
               Neque porro est qui dolorem ipsum quia quaed inventore veritatis
@@ -75,11 +73,10 @@ export default function Coachingsingle() {
             </p>
           </div>
           <div className="col-12 col-lg-4 right">
-            <Sidebar/>
+            <Sidebar />
           </div>
         </div>
       </div>
       <Footer />
     </div>
-  );
-}
+  );}
