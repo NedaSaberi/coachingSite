@@ -1,4 +1,6 @@
-
+.first-view{
+    background-image: url('/public/images/bg-top.jpg');
+}
 .aboutPart .aboutBody{
     max-width: 850px;
     margin: 0 auto;
@@ -12,15 +14,6 @@
 .about-images img{
     width: 50%;
     height: 100%;
-}
-.stats-back{
-    height: 630px;
-}
-.stats-front{
-    background-color: rgba(0, 0, 0, 0.6);    
-}
-.numbers-wrapper{
-
 }
 .numbers-wrapper .numbers{
     width: 20%;

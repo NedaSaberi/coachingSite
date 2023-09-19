@@ -1,0 +1,11 @@
+.worklifebalance .body{
+    padding: 70px 110px;
+}
+
+.worklifebalance .body .left img{
+    width: 100%;
+}
+.worklifebalance .body .left ul span{
+    color: #222222;
+    margin-left: 10px;
+}

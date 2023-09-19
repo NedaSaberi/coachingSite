@@ -1,0 +1,19 @@
+.map-container{
+    margin-top: 100px;
+    height: 400px;
+    width: 100%;
+}
+.map-container .contacting-ways{
+    height: 150px;
+    top: -80px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.map-container .contacting-ways .key{
+    font-size: 12px;
+}
+.map-container .contacting-ways .val{
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 500;
+}

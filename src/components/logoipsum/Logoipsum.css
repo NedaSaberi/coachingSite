@@ -1,0 +1,8 @@
+.logo-wrapper{
+    width: 100%;
+    justify-content: space-around;
+    /* height: 150px; */
+}
+.logo-wrapper img{
+    width: 150px; 
+}
