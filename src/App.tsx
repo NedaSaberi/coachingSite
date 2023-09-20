@@ -21,6 +21,7 @@ import Oneononesession from "./pages/oneononesession/Oneononesession";
 import Myaccount from "./pages/myaccount/Myaccount";
 import Cart from "./pages/cart/Cart";
 import Checkout from "./pages/checkout/Checkout";
+import LostPass from "./pages/lost-pass/Lost-pass";
 
 
 function App() {
@@ -49,6 +50,7 @@ function App() {
           <Route path="/myaccount" element={<Myaccount />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/checkout" element={<Checkout />} />
+          <Route path="/lost-password" element={<LostPass />} />
         </Routes>
       </BrowserRouter>{" "}
     </div>

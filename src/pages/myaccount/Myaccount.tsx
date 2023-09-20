@@ -10,7 +10,7 @@ export default function Myaccount() {
         </div>
       </div>
       <div className="row forms">
-        <div className="col-12 col-lg-6 left bg-warning">
+        <div className="col-12 col-lg-6 left">
             <Loginform/>
         </div>
         <div className="col-12 col-lg-6 right bg-success">

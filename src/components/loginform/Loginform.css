@@ -4,8 +4,42 @@
 .loginform-wrapper .loginform{
     background-color: #efefef;
     padding: 30px;
-    margin-top: 35px;
+    color: #6f6f6f;
+    font-size: 13px;
 }
 .loginform-wrapper .loginform .input-group{
-    margin-top: 30px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.loginform-wrapper .loginform .input-group label{
+    margin-bottom: 10px;
+}
+.loginform-wrapper .loginform .input-group input{
+    border: 1px solid #cfcfcf;
+    font-size: 14px;
+    padding: 8px;
+}
+.loginform-wrapper .loginform .password-input {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.loginform-wrapper .loginform .password-input .toggle-password{
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+}
+.loginform-wrapper .loginform .input-group input:focus{
+    outline: 1px solid orange;  
+}
+.loginform-wrapper .loginform .submit-group button{
+    margin: 20px 20px 0 0 ;
+    width: 100px;
+    border: none;
+}
+.loginform-wrapper .loginform .lost-link{
+    text-decoration: none; 
 }
