@@ -103,9 +103,12 @@ export default function HomeV2(){
         <div className="row wall text-white">
           <div className="orange-cover"></div>
           <div className="col-12 col-lg-5">
+          <div className="orange-cover"></div>
+          <div className="col-12 col-lg-5">
             <div className="title">WHAT WE OFFER</div>
             <h2>Pricing Plans</h2>
           </div>
+          <div className="col-12 col-lg-7">
           <div className="col-12 col-lg-7">
             <p>
               There are many variations of passag of Lorem ipsum dolor sit amet,
