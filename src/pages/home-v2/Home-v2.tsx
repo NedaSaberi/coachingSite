@@ -1,3 +1,4 @@
+
 import Advvid from "../../components/advisors-video/Advvid";
 import Elementor from "../../components/elementor/Elementor";
 import Footer from "../../components/footer/Footer";
@@ -101,14 +102,12 @@ export default function HomeV2(){
       </div>
       <div className="pricing-plans">
         <div className="row wall text-white">
-          <div className="orange-cover"></div>
           <div className="col-12 col-lg-5">
           <div className="orange-cover"></div>
           <div className="col-12 col-lg-5">
             <div className="title">WHAT WE OFFER</div>
             <h2>Pricing Plans</h2>
           </div>
-          <div className="col-12 col-lg-7">
           <div className="col-12 col-lg-7">
             <p>
               There are many variations of passag of Lorem ipsum dolor sit amet,
@@ -149,6 +148,7 @@ export default function HomeV2(){
           </div>
           <div className="map col-12 col-md-6"></div>
         </div>
+      </div>
       </div>
       <Advvid />
       <Logoipsum />
