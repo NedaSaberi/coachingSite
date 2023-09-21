@@ -21,7 +21,7 @@ export default function RegisterForm() {
           described in our <Link to="/" className='text-orange link'>privacy policy</Link>.
         </p>
         <div className="submit-group d-block my-2">
-          <button className="bg-orange text-white">REGISTER</button>
+          <button className="shop-btn bg-orange text-white">REGISTER</button>
         </div>
       </form>
     </div>

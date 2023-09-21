@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './Loginform.css';
+import '../../pages/shop/Shop.css';
 import { Link } from 'react-router-dom';
 
 export default function Loginform() {
@@ -29,7 +29,7 @@ export default function Loginform() {
             </div>
         </div>
         <div className="submit-group d-block my-3">
-            <button className='bg-orange text-white'>LOG IN</button>
+            <button className='shop-btn bg-orange text-white'>LOG IN</button>
             <input type="checkbox" />
             <span className='m-1'>
               Remember me
