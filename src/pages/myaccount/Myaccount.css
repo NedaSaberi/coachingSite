@@ -1,3 +1,49 @@
 .myaccount .forms{
     padding: 80px 120px;
 }
+
+.form-wrapper{
+    width: 100%;    
+}
+.form-wrapper .form{
+    background-color: #efefef;
+    padding: 30px;
+    color: #6f6f6f;
+    font-size: 13px;
+}
+.form-wrapper .form .input-group{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.form-wrapper .form .input-group label{
+    margin-bottom: 10px;
+}
+.form-wrapper .form .input-group input{
+    border: 1px solid #cfcfcf;
+    font-size: 14px;
+    padding: 8px;
+}
+.form-wrapper .form .password-input {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.form-wrapper .form .password-input .toggle-password{
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+}
+.form-wrapper .form .input-group input:focus{
+    outline: 1px solid orange;  
+}
+.form-wrapper .form .submit-group button{
+    margin: 20px 20px 0 0 ;
+    padding: 12px 33px;
+    border: none;
+}
+.form-wrapper .form .link{
+    text-decoration: none; 
+}

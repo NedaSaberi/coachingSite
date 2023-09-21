@@ -8,9 +8,9 @@ export default function Loginform() {
     setShowPassword(!showPassword);
   }
   return (
-    <div className="loginform-wrapper">
+    <div className="form-wrapper">
       <h3 className='mb-5'>Log in</h3>
-      <form className="loginform" action="">
+      <form className="form" action="">
         <div className="input-group">
           <label htmlFor="user">
             Username or email address<span className="text-danger">*</span>
@@ -29,13 +29,13 @@ export default function Loginform() {
             </div>
         </div>
         <div className="submit-group d-block my-3">
-            <button className='bg-orange text-white py-1'>LOG IN</button>
+            <button className='bg-orange text-white'>LOG IN</button>
             <input type="checkbox" />
             <span className='m-1'>
               Remember me
             </span>
         </div>
-        <Link to='/lost-password' className='text-orange lost-link'>Lost your password?</Link>
+        <Link to='/lost-password' className='text-orange link'>Lost your password?</Link>
       </form>
     </div>
   );
