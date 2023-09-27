@@ -1,28 +1,28 @@
-import "./App.css";
-import "bootstrap/dist/css/bootstrap.css";
-import "bootstrap/js/dist/dropdown";
-import Navbar from "./components/navbar/Navbar";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import HomeV1 from "./pages/home-v1/Home-v1";
-import HomeV2 from "./pages/home-v2/Home-v2";
-import About from "./pages/about/About";
-import Aboutus from "./pages/aboutus/Aboutus";
-import News from "./pages/news/News";
-import Shop from "./pages/shop/Shop";
-import Pages from "./pages/pages/Pages";
-import Coaching from "./pages/coaching/Coaching";
-import Coachingsingle from "./pages/coachingsingle/Coachingsingle";
-import Contact from "./pages/contact/Contact";
-import Pricingplans from "./pages/pricingplans/Pricingplans";
-import Worklifebalance from "./pages/worklifebalance/Worklifebalance";
-import { ThemeProvider } from "./context/ThemeContext";
-import Importantdecisions from "./pages/importantdecisions/Importantdecisions";
-import Oneononesession from "./pages/oneononesession/Oneononesession";
-import Myaccount from "./pages/myaccount/Myaccount";
-import Cart from "./pages/cart/Cart";
-import Checkout from "./pages/checkout/Checkout";
-import LostPass from "./pages/lost-pass/Lost-pass";
+import './App.css';
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/js/dist/dropdown';
 
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+
+import Navbar from './components/navbar/Navbar';
+import { ThemeProvider } from './context/ThemeContext';
+import About from './pages/about/About';
+import Cart from './pages/cart/Cart';
+import Checkout from './pages/checkout/Checkout';
+import Coaching from './pages/coaching/Coaching';
+import Coachingsingle from './pages/coachingsingle/Coachingsingle';
+import Contact from './pages/contact/Contact';
+import HomeV1 from './pages/home-v1/Home-v1';
+import HomeV2 from './pages/home-v2/Home-v2';
+import Importantdecisions from './pages/importantdecisions/Importantdecisions';
+import LostPass from './pages/lost-pass/Lost-pass';
+import Myaccount from './pages/myaccount/Myaccount';
+import News from './pages/news/News';
+import Oneononesession from './pages/oneononesession/Oneononesession';
+import Pages from './pages/pages/Pages';
+import Pricingplans from './pages/pricingplans/Pricingplans';
+import Shop from './pages/shop/Shop';
+import Worklifebalance from './pages/worklifebalance/Worklifebalance';
 
 function App() {
   return (
@@ -41,7 +41,7 @@ function App() {
           <Route path="/news" element={<News />} />
           <Route path="/pages" element={<Pages />} />
           <Route path="/shop" element={<Shop />} />
-          <Route path="/aboutus" element={<Aboutus />} />
+          {/* <Route path="/aboutus" element={<Aboutus />} /> */}
           <Route path="/coachingsingle" element={<Coachingsingle />} />
           <Route path="/pricingplans" element={<Pricingplans />} />
           <Route path="/worklifebalance" element={<Worklifebalance />} />
