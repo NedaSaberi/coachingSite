@@ -1,7 +1,8 @@
-import Footer from '../../components/footer/Footer';
-import '../stylePages/stylePages.css'
-import ContactForm from '../../components/contactForm/ContactForm';
+import '../stylePages/stylePages.css';
 import './Contact.css';
+
+import ContactForm from '../../components/contactForm/ContactForm';
+import Footer from '../../components/footer/Footer';
 import Map from '../../components/map/Map';
 
 export default function Contact() {
@@ -13,9 +14,6 @@ export default function Contact() {
           <p>Need Assistance or Have a Question?</p>
         </div>
       </div>
-<<<<<<< HEAD
-      <Footer/>
-=======
       <div className="contact-body row m-0 p-7">
         <div className="left col-12 col-sm-6 p-7">
           <div className="text-orange top-title">ADVISING & ASSISTANCE</div>
@@ -63,7 +61,6 @@ export default function Contact() {
         <Map/>
       </div>
       <Footer />
->>>>>>> contactForm
     </>
   );
 }
