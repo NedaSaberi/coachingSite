@@ -7,6 +7,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Navbar from './components/navbar/Navbar';
 import { ThemeProvider } from './context/ThemeContext';
 import About from './pages/about/About';
+import Aboutus from './pages/aboutus/Aboutus';
 import Cart from './pages/cart/Cart';
 import Checkout from './pages/checkout/Checkout';
 import Coaching from './pages/coaching/Coaching';
@@ -41,7 +42,7 @@ function App() {
           <Route path="/news" element={<News />} />
           <Route path="/pages" element={<Pages />} />
           <Route path="/shop" element={<Shop />} />
-          {/* <Route path="/aboutus" element={<Aboutus />} /> */}
+          <Route path="/aboutus" element={<Aboutus />} />
           <Route path="/coachingsingle" element={<Coachingsingle />} />
           <Route path="/pricingplans" element={<Pricingplans />} />
           <Route path="/worklifebalance" element={<Worklifebalance />} />
@@ -52,7 +53,7 @@ function App() {
           <Route path="/checkout" element={<Checkout />} />
           <Route path="/lost-password" element={<LostPass />} />
         </Routes>
-      </BrowserRouter>{" "}
+      </BrowserRouter>
     </div>
   );
 }
