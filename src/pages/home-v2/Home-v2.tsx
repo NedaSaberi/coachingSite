@@ -1,11 +1,9 @@
 
 import Advvid from "../../components/advisors-video/Advvid";
 import Elementor from "../../components/elementor/Elementor";
-import Footer from "../../components/footer/Footer";
 import FreeConsulation from "../../components/freeCons/FreeConsulation";
 import Logoipsum from "../../components/logoipsum/Logoipsum";
 import Pricesplans from "../../components/pricesplans/Pricesplans";
-import "../stylePages/stylePages.css";
 import "./home-v2.css";
 
 export default function HomeV2(){
@@ -153,7 +151,6 @@ export default function HomeV2(){
       <Advvid />
       <Logoipsum />
       <FreeConsulation />
-      <Footer />
     </div>
   );
 }

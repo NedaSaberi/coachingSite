@@ -1,4 +1,3 @@
-import Footer from '../../components/footer/Footer';
 import './Checkout.css';
 import { Link } from 'react-router-dom';
 
@@ -27,7 +26,6 @@ export default function Checkout() {
           </Link>
         </div>
       </div>
-      <Footer />
     </div>
   );
 }

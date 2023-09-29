@@ -5,7 +5,6 @@ import Testimonials from '../../components/testimonials/Testimonials';
 import Logoipsum from '../../components/logoipsum/Logoipsum';
 import Advvid from '../../components/advisors-video/Advvid';
 import FreeConsulation from '../../components/freeCons/FreeConsulation';
-import Footer from '../../components/footer/Footer';
 
 export default function Aboutus() {
   return (
@@ -65,7 +64,6 @@ export default function Aboutus() {
       <Advvid/>
       <Experts />
       <FreeConsulation/>
-      <Footer/>
     </div>
   );
 }

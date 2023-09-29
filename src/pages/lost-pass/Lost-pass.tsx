@@ -1,5 +1,3 @@
-import React from 'react'
-import Footer from '../../components/footer/Footer';
 import LostPassForm from '../../components/lostpassform/LostPassForm';
 
 export default function LostPass() {
@@ -13,7 +11,6 @@ export default function LostPass() {
       <div className="">
         <LostPassForm/>
       </div>
-      <Footer/>
     </div>
   );
 }

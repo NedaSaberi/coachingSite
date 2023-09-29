@@ -1,8 +1,6 @@
-import '../stylePages/stylePages.css';
 import './Contact.css';
 
 import ContactForm from '../../components/contactForm/ContactForm';
-import Footer from '../../components/footer/Footer';
 import Map from '../../components/map/Map';
 
 export default function Contact() {
@@ -60,7 +58,6 @@ export default function Contact() {
       <div>
         <Map/>
       </div>
-      <Footer />
     </>
   );
 }

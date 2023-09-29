@@ -1,7 +1,5 @@
-import "../stylePages/stylePages.css";
 import './Home-v1.css';
 import Map from '../../components/map/Map';
-import Footer from '../../components/footer/Footer';
 import Specialties from '../../components/specialties/Specialties';
 import Experts from "../../components/experts/Experts";
 import Autho from "../../components/autho/Autho";
@@ -160,7 +158,6 @@ const HomeV1= ()=> {
         <div>
           <Map />
         </div>
-        <Footer />
       </div>
     );
 }

@@ -1,4 +1,3 @@
-import Footer from '../../components/footer/Footer';
 import Loginform from '../../components/loginform/Loginform';
 import RegisterForm from '../../components/registerForm/RegisterForm';
 import './Myaccount.css';
@@ -19,7 +18,6 @@ export default function Myaccount() {
             <RegisterForm />
         </div>
       </div>
-      <Footer/>
     </div>
   );
 }

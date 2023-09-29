@@ -1,4 +1,3 @@
-import Footer from '../../components/footer/Footer';
 import './Cart.css';
 
 export default function Cart() {
@@ -17,7 +16,6 @@ export default function Cart() {
         <button className='shop-btn text-white bg-orange'>RETURN TO SHOP</button>
         </div>
       </div>
-      <Footer />
     </div>
   );
 }

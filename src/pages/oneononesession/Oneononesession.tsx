@@ -1,4 +1,3 @@
-import Footer from "../../components/footer/Footer";
 import Sidebar from "../../components/sidebar/Sidebar";
 import "./Oneononesession.css";
 
@@ -77,7 +76,6 @@ export default function Oneononesession() {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 }

@@ -1,4 +1,3 @@
-import Footer from '../../components/footer/Footer';
 import './Coachingsingle.css';
 import { Link } from 'react-router-dom';
 import '../../App.css';
@@ -79,7 +78,6 @@ export default function Coachingsingle() {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 }

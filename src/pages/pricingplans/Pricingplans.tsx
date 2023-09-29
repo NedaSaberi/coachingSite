@@ -2,7 +2,6 @@ import './Pricingplans.css';
 import Pricesplans from "../../components/pricesplans/Pricesplans";
 import Logoipsum from '../../components/logoipsum/Logoipsum';
 import FreeConsulation from '../../components/freeCons/FreeConsulation';
-import Footer from '../../components/footer/Footer';
 
 export default function Pricingplans() {
   return (
@@ -16,7 +15,6 @@ export default function Pricingplans() {
       <Pricesplans/>
       <Logoipsum/>
       <FreeConsulation/>
-      <Footer/>
     </div>
   );
 }

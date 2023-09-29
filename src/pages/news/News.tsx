@@ -1,5 +1,3 @@
-import React from 'react'
-import Footer from '../../components/footer/Footer';
 
 export default function News() {
   return (
@@ -10,7 +8,6 @@ export default function News() {
           <p>Get the Latest News and Updates</p>
         </div>
       </div>
-      <Footer/>
     </>
   );
 }

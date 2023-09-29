@@ -1,9 +1,8 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/js/dist/dropdown';
-
+import './pages/stylePages/stylePages.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-
 import Navbar from './components/navbar/Navbar';
 import { ThemeProvider } from './context/ThemeContext';
 import About from './pages/about/About';
@@ -24,6 +23,7 @@ import Pages from './pages/pages/Pages';
 import Pricingplans from './pages/pricingplans/Pricingplans';
 import Shop from './pages/shop/Shop';
 import Worklifebalance from './pages/worklifebalance/Worklifebalance';
+import Footer from './components/footer/Footer';
 
 function App() {
   return (
@@ -32,7 +32,6 @@ function App() {
         <ThemeProvider>
           <Navbar />
         </ThemeProvider>
-
         <Routes>
           <Route path="/" element={<HomeV1 />} />
           <Route path="/home-v2" element={<HomeV2 />} />
@@ -53,6 +52,7 @@ function App() {
           <Route path="/checkout" element={<Checkout />} />
           <Route path="/lost-password" element={<LostPass />} />
         </Routes>
+        <Footer/>
       </BrowserRouter>
     </div>
   );

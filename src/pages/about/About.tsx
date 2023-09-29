@@ -1,6 +1,4 @@
-import "../stylePages/stylePages.css";
 import "./About.css";
-import Footer from "../../components/footer/Footer";
 import FreeConsulation from "../../components/freeCons/FreeConsulation";
 import Stats from "../../components/stats/Stats";
 import Logoipsum from "../../components/logoipsum/Logoipsum";
@@ -57,7 +55,6 @@ export default function About() {
 
       <FreeConsulation/>
 
-      <Footer/>
     </>
   );
 }
