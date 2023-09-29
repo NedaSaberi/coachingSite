@@ -1,7 +1,7 @@
 import Sidebar from '../../components/sidebar/Sidebar';
-import './Importantdecisions.css';
+import './ImportantDecisions.css';
 
-export default function Importantdecisions() {
+export default function ImportantDecisions() {
   return (
     <div className="importantdecisions">
       <div className="first-view">

@@ -1,8 +1,8 @@
 import Footer from '../../components/footer/Footer';
 import Sidebar from '../../components/sidebar/Sidebar';
-import './Worklifebalance.css';
+import "./WorkLifeBalance.css";
 
-export default function Worklifebalance() {
+export default function WorkLifeBalance() {
   return (
     <div className="worklifebalance">
       <div className="first-view">
@@ -79,4 +79,5 @@ export default function Worklifebalance() {
       </div>
       <Footer />
     </div>
-  );}
+  );
+}

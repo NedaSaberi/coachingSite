@@ -1,12 +1,11 @@
-
-import Advvid from "../../components/advisors-video/Advvid";
+import AdvisorsVideo from "../../components/advisors-video/AdvisorsVideo";
 import Elementor from "../../components/elementor/Elementor";
 import FreeConsulation from "../../components/freeCons/FreeConsulation";
 import Logoipsum from "../../components/logoipsum/Logoipsum";
-import Pricesplans from "../../components/pricesplans/Pricesplans";
-import "./home-v2.css";
+import Pricesplans from "../../components/pricesChart/PricesChart";
+import "./homeV2.css";
 
-export default function HomeV2(){
+export default function HomeV2() {
   setTimeout(() => {
     let leftElement = document.querySelector(
       ".home-first-view .left"
@@ -23,7 +22,6 @@ export default function HomeV2(){
     rightElement.style.opacity = "1";
   }, 3000);
 
-  
   return (
     <div className="home v2">
       <div className="home-first-view">
@@ -101,54 +99,55 @@ export default function HomeV2(){
       <div className="pricing-plans">
         <div className="row wall text-white">
           <div className="col-12 col-lg-5">
-          <div className="orange-cover"></div>
-          <div className="col-12 col-lg-5">
-            <div className="title">WHAT WE OFFER</div>
-            <h2>Pricing Plans</h2>
+            <div className="orange-cover"></div>
+            <div className="col-12 col-lg-5">
+              <div className="title">WHAT WE OFFER</div>
+              <h2>Pricing Plans</h2>
+            </div>
+            <div className="col-12 col-lg-7">
+              <p>
+                There are many variations of passag of Lorem ipsum dolor sit
+                amet, consectetur adipisicing elit. Quibusdam officiis
+                voluptatem sunt nam ipsa, repudiandae distinctio repellendus
+                similique incidunt enim, vel autem dicta possimus blanditiis
+                animi provident assumenda qui quis.
+              </p>
+            </div>
           </div>
-          <div className="col-12 col-lg-7">
-            <p>
-              There are many variations of passag of Lorem ipsum dolor sit amet,
-              consectetur adipisicing elit. Quibusdam officiis voluptatem sunt
-              nam ipsa, repudiandae distinctio repellendus similique incidunt
-              enim, vel autem dicta possimus blanditiis animi provident
-              assumenda qui quis.
+          <Pricesplans />
+          <div className="col-12 col-md-8 mission">
+            <h3>What I live for and how I can be useful to you</h3>
+            <p className="text-muted">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatum, fugit. Voluptates eaque repellat maxime soluta id
+              ratione ipsum. Nihil iure totam cum ducimus corporis, veritatis
+              modi nam eos ipsa doloribus.
             </p>
           </div>
-        </div>
-        <Pricesplans />
-        <div className="col-12 col-md-8 mission">
-          <h3>What I live for and how I can be useful to you</h3>
-          <p className="text-muted">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum,
-            fugit. Voluptates eaque repellat maxime soluta id ratione ipsum.
-            Nihil iure totam cum ducimus corporis, veritatis modi nam eos ipsa
-            doloribus.
-          </p>
-        </div>
-        <div className="col-12 col-md-4">
-          <img className="w-100" src="/images/mission.jpg" alt="" />
-        </div>
-        <div className="row location">
-          <div className="context col-12 col-md-6">
-            <div className="text-orange">OUR LOCATION</div>
-            <h1 className="mt-3">
-              Trusted by
-              <br />
-              Millions of People
-            </h1>
-            <p className="text-muted mt-4">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum
-              minima, itaque consequatur laudantium natus exercitationem, quam
-              sunt dolores vitae deleniti ex sapiente voluptas, totam
-              cupiditate. Dignissimos doloribus quam explicabo iusto.
-            </p>
+          <div className="col-12 col-md-4">
+            <img className="w-100" src="/images/mission.jpg" alt="" />
           </div>
-          <div className="map col-12 col-md-6"></div>
+          <div className="row location">
+            <div className="context col-12 col-md-6">
+              <div className="text-orange">OUR LOCATION</div>
+              <h1 className="mt-3">
+                Trusted by
+                <br />
+                Millions of People
+              </h1>
+              <p className="text-muted mt-4">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Laborum minima, itaque consequatur laudantium natus
+                exercitationem, quam sunt dolores vitae deleniti ex sapiente
+                voluptas, totam cupiditate. Dignissimos doloribus quam explicabo
+                iusto.
+              </p>
+            </div>
+            <div className="map col-12 col-md-6"></div>
+          </div>
         </div>
       </div>
-      </div>
-      <Advvid />
+      <AdvisorsVideo />
       <Logoipsum />
       <FreeConsulation />
     </div>

@@ -1,7 +1,7 @@
 import Sidebar from "../../components/sidebar/Sidebar";
-import "./Oneononesession.css";
+import "./OneOnOneSession.css";
 
-export default function Oneononesession() {
+export default function OneOnOneSession() {
   return (
     <div className="oneononesession">
       <div className="first-view">

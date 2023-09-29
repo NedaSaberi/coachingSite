@@ -1,10 +1,10 @@
-import './Aboutus.css'
-import Experts from '../../components/experts/Experts'
-import Autho from '../../components/autho/Autho';
-import Testimonials from '../../components/testimonials/Testimonials';
-import Logoipsum from '../../components/logoipsum/Logoipsum';
-import Advvid from '../../components/advisors-video/Advvid';
-import FreeConsulation from '../../components/freeCons/FreeConsulation';
+import "./AboutUs.css";
+import Experts from "../../components/experts/Experts";
+import Autho from "../../components/autho/Autho";
+import Testimonials from "../../components/testimonials/Testimonials";
+import Logoipsum from "../../components/logoipsum/Logoipsum";
+import AdvisorsVideo from "../../components/advisors-video/AdvisorsVideo";
+import FreeConsulation from "../../components/freeCons/FreeConsulation";
 
 export default function Aboutus() {
   return (
@@ -41,7 +41,7 @@ export default function Aboutus() {
                 aria-valuemax={100}
               ></div>
             </div>
-            <h5 className='mt-3'>Education</h5>
+            <h5 className="mt-3">Education</h5>
             <div className="progress">
               <div
                 className="progress-bar"
@@ -52,18 +52,18 @@ export default function Aboutus() {
                 aria-valuemax={100}
               ></div>
             </div>
-            <Autho/>
+            <Autho />
           </div>
           <div className="col-12 col-lg-6 right px-5">
             <img src="/images/about-company.jpg" alt="" />
           </div>
         </div>
       </div>
-      <Testimonials/>
-      <Logoipsum/>
-      <Advvid/>
+      <Testimonials />
+      <Logoipsum />
+      <AdvisorsVideo />
       <Experts />
-      <FreeConsulation/>
+      <FreeConsulation />
     </div>
   );
 }

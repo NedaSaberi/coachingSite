@@ -1,9 +1,8 @@
-import './Coachingsingle.css';
-import { Link } from 'react-router-dom';
+import './CoachingSingle.css';
 import '../../App.css';
 import Sidebar from '../../components/sidebar/Sidebar';
 
-export default function Coachingsingle() {
+export default function CoachingSingle() {
   return (
     <div className="coaching-single">
       <div className="first-view">

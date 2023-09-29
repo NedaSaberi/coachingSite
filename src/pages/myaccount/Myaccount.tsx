@@ -1,8 +1,8 @@
-import Loginform from '../../components/loginform/Loginform';
+import LoginForm from '../../components/loginForm/LoginForm';
 import RegisterForm from '../../components/registerForm/RegisterForm';
-import './Myaccount.css';
+import './MyAccount.css';
 
-export default function Myaccount() {
+export default function MyAccount() {
   return (
     <div className="myaccount">
       <div className="first-view">
@@ -12,7 +12,7 @@ export default function Myaccount() {
       </div>
       <div className="row forms">
         <div className="col-12 col-lg-6 left">
-            <Loginform/>
+            <LoginForm/>
         </div>
         <div className="col-12 col-lg-6 right">
             <RegisterForm />

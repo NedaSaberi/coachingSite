@@ -1,4 +1,4 @@
-import './Home-v1.css';
+import './HomeV1.css';
 import Map from '../../components/map/Map';
 import Specialties from '../../components/specialties/Specialties';
 import Experts from "../../components/experts/Experts";

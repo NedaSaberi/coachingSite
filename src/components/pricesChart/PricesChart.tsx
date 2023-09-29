@@ -1,6 +1,6 @@
-import './Pricesplans.css';
+import './PricesChart.css';
 
-export default function Pricesplans() {
+export default function PricesChart() {
   return (
         <div className="row prices-wrapper">
           <div className="col-12 col-md-4 p-3">

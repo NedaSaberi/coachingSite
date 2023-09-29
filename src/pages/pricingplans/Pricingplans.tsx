@@ -1,9 +1,9 @@
-import './Pricingplans.css';
-import Pricesplans from "../../components/pricesplans/Pricesplans";
-import Logoipsum from '../../components/logoipsum/Logoipsum';
-import FreeConsulation from '../../components/freeCons/FreeConsulation';
+import "./PricingPlans.css";
+import Logoipsum from "../../components/logoipsum/Logoipsum";
+import FreeConsulation from "../../components/freeCons/FreeConsulation";
+import PricesChart from "../../components/pricesChart/PricesChart";
 
-export default function Pricingplans() {
+export default function PricingPlans() {
   return (
     <div className="pricing-plans">
       <div className="first-view">
@@ -12,9 +12,9 @@ export default function Pricingplans() {
           <p>Excelling Your Professional Career</p>
         </div>
       </div>
-      <Pricesplans/>
-      <Logoipsum/>
-      <FreeConsulation/>
+      <PricesChart />
+      <Logoipsum />
+      <FreeConsulation />
     </div>
   );
 }

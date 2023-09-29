@@ -1,4 +1,4 @@
-import './Checkout.css';
+import './CheckOut.css';
 import { Link } from 'react-router-dom';
 
 export default function Checkout() {

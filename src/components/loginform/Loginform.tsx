@@ -2,7 +2,7 @@ import { useState } from 'react';
 import '../../pages/shop/Shop.css';
 import { Link } from 'react-router-dom';
 
-export default function Loginform() {
+export default function LoginForm() {
   const [showPassword, setShowPassword]= useState(false);
   const togglePasswordVisibility= ()=>{
     setShowPassword(!showPassword);

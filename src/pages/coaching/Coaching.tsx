@@ -1,8 +1,8 @@
-import Advvid from '../../components/advisors-video/Advvid';
-import FreeConsulation from '../../components/freeCons/FreeConsulation';
-import Logoipsum from '../../components/logoipsum/Logoipsum';
-import Specialties from '../../components/specialties/Specialties';
-import './Coaching.css'
+import AdvisorsVideo from "../../components/advisors-video/AdvisorsVideo";
+import FreeConsulation from "../../components/freeCons/FreeConsulation";
+import Logoipsum from "../../components/logoipsum/Logoipsum";
+import Specialties from "../../components/specialties/Specialties";
+import "./Coaching.css";
 
 export default function Coaching() {
   return (
@@ -13,10 +13,10 @@ export default function Coaching() {
           <p>Excelling Your Professional Career</p>
         </div>
       </div>
-      <Specialties/>
-      <Logoipsum/>
+      <Specialties />
+      <Logoipsum />
       <FreeConsulation />
-      <Advvid/>
+      <AdvisorsVideo />
       {/* <video className='coaching-video' src="/public/videos/pexels-zen-chung-5530410 (2160p).mp4" controls>Your browser doesn't support the video tag.</video> */}
     </>
   );

@@ -1,4 +1,4 @@
-import LostPassForm from '../../components/lostpassform/LostPassForm';
+import LostPassForm from '../../components/lostPassForm/LostPassForm';
 
 export default function LostPass() {
   return (

@@ -1,6 +1,6 @@
-import './Advvid.css'
+import "./AdvisorsVideo.css";
 
-export default function Advvid() {
+export default function AdvisorsVideo() {
   return (
       <div className="advisors-video">
         <video

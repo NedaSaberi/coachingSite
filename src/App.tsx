@@ -1,28 +1,28 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/js/dist/dropdown';
-import './pages/stylePages/stylePages.css';
+import './stylePages/StylePages.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Navbar from './components/navbar/Navbar';
 import { ThemeProvider } from './context/ThemeContext';
 import About from './pages/about/About';
-import Aboutus from './pages/aboutus/Aboutus';
+import Aboutus from './pages/aboutUs/AboutUs';
 import Cart from './pages/cart/Cart';
-import Checkout from './pages/checkout/Checkout';
+import Checkout from './pages/checkOut/CheckOut';
 import Coaching from './pages/coaching/Coaching';
-import Coachingsingle from './pages/coachingsingle/Coachingsingle';
+import Coachingsingle from './pages/coachingSingle/CoachingSingle';
 import Contact from './pages/contact/Contact';
-import HomeV1 from './pages/home-v1/Home-v1';
-import HomeV2 from './pages/home-v2/Home-v2';
-import Importantdecisions from './pages/importantdecisions/Importantdecisions';
-import LostPass from './pages/lost-pass/Lost-pass';
-import Myaccount from './pages/myaccount/Myaccount';
+import HomeV1 from './pages/homeV1/HomeV1';
+import HomeV2 from './pages/homeV2/HomeV2';
+import ImportantDecisions from './pages/importantDecisions/ImportantDecisions';
+import LostPass from './pages/lostPass/LostPass';
+import Myaccount from './pages/myAccount/MyAccount';
 import News from './pages/news/News';
-import Oneononesession from './pages/oneononesession/Oneononesession';
+import Oneononesession from './pages/oneOnOneSession/OneOnOneSession';
 import Pages from './pages/pages/Pages';
-import Pricingplans from './pages/pricingplans/Pricingplans';
+import Pricingplans from './pages/pricingPlans/PricingPlans';
 import Shop from './pages/shop/Shop';
-import Worklifebalance from './pages/worklifebalance/Worklifebalance';
+import Worklifebalance from './pages/workLifeBalance/WorkLifeBalance';
 import Footer from './components/footer/Footer';
 
 function App() {
@@ -45,7 +45,7 @@ function App() {
           <Route path="/coachingsingle" element={<Coachingsingle />} />
           <Route path="/pricingplans" element={<Pricingplans />} />
           <Route path="/worklifebalance" element={<Worklifebalance />} />
-          <Route path="/importantdecisions" element={<Importantdecisions />} />
+          <Route path="/importantdecisions" element={<ImportantDecisions />} />
           <Route path="/oneononesession" element={<Oneononesession />} />
           <Route path="/myaccount" element={<Myaccount />} />
           <Route path="/cart" element={<Cart />} />
