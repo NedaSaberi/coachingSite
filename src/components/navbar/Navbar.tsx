@@ -1,35 +1,9 @@
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 import { useTheme } from "../../hooks/useTheme";
-import { useState } from "react";
 
 function Navbar() {
   const { color } = useTheme();
-
-  const [showHome, setShowHome] = useState(false);
-  const showHomeDropdown = () => {
-    setShowHome(!showHome);
-  };
-  const hideHomeDropdown = () => {
-    setShowHome(false);
-  };
-  
-  const [showPages, setShowPages] = useState(false);
-  const showPagesDropdown = () => {
-    setShowPages(!showPages);
-  };
-  const hidePagesDropdown = () => {
-    setShowPages(false);
-  };
-
-  const [showShop, setShowShop] = useState(false);
-  const showShopDropdown = () => {
-    setShowShop(!showShop);
-  };
-  const hideShopDropdown = () => {
-    setShowShop(false);
-  };
-
   return (
     <nav
       className="navbar navbar-expand-lg navbar-light"
@@ -58,37 +32,26 @@ function Navbar() {
               id="navbarSupportedContent"
             >
               <ul className="navbar-nav d-flex justify-content-between w-100">
-                <li
-                  className={`nav-item dropdown ${showHome ? "show" : ""}`}
-                  onMouseEnter={showHomeDropdown}
-                  onMouseLeave={hideHomeDropdown}
-                >
+                <li className="nav-item dropdown homeDrop">
                   <Link
-                    to="/"
                     className="nav-link dropdown-toggle"
+                    to="/"
                     id="homeDropdown"
                     role="button"
-                    data-bs-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded={showHome}
                   >
                     Home
                   </Link>
-                  <ul
-                    className={`dropdown-menu ${showHome ? "show" : ""}`}
+                  <div
+                    className="dropdown-menu home-dropdown"
                     aria-labelledby="homeDropdown"
                   >
-                    <li>
-                      <a className="dropdown-item" href="/">
-                        Home V1
-                      </a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item" href="/home-v2">
-                        Home V2
-                      </a>
-                    </li>
-                  </ul>
+                    <a className="dropdown-item" href="/">
+                      Home V1
+                    </a>
+                    <a className="dropdown-item" href="/home-v2">
+                      Home V2
+                    </a>
+                  </div>
                 </li>
                 <li className="nav-item active">
                   <Link to="/about" className="nav-link">
@@ -101,75 +64,70 @@ function Navbar() {
                   </Link>
                 </li>
                 <li
-                  className={`nav-item dropdown ${showPages ? "show" : ""}`}
-                  onMouseEnter={showPagesDropdown}
-                  onMouseLeave={hidePagesDropdown}
+                  className="nav-item dropdown pagesDrop"
                 >
                   <Link
                     to="/pages"
                     className="nav-link dropdown-toggle"
                     id="pagesDropdown"
                     role="button"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded={showPages}
                   >
                     Pages
                   </Link>
-                  <ul
-                    className={`dropdown-menu ${showPages ? "show" : ""}`}
+                  <div
+                    className="dropdown-menu pages-dropdown"
                     aria-labelledby="pagesDropdown"
                   >
-                    <li>
+                    
                       <a className="dropdown-item" href="/about">
                         About
                       </a>
-                    </li>
-                    <li>
+                    
                       <a className="dropdown-item" href="/aboutus">
                         About us
                       </a>
-                    </li>
-                    <li>
+                   
                       <a className="dropdown-item" href="/coachingsingle">
                         Coaching Single
                       </a>
-                    </li>
-                    <li>
+                    
                       <a className="dropdown-item" href="/pricingplans">
                         Pricing Plans
                       </a>
-                    </li>
-                  </ul>
+                  </div>
                 </li>
                 <li className="nav-item">
                   <Link to="/news" className="nav-link">
                     News
                   </Link>
                 </li>
-                <li className={`nav-item dropdown ${showShop? "show" : ""}`} onMouseEnter={showShopDropdown} onMouseLeave={hideShopDropdown}> 
+                <li
+                  className="nav-item dropdown shopDrop"
+                >
                   <Link
                     to="/shop"
                     className="nav-link dropdown-toggle"
                     id="shopDropdown"
                     role="button"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded={showShop}
                   >
                     Shop
                   </Link>
-                  <ul className={`dropdown-menu ${showShop? "show": ""}`} aria-labelledby="shopDropdown">
-                    <li>
-                      <a className="dropdown-item" href="/myaccount">My account</a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item" href="/cart">Cart</a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item" href="/checkout">Checkout</a>
-                    </li>
-                  </ul>
+                  <div
+                    className="dropdown-menu shop-dropdown"
+                    aria-labelledby="shopDropdown"
+                  >
+                      <a className="dropdown-item" href="/myaccount">
+                        My account
+                      </a>
+                    
+                      <a className="dropdown-item" href="/cart">
+                        Cart
+                      </a>
+                    
+                      <a className="dropdown-item" href="/checkout">
+                        Checkout
+                      </a>
+                  </div>
                 </li>
                 <li className="nav-item">
                   <Link to="/contact" className="nav-link">
@@ -191,11 +149,6 @@ function Navbar() {
             </div>
           </div>
         </div>
-
-        {/* <form className="form-inline my-2 my-lg-0">
-                <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"/>
-                <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form> */}
       </div>
     </nav>
   );
