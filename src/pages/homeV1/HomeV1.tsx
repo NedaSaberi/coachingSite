@@ -6,17 +6,17 @@ import Autho from "../../components/autho/Autho";
 
 const HomeV1= ()=> {
     
-    setTimeout(()=>{
-      let leftElement = document.querySelector(".home-first-view .left") as HTMLElement;
-      leftElement.style.transform = "translateY(0)";
-      leftElement.style.opacity = "1";
-    }, 2000);
+    // setTimeout(()=>{
+    //   let leftElement = document.querySelector(".home-first-view .left") as HTMLElement;
+    //   leftElement.style.transform = "translateY(0)";
+    //   leftElement.style.opacity = "1";
+    // }, 2000);
 
-    setTimeout(()=>{
-      let rightElement = document.querySelector(".home-first-view .right") as HTMLElement;
-      rightElement.style.transform = "translate(-100px, -50%)";
-      rightElement.style.opacity= "1"
-    }, 3000);
+    // setTimeout(()=>{
+    //   let rightElement = document.querySelector(".home-first-view .right") as HTMLElement;
+    //   rightElement.style.transform = "translate(-100px, -50%)";
+    //   rightElement.style.opacity= "1"
+    // }, 3000);
 
     window.addEventListener("scroll", ()=>{
       if(document.body.getBoundingClientRect().top < 0){
@@ -30,7 +30,7 @@ const HomeV1= ()=> {
       <div className="home v1">
         <div className="home-first-view">
           <div className="row">
-            <div className="left">
+            <div className="left col-11 offset-0 offset-lg-1">
               <h5 className="text-orange">PROFESSIONAL LIFE COACH & ADVISOR</h5>
               <div className="h0 my-5">
                 Life Coaching
@@ -40,7 +40,7 @@ const HomeV1= ()=> {
               <button className="bg-orange text-white free-consulation">FREE CONSULATION</button>
             </div>
             <div className="right">
-              <div className="text-end h-100 d-flex flex-column justify-content-center">
+              <div className="text-end d-flex flex-column">
                 <i className="fa-brands fa-twitter"></i>
                 <i className="fa-brands fa-facebook"></i>
                 <i className="fa-brands fa-linkedin"></i>
@@ -49,7 +49,7 @@ const HomeV1= ()=> {
             </div>
           </div>
         </div>
-        <div className="home-second-view p-5 m-5">
+        {/* <div className="home-second-view p-5 m-5">
           <div className="row">
             <div className="col-7 left h-100">
               <div className="row h-100">
@@ -93,7 +93,7 @@ const HomeV1= ()=> {
              <Autho/>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <Specialties/>
         <div className="excel">

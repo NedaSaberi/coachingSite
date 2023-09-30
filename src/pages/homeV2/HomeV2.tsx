@@ -6,27 +6,27 @@ import Pricesplans from "../../components/pricesChart/PricesChart";
 import "./homeV2.css";
 
 export default function HomeV2() {
-  setTimeout(() => {
-    let leftElement = document.querySelector(
-      ".home-first-view .left"
-    ) as HTMLElement;
-    leftElement.style.transform = "translateY(0)";
-    leftElement.style.opacity = "1";
-  }, 2000);
+  // setTimeout(() => {
+  //   let leftElement = document.querySelector(
+  //     ".home-first-view .left"
+  //   ) as HTMLElement;
+  //   leftElement.style.transform = "translateY(0)";
+  //   leftElement.style.opacity = "1";
+  // }, 2000);
 
-  setTimeout(() => {
-    let rightElement = document.querySelector(
-      ".home-first-view .right"
-    ) as HTMLElement;
-    rightElement.style.transform = "translate(-100px, -50%)";
-    rightElement.style.opacity = "1";
-  }, 3000);
+  // setTimeout(() => {
+  //   let rightElement = document.querySelector(
+  //     ".home-first-view .right"
+  //   ) as HTMLElement;
+  //   rightElement.style.transform = "translate(-100px, -50%)";
+  //   rightElement.style.opacity = "1";
+  // }, 3000);
 
   return (
     <div className="home v2">
       <div className="home-first-view">
         <div className="row">
-          <div className="left text-center">
+          <div className="left text-center col-12">
             <h5 className="text-orange">PROFESSIONAL LIFE COACH & ADVISOR</h5>
             <div className="h0 my-5">
               Helping You
