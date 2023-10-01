@@ -1,19 +1,26 @@
 .v1 .home-first-view{
     background-image: url("/public/images/home-v1-top.jpg");
 }
+.v1 .home-second-view{
+    width: 95%;
+    overflow: hidden;
+}
 .v1 .home-second-view .row{
     width: 100%;
     height: 500px;
     position: relative;
     z-index: 1;
+    /* overflow: hidden; */
 }
 .v1 .home-second-view .left{
     transform: translateX(-520px);
     transition: all 1s ease-in-out;
+    /* overflow: hidden; */
 }
 .v1 .home-second-view .right{
     transform: translateX(520px);
     transition: all 1s ease-in-out;
+    /* overflow: hidden; */
 }
 .v1 .home-second-view .right .title{
     color: #595959;

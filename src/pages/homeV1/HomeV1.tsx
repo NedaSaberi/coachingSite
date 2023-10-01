@@ -30,7 +30,7 @@ const HomeV1= ()=> {
       <div className="home v1">
         <div className="home-first-view">
           <div className="row">
-            <div className="left col-11 offset-0 offset-lg-1">
+            <div className="left col-12 offset-0 col-lg-11 offset-lg-1">
               <h5 className="text-orange">PROFESSIONAL LIFE COACH & ADVISOR</h5>
               <div className="h0 my-5">
                 Life Coaching
@@ -49,7 +49,7 @@ const HomeV1= ()=> {
             </div>
           </div>
         </div>
-        {/* <div className="home-second-view p-5 m-5">
+        <div className="home-second-view p-5 m-5">
           <div className="row">
             <div className="col-7 left h-100">
               <div className="row h-100">
@@ -93,7 +93,7 @@ const HomeV1= ()=> {
              <Autho/>
             </div>
           </div>
-        </div> */}
+        </div>
 
         <Specialties/>
         <div className="excel">

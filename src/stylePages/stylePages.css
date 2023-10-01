@@ -1,6 +1,7 @@
 .first-view{
     background-position: top center;
     background-size: cover;
+    overflow: hidden;
 }
 .first-view-content{
     min-height: 515px;
@@ -30,8 +31,8 @@
     background-position: top center;
     background-size: cover;
     width: 100%; /* Set the width according to your layout */
-    height: 100vh; /* Set the height according to your layout */
-    /* overflow: hidden; */
+    height: 100vh; /*Set the height according to your layout */
+    overflow: hidden;
 }
  
 .home .home-first-view .row{
