@@ -6,6 +6,7 @@
     color: #000;
     font-size: 15px;
 }
+
 .sidebar ul li:hover{
     color: #fff;
     background-color: #D9945D;
@@ -18,16 +19,14 @@
     color: #fff;
     background-color: #D9945D;
 }
-.sidebar .link-no-underline{
-  text-decoration: none;
-}
-.sidebar .call-box{
+
+.callBox{
     width: 100%;
     background-color: rgb(110, 110, 125);
     margin-left: 32px;
     padding: 50px;
 }
-.sidebar .call-box .phone-wrapper{
+.phoneWrapper{
     background-color:#D9945D;
     width: 70px;
     height: 70px;
@@ -35,7 +34,11 @@
     padding: 24px;
     margin: 0 auto;
 }
-.sidebar .call-box .phone-wrapper i{
+.phoneWrapper i{
     color: #fff;
     font-size: 20px;
+}
+
+.sidebar .test{
+    background-color: aqua;
 }

@@ -1,13 +1,13 @@
-import "./AdvisorsVideo.css";
+import styles from './AdvisorsVideo.module.css';
 
 export default function AdvisorsVideo() {
   return (
-      <div className="advisors-video">
+      <div className={styles.advisorsVideo}>
         <video
           src="/videos/pexels-zen-chung-5530410 (2160p).mp4"
           autoPlay
         ></video>
-        <div className="context position-absolute text-center">
+        <div className={`${styles.context} position-absolute text-center`}>
           <h1 className="text-white">
             Experienced Advisors
             <br />

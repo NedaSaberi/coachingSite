@@ -1,22 +1,22 @@
-.form-container{
+.formContainer{
     background-color: #F1F4F6;
 }
-.form-container .top-title{
+.topTitle{
     font-weight: 500;
 }
-.form-container .title{
+.title{
     font-size: 35px;
 }
 
-.form-container form input{
+.formContainer form input{
     width: 75%;
 }
-.form-container form *{
+.formContainer form *{
     padding: 12px;
     margin: 18px 0;
     border: 1px solid #dfdddd;
     font-size: 13px;
 }
-.form-container form button{
+.formContainer form button{
     width: 150px;
 }

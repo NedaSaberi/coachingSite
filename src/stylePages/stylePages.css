@@ -1,9 +1,10 @@
-.first-view{
+.firstView{
     background-position: top center;
     background-size: cover;
     overflow: hidden;
+    background-image: url('/public/images/bg-top.jpg');
 }
-.first-view-content{
+.firstViewContent{
     min-height: 515px;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.6);
@@ -13,7 +14,7 @@
     justify-content: center;
     align-items: center;
 }
-.first-view-content p{
+.firstViewContent p{
     color: #ffffffb3;
 }
 .free-consulation{
@@ -24,9 +25,15 @@
     padding: 15px 40px;
     border: none;
 }
-
+.link-no-underline{
+  text-decoration: none;
+}
 /* homes */
-.home .home-first-view{
+.home{
+
+}
+
+.homeFirstView{
     /* position: relative; */
     background-position: top center;
     background-size: cover;
@@ -35,7 +42,7 @@
     overflow: hidden;
 }
  
-.home .home-first-view .row{
+.homeFirstView .row{
     height: 100vh;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.6);
@@ -49,7 +56,7 @@
     position: relative;
 }
 
-.home .home-first-view .row .right{
+.homeFirstView .row .right{
     position: absolute;
     top: 50%;
     left: 0;
@@ -62,11 +69,11 @@
     /* animation-delay: 2s; */
 } 
 
-.home .home-first-view .row .right i{
+.homeFirstView .row .right i{
     margin: 10px;    
 }
 
-.home .home-first-view .row .left{
+.homeFirstView .row .left{
     /* position: absolute;
     top: 0;
     left: 0; */

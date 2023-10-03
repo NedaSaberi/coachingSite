@@ -14,7 +14,7 @@ export default function ImportantDecisions() {
         <div className="row">
           <div className="col-12 col-lg-8 left">
             <img src="/images/about-right.jpg" alt="" />
-            <h1 className="my-5">Importantdecisions</h1>
+            <h1 className="my-5">Important decisions</h1>
             <p className="text-muted">
               Lorem ipsum is simply free text used by copytyping refreshing.
               Neque porro est qui dolorem ipsum quia quaed inventore veritatis

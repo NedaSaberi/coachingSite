@@ -1,13 +1,13 @@
-.free-consulation-box{
+.freeConsulationBox{
     padding: 50px 100px;
 }
-.free-consulation-box .left{
+.left{
     width: 60%;
 }
-.free-consulation-box .right{
+.right{
     width: 40%;
 }
-.free-consulation-box .right button{
+.right button{
     background-color: #41484E;
     color: #fff;
     font-size: 13px;

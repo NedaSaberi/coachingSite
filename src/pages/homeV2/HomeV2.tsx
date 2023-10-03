@@ -2,8 +2,8 @@ import AdvisorsVideo from "../../components/advisors-video/AdvisorsVideo";
 import Elementor from "../../components/elementor/Elementor";
 import FreeConsulation from "../../components/freeCons/FreeConsulation";
 import Logoipsum from "../../components/logoipsum/Logoipsum";
-import Pricesplans from "../../components/pricesChart/PricesChart";
-import "./homeV2.css";
+import PricesChart from "../../components/pricesChart/PricesChart";
+import styles from './homeV2.module.css';
 
 export default function HomeV2() {
   // setTimeout(() => {
@@ -23,8 +23,8 @@ export default function HomeV2() {
   // }, 3000);
 
   return (
-    <div className="home v2">
-      <div className="home-first-view">
+    <div className={styles.v2}>
+      <div className={`homeFirstView ${styles.homeFirstView}`}>
         <div className="row">
           <div className="left text-center col-12">
             <h5 className="text-orange">PROFESSIONAL LIFE COACH & ADVISOR</h5>
@@ -48,9 +48,9 @@ export default function HomeV2() {
         </div>
       </div>
       <Elementor />
-      <div className="introduction">
-        <div className="row">
-          <div className="col-12 col-lg-6 left">
+      <div className={styles.introduction}>
+        <div className={`${styles.row} row`}>
+          <div className={`${styles.left} col-12 col-lg-6`}>
             <div className="title text-orange">OUR INTRODUCTION</div>
             <h1 className="my-4">
               It's Time for a<br />
@@ -87,7 +87,7 @@ export default function HomeV2() {
             </ul>
             <button className="free-consulation my-4">FREE CONSULATION</button>
           </div>
-          <div className="col-12 col-lg-6 right">
+          <div className={`${styles.right} col-12 col-lg-6`}>
             <img
               className="w-100 h-100"
               src="/images/businessman-and-businesswomen-working-on-business-S5PJZ55.jpg"
@@ -96,55 +96,53 @@ export default function HomeV2() {
           </div>
         </div>
       </div>
-      <div className="pricing-plans">
-        <div className="row wall text-white">
+      <div className={styles.pricingPlans}>
+        <div className={`${styles.wall} row text-white`}>
+          {/* <div className="orange-cover"></div> */}
           <div className="col-12 col-lg-5">
-            <div className="orange-cover"></div>
-            <div className="col-12 col-lg-5">
-              <div className="title">WHAT WE OFFER</div>
-              <h2>Pricing Plans</h2>
-            </div>
-            <div className="col-12 col-lg-7">
-              <p>
-                There are many variations of passag of Lorem ipsum dolor sit
-                amet, consectetur adipisicing elit. Quibusdam officiis
-                voluptatem sunt nam ipsa, repudiandae distinctio repellendus
-                similique incidunt enim, vel autem dicta possimus blanditiis
-                animi provident assumenda qui quis.
-              </p>
-            </div>
+            <div>WHAT WE OFFER</div>
+            <h2>Pricing Plans</h2>
           </div>
-          <Pricesplans />
-          <div className="col-12 col-md-8 mission">
-            <h3>What I live for and how I can be useful to you</h3>
-            <p className="text-muted">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatum, fugit. Voluptates eaque repellat maxime soluta id
-              ratione ipsum. Nihil iure totam cum ducimus corporis, veritatis
-              modi nam eos ipsa doloribus.
+          <div className="col-12 col-lg-7">
+            <p>
+              There are many variations of passag of Lorem ipsum dolor sit amet,
+              consectetur adipisicing elit. Quibusdam officiis voluptatem sunt
+              nam ipsa, repudiandae distinctio repellendus similique incidunt
+              enim, vel autem dicta possimus blanditiis animi provident
+              assumenda qui quis.
             </p>
           </div>
-          <div className="col-12 col-md-4">
-            <img className="w-100" src="/images/mission.jpg" alt="" />
+        </div>
+        
+        <PricesChart />
+        <div className="col-12 col-md-8 mission">
+          <h3>What I live for and how I can be useful to you</h3>
+          <p className="text-muted">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum,
+            fugit. Voluptates eaque repellat maxime soluta id ratione ipsum.
+            Nihil iure totam cum ducimus corporis, veritatis modi nam eos ipsa
+            doloribus.
+          </p>
+        </div>
+        <div className="col-12 col-md-4">
+          <img className="w-100" src="/images/mission.jpg" alt="" />
+        </div>
+        <div className="row location">
+          <div className="context col-12 col-md-6">
+            <div className="text-orange">OUR LOCATION</div>
+            <h1 className="mt-3">
+              Trusted by
+              <br />
+              Millions of People
+            </h1>
+            <p className="text-muted mt-4">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum
+              minima, itaque consequatur laudantium natus exercitationem, quam
+              sunt dolores vitae deleniti ex sapiente voluptas, totam
+              cupiditate. Dignissimos doloribus quam explicabo iusto.
+            </p>
           </div>
-          <div className="row location">
-            <div className="context col-12 col-md-6">
-              <div className="text-orange">OUR LOCATION</div>
-              <h1 className="mt-3">
-                Trusted by
-                <br />
-                Millions of People
-              </h1>
-              <p className="text-muted mt-4">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Laborum minima, itaque consequatur laudantium natus
-                exercitationem, quam sunt dolores vitae deleniti ex sapiente
-                voluptas, totam cupiditate. Dignissimos doloribus quam explicabo
-                iusto.
-              </p>
-            </div>
-            <div className="map col-12 col-md-6"></div>
-          </div>
+          <div className="map col-12 col-md-6"></div>
         </div>
       </div>
       <AdvisorsVideo />

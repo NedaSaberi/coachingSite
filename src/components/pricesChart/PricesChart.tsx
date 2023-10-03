@@ -1,12 +1,14 @@
-import './PricesChart.css';
+import styles from './PricesChart.module.css';
 
 export default function PricesChart() {
   return (
-        <div className="row prices-wrapper">
-          <div className="col-12 col-md-4 p-3">
-            <div className="card">
-              <div className="title">SINGLE SESSION</div>
-              <h1 className="price">$200</h1>
+    <div className="row">
+      <div className="mx-auto col-10 col-md-12 col-xl-10">
+        <div className={`${styles.pricesWrapper} row`}>
+          <div className="col-12 offset-1 col-md-4 offset-md-0 col-xl-4 p-3">
+            <div className={`${styles.card} text-center`}>
+              <div className={styles.title}>SINGLE SESSION</div>
+              <h1 className={styles.price}>$200</h1>
               <ul>
                 <li>
                   <i className="fa-solid fa-check"></i>
@@ -28,10 +30,10 @@ export default function PricesChart() {
               <button>CONTACT US</button>
             </div>
           </div>
-          <div className="col-12 col-md-4 p-3">
-            <div className="card mid">
-              <div className="title text-orange">RECOMMENDED</div>
-              <h1 className="price text-orange">$650</h1>
+          <div className="col-12 offset-1 col-md-4 offset-md-0 col-xl-4 p-3">
+            <div className={`${styles.card} ${styles.mid} text-center`}>
+              <div className={`${styles.title} text-orange`}>RECOMMENDED</div>
+              <h1 className={`${styles.price} text-orange`}>$650</h1>
               <ul>
                 <li>
                   <i className="text-orange fa-solid fa-check"></i>
@@ -57,10 +59,10 @@ export default function PricesChart() {
               <button>CONTACT US</button>
             </div>
           </div>
-          <div className="col-12 col-md-4 p-3">
-            <div className="card">
-              <div className="title">PREMIERE PACKAGE</div>
-              <h1 className="price">$1,200</h1>
+          <div className="col-12 offset-1 col-md-4 offset-md-0 col-xl-4 p-3">
+            <div className={`${styles.card} text-center`}>
+              <div className={styles.title}>PREMIERE PACKAGE</div>
+              <h1 className={styles.price}>$1,200</h1>
               <ul>
                 <li>
                   <i className="fa-solid fa-check"></i>
@@ -82,7 +84,8 @@ export default function PricesChart() {
               <button>CONTACT US</button>
             </div>
           </div>
-          
         </div>
+      </div>
+    </div>
   );
 }

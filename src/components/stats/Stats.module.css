@@ -1,0 +1,20 @@
+.numbersWrapper .numbers{
+    width: 20%;
+    height:220px;
+    background-color: #2f3f3c;
+    padding: 25px;
+}
+.numbersWrapper .numbers .num{
+    color: #fff;
+    font-size: 80px;
+    font-weight: 600;
+}
+.numbersWrapper .numbers .sub{
+    color: #a3a2a2;
+}
+.statsBack{
+    height: 630px;
+}
+.statsFront{
+    background-color: rgba(0, 0, 0, 0.6);    
+}

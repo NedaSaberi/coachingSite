@@ -1,4 +1,4 @@
-import './Contact.css';
+import styles from './Contact.module.css';
 
 import ContactForm from '../../components/contactForm/ContactForm';
 import Map from '../../components/map/Map';
@@ -6,16 +6,16 @@ import Map from '../../components/map/Map';
 export default function Contact() {
   return (
     <>
-      <div className="first-view">
-        <div className="first-view-content">
+      <div className="firstView">
+        <div className="firstViewContent">
           <h1>Contact</h1>
           <p>Need Assistance or Have a Question?</p>
         </div>
       </div>
-      <div className="contact-body row m-0 p-7">
-        <div className="left col-12 col-sm-6 p-7">
-          <div className="text-orange top-title">ADVISING & ASSISTANCE</div>
-          <div className="fs-1 title">
+      <div className={`${styles.contactBody} row m-0 p-7`}>
+        <div className="col-12 col-sm-6 p-7">
+          <div className={`text-orange ${styles.topTitle}`}>ADVISING & ASSISTANCE</div>
+          <div className="fs-1">
             Do you Need Help? <br />
             Get in Touch with the <br/>
             Team
@@ -44,14 +44,14 @@ export default function Contact() {
               <span>Donec risus magna, auctor a tincidun.</span>
             </li>
           </ul>
-          <div className="social-media d-flex">
+          <div className={`${styles.socialMedia} d-flex`}>
             <span><i className="fa-brands fa-twitter"></i></span>
             <span><i className="fa-brands fa-facebook"></i></span>
             <span><i className="fa-brands fa-linkedin"></i></span>
             <span><i className="fa-brands fa-instagram"></i></span>
           </div>
         </div>
-        <div className="right col-12 col-sm-6">
+        <div className="col-12 col-sm-6">
           <ContactForm />
         </div>
       </div>

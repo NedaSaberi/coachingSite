@@ -1,16 +1,18 @@
 import { Link } from "react-router-dom";
-import './Sidebar.css';
+import styles from './Sidebar.module.css';
 
 export default function Sidebar() {
   return (
-    <div className="sidebar">
+    <div className={styles.sidebar}>
+
       <ul>
+        {/* <li className={styles.test}>test</li> */}
         <Link className="link-no-underline" to="/coachingsingle">
-          <li className="first">
+          <li className={styles.first}>
             <i className="fa-solid fa-caret-right"></i>
             <span>Career Mentoring</span>
           </li>
-        </Link>
+        </Link>      
         <Link className="link-no-underline" to="/worklifebalance">
           <li>
             <i className="fa-solid fa-caret-right"></i>
@@ -30,8 +32,8 @@ export default function Sidebar() {
           </li>
         </Link>
       </ul>
-      <div className="call-box text-center">
-        <div className="phone-wrapper">
+      <div className={`${styles.callBox} text-center`}>
+        <div className={styles.phoneWrapper}>
           <i className="fa-solid fa-phone-volume"></i>
         </div>
         <div className="text-orange my-3">

@@ -1,19 +1,19 @@
-import './CoachingSingle.css';
+import styles from './CoachingSingle.module.css';
 import '../../App.css';
 import Sidebar from '../../components/sidebar/Sidebar';
 
 export default function CoachingSingle() {
   return (
     <div className="coaching-single">
-      <div className="first-view">
-        <div className="first-view-content bg-orange">
+      <div className="firstView">
+        <div className="firstViewContent bg-orange">
           <h1>Career Mentoring</h1>
           <p>Excelling Your Professional Career</p>
         </div>
       </div>
-      <div className="body">
+      <div className={styles.body}>
         <div className="row">
-          <div className="col-12 col-lg-8 left">
+          <div className={`${styles.left} col-12 col-lg-8`}>
             <img src="/images/about-right.jpg" alt="" />
             <h1 className="my-5">Career Mentoring</h1>
             <p className="text-muted">
@@ -37,7 +37,7 @@ export default function CoachingSingle() {
               only five centuries, but also the leap into electronic
               typesetting.
             </p>
-            <div className="imgs my-4">
+            <div className="my-4">
               <img src="/images/careermentoring.jpg" alt="" />
             </div>
             <h3>Service Benefits</h3>

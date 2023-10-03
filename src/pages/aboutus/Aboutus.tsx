@@ -1,4 +1,4 @@
-import "./AboutUs.css";
+import styles from './AboutUs.module.css';
 import Experts from "../../components/experts/Experts";
 import Autho from "../../components/autho/Autho";
 import Testimonials from "../../components/testimonials/Testimonials";
@@ -8,16 +8,16 @@ import FreeConsulation from "../../components/freeCons/FreeConsulation";
 
 export default function Aboutus() {
   return (
-    <div className="aboutus">
-      <div className="first-view">
-        <div className="first-view-content bg-orange">
+    <div>
+      <div className="firstView">
+        <div className="firstViewContent bg-orange">
           <h1>About us</h1>
           <p>Specializing in Career Mentoring</p>
         </div>
       </div>
-      <div className="about-company">
+      <div className={styles.aboutCompany}>
         <div className="row p-7">
-          <div className="col-12 col-lg-6 left">
+          <div className={`col-12 col-lg-6 ${styles.left}`}>
             <div className="text-orange">ABOUT OUR COMPANY</div>
             <h1 className="my-4">
               Get to Know About
@@ -31,9 +31,9 @@ export default function Aboutus() {
               maxime, aliquid totam quis.
             </p>
             <h5>Mentorship</h5>
-            <div className="progress">
+            <div className={`progress ${styles.progress}`}>
               <div
-                className="progress-bar"
+                className={`progress-bar ${styles.progressBar}`}
                 role="progressbar"
                 style={{ width: "92%" }}
                 aria-valuenow={25}
@@ -42,9 +42,9 @@ export default function Aboutus() {
               ></div>
             </div>
             <h5 className="mt-3">Education</h5>
-            <div className="progress">
+            <div className={`progress ${styles.progress}`}>
               <div
-                className="progress-bar"
+                className={`progress-bar ${styles.progressBar}`}
                 role="progressbar"
                 style={{ width: "82%" }}
                 aria-valuenow={25}
@@ -54,7 +54,7 @@ export default function Aboutus() {
             </div>
             <Autho />
           </div>
-          <div className="col-12 col-lg-6 right px-5">
+          <div className={`${styles.right} col-12 col-lg-6 px-5`}>
             <img src="/images/about-company.jpg" alt="" />
           </div>
         </div>

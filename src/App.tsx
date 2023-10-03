@@ -1,7 +1,7 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/js/dist/dropdown';
-import './stylePages/StylePages.css';
+import "./stylePages/StylePages.css";
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Navbar from './components/navbar/Navbar';
 import { ThemeProvider } from './context/ThemeContext';

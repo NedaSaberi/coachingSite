@@ -2,13 +2,13 @@ import AdvisorsVideo from "../../components/advisors-video/AdvisorsVideo";
 import FreeConsulation from "../../components/freeCons/FreeConsulation";
 import Logoipsum from "../../components/logoipsum/Logoipsum";
 import Specialties from "../../components/specialties/Specialties";
-import "./Coaching.css";
+import styles from './Coaching.module.css';
 
 export default function Coaching() {
   return (
     <>
-      <div className="first-view">
-        <div className="first-view-content">
+      <div className="firstView">
+        <div className="firstViewContent">
           <h1>Coaching</h1>
           <p>Excelling Your Professional Career</p>
         </div>

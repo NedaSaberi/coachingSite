@@ -1,8 +1,10 @@
-import './HomeV1.css';
+import styles from './HomeV1.module.css';
+
 import Map from '../../components/map/Map';
 import Specialties from '../../components/specialties/Specialties';
 import Experts from "../../components/experts/Experts";
 import Autho from "../../components/autho/Autho";
+import Logoipsum from '../../components/logoipsum/Logoipsum';
 
 const HomeV1= ()=> {
     
@@ -20,15 +22,23 @@ const HomeV1= ()=> {
 
     window.addEventListener("scroll", ()=>{
       if(document.body.getBoundingClientRect().top < 0){
-        let leftElement = document.querySelector(".home-second-view .left") as HTMLElement;
+        let leftElement = document.querySelector(
+          `.${styles.left}`
+        ) as HTMLElement;
         leftElement.style.transform = "translateX(0)";
-        let rightElement = document.querySelector(".home-second-view .right") as HTMLElement;
+        let rightElement = document.querySelector(
+          `.${styles.right}`
+        ) as HTMLElement;
         rightElement.style.transform = "translateX(0)";
+        // let leftElement = document.querySelector(".homeSecondView .left") as HTMLElement;
+        // leftElement.style.transform = "translateX(0)";
+        // let rightElement = document.querySelector(".homeSecondView .right") as HTMLElement;
+        // rightElement.style.transform = "translateX(0)";
       }
     })
     return (
-      <div className="home v1">
-        <div className="home-first-view">
+      <div className={`home ${styles.v1}`}>
+        <div className={`homeFirstView ${styles.homeFirstView}`}>
           <div className="row">
             <div className="left col-12 offset-0 col-lg-11 offset-lg-1">
               <h5 className="text-orange">PROFESSIONAL LIFE COACH & ADVISOR</h5>
@@ -37,7 +47,9 @@ const HomeV1= ()=> {
                 <br />
                 with Meghdad
               </div>
-              <button className="bg-orange text-white free-consulation">FREE CONSULATION</button>
+              <button className="bg-orange text-white free-consulation">
+                FREE CONSULATION
+              </button>
             </div>
             <div className="right">
               <div className="text-end d-flex flex-column">
@@ -49,10 +61,10 @@ const HomeV1= ()=> {
             </div>
           </div>
         </div>
-        <div className="home-second-view p-5 m-5">
-          <div className="row">
-            <div className="col-7 left h-100">
-              <div className="row h-100">
+        <div className={`${styles.homeSecondView} p-5 m-5`}>
+          <div className={styles.row}>
+            <div className={`${styles.left} col-7 h-100`}>
+              <div className={`${styles.row} h-100`}>
                 <img
                   className="col-6 p-2 h-100"
                   src="/images/home-1-sec-row(1).jpg"
@@ -65,12 +77,12 @@ const HomeV1= ()=> {
                 />
               </div>
             </div>
-            <div className="col-5 right">
+            <div className={`${styles.right} col-5`}>
               <h6 className="text-orange">GET TO KNOW US</h6>
-              <h2 className="title my-4">
+              <h2 className={`${styles.title} my-4`}>
                 Working Together for your Better Life!
               </h2>
-              <p className="body">
+              <p className={styles.body}>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 Recusandae eos mollitia optio, exercitationem a minima saepe
                 excepturi cumque explicabo vitae amet reprehenderit eum eaque
@@ -90,29 +102,29 @@ const HomeV1= ()=> {
                   <span>Entum estibulum dignissim posuere.</span>
                 </li>
               </ul>
-             <Autho/>
+              <Autho />
             </div>
           </div>
         </div>
 
-        <Specialties/>
-        <div className="excel">
-          <div className="row w-100">
-            <div className="left col-6">
+        <Specialties />
+        <div className={styles.excel}>
+          <div className={`${styles.row} row w-100`}>
+            <div className={`${styles.left} col-6`}>
               <img className="w-100" src="/images/excel.jpg" alt="" />
             </div>
-            <div className="right col-6">
+            <div className={`${styles.right} col-6`}>
               <div className="text-orange">GET TO KNOW US</div>
               <h1 className="text-white my-3">We Can Help You Excel at Work</h1>
               <p className="text-gray">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero
-                eos consequuntuste voluptates ratione aut ab suscipit
-                error quidem impedit recusandae labore. Non!
+                eos consequuntuste voluptates ratione aut ab suscipit error
+                quidem impedit recusandae labore. Non!
               </p>
               <h6 className="text-white mt-5">Mentorship</h6>
-              <div className="progress">
+              <div className={`${styles.progress} progress`}>
                 <div
-                  className="progress-bar"
+                  className={`${styles.progressBar} progress-bar`}
                   role="progressbar"
                   style={{ width: "92%" }}
                   aria-valuenow={25}
@@ -121,9 +133,9 @@ const HomeV1= ()=> {
                 ></div>
               </div>
               <h6 className="text-white mt-3">Education</h6>
-              <div className="progress">
+              <div className={`${styles.progress} progress`}>
                 <div
-                  className="progress-bar"
+                  className={`${styles.progressBar} progress-bar`}
                   role="progressbar"
                   style={{ width: "70%" }}
                   aria-valuenow={25}
@@ -134,9 +146,9 @@ const HomeV1= ()=> {
             </div>
           </div>
         </div>
-       <Experts/>
-        <div className="life-coaching p-5">
-          <div className="content col-5 m-7">
+        <Experts />
+        <div className={`${styles.lifeCoaching} p-5`}>
+          <div className="col-5 m-7">
             <h1>
               Get Started Now with Life
               <br />
@@ -150,11 +162,7 @@ const HomeV1= ()=> {
             <button className="free-consulation">FREE CONSULATION</button>
           </div>
         </div>
-        <div className="logo">
-          logoipsum logoipsum logoipsum logoipsum logoipsum logoipsum logoipsum
-          logoipsum logoipsum logoipsum logoipsum logoipsum logoipsum logoipsum
-          logoipsum logoipsum
-        </div>
+        <Logoipsum />
         <div>
           <Map />
         </div>

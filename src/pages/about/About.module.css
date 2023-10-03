@@ -1,0 +1,31 @@
+/* About.module.css */
+
+.aboutBody{
+    max-width: 850px;
+    margin: 0 auto;
+    color: #7f8489;
+}
+.aboutImages{
+    min-height: 400px;
+    width: 85%;
+    margin: 50px auto;
+}
+.aboutImages img{
+    width: 50%;
+    height: 100%;
+}
+
+.consulation{
+    background-image: url('/public/images/consulation.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+.consBody{
+    color: #5f6161;
+    width: 40%;
+}
+.consulation button:hover{
+    background-color:#5f6161
+}
+
