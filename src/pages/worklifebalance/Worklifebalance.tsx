@@ -1,19 +1,19 @@
 import Footer from '../../components/footer/Footer';
 import Sidebar from '../../components/sidebar/Sidebar';
-import "./WorkLifeBalance.css";
+import styles from './WorkLifeBalance.module.css';
 
 export default function WorkLifeBalance() {
   return (
     <div className="worklifebalance">
-      <div className="first-view">
-        <div className="first-view-content bg-orange">
+      <div className="firstView">
+        <div className="firstViewContent bg-orange">
           <h1>Work & Life Balance</h1>
           <p>Excelling Your Professional Career</p>
         </div>
       </div>
-      <div className="body">
+      <div className={styles.body}>
         <div className="row">
-          <div className="col-12 col-lg-8 left">
+          <div className={`${styles.left} col-12 col-lg-8`}>
             <img src="/images/about-left.jpg" alt="" />
             <h1 className="my-5">Work & Life Balance</h1>
             <p className="text-muted">
@@ -77,7 +77,6 @@ export default function WorkLifeBalance() {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 }

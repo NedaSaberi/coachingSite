@@ -1,0 +1,41 @@
+.myaccount .forms{
+    padding: 80px 120px;
+}
+
+.formWrapper{
+    width: 100%;    
+}
+.formWrapper .form{
+    background-color: #efefef;
+    padding: 30px;
+    color: #6f6f6f;
+    font-size: 13px;
+}
+.formWrapper .form .input-group{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.formWrapper .form .input-group label{
+    margin-bottom: 10px;
+}
+.formWrapper .form .input-group input{
+    border: 1px solid #cfcfcf;
+    font-size: 14px;
+    padding: 8px;
+}
+.formWrapper .form .password-input {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.formWrapper .form .password-input .toggle-password{
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+}
+.formWrapper .form .input-group input:focus{
+    outline: 1px solid orange;  
+}

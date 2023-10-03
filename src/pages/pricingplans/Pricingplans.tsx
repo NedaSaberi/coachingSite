@@ -6,8 +6,8 @@ import PricesChart from "../../components/pricesChart/PricesChart";
 export default function PricingPlans() {
   return (
     <div className="pricing-plans">
-      <div className="first-view">
-        <div className="first-view-content bg-orange">
+      <div className="firstView">
+        <div className="firstViewContent bg-orange">
           <h1>Pricing Plans</h1>
           <p>Excelling Your Professional Career</p>
         </div>

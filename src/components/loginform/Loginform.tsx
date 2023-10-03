@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import '../../pages/shop/Shop.css';
+import '../../pages/myAccount/MyAccount.css';
 import { Link } from 'react-router-dom';
 
 export default function LoginForm() {
@@ -8,7 +8,7 @@ export default function LoginForm() {
     setShowPassword(!showPassword);
   }
   return (
-    <div className="form-wrapper">
+    <div className="formWrapper">
       <h3 className='mb-5'>Log in</h3>
       <form className="form" action="">
         <div className="input-group">

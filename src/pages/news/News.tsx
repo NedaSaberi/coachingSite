@@ -2,8 +2,8 @@
 export default function News() {
   return (
     <>
-      <div className="first-view">
-        <div className="first-view-content">
+      <div className="firstView">
+        <div className="firstViewContent">
           <h1>News</h1>
           <p>Get the Latest News and Updates</p>
         </div>

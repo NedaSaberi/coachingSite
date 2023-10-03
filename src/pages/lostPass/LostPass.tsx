@@ -2,9 +2,9 @@ import LostPassForm from '../../components/lostPassForm/LostPassForm';
 
 export default function LostPass() {
   return (
-    <div className='lost-pass'>
-      <div className="first-view">
-        <div className="first-view-content bg-orange">
+    <div>
+      <div className="firstView">
+        <div className="firstViewContent bg-orange">
           <h1>My account</h1>
         </div>
       </div>

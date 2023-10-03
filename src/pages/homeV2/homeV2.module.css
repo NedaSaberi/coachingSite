@@ -30,4 +30,15 @@
     width: 100%;
     padding: 140px; 
 }
-
+.pricesChartWrapper{
+    margin-top: -220px;
+}
+.missionImg{
+    width: 150px;
+}
+.location{
+    background-color: rgb(244, 241, 252);
+}
+.location .title{
+    color: rgb(92, 92, 92);
+}

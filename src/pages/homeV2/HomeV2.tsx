@@ -3,6 +3,7 @@ import Elementor from "../../components/elementor/Elementor";
 import FreeConsulation from "../../components/freeCons/FreeConsulation";
 import Logoipsum from "../../components/logoipsum/Logoipsum";
 import PricesChart from "../../components/pricesChart/PricesChart";
+import Map from "../../components/map/Map";
 import styles from './homeV2.module.css';
 
 export default function HomeV2() {
@@ -113,24 +114,33 @@ export default function HomeV2() {
             </p>
           </div>
         </div>
-        
-        <PricesChart />
-        <div className="col-12 col-md-8 mission">
-          <h3>What I live for and how I can be useful to you</h3>
-          <p className="text-muted">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum,
-            fugit. Voluptates eaque repellat maxime soluta id ratione ipsum.
-            Nihil iure totam cum ducimus corporis, veritatis modi nam eos ipsa
-            doloribus.
-          </p>
+        <div className={styles.pricesChartWrapper}>
+          <PricesChart />
         </div>
-        <div className="col-12 col-md-4">
-          <img className="w-100" src="/images/mission.jpg" alt="" />
+        <div className="row p-5">
+          <div className="col-12 col-md-8 mission d-flex flex-column justify-content-center border-top pt-5">
+            <h3 className="mb-5">
+              What I live for and how I can be useful to you
+            </h3>
+            <p className="text-muted">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatum, fugit. Voluptates eaque repellat maxime soluta id
+              ratione ipsum. Nihil iure totam cum ducimus corporis, veritatis
+              modi nam eos ipsa doloribus.
+            </p>
+          </div>
+          <div className="col-12 col-md-4 text-center border-top pt-5">
+            <img
+              className={styles.missionImg}
+              src="/images/mission.jpg"
+              alt=""
+            />
+          </div>
         </div>
-        <div className="row location">
-          <div className="context col-12 col-md-6">
+        <div className={`${styles.location} row`}>
+          <div className="col-12 col-md-6 p-5">
             <div className="text-orange">OUR LOCATION</div>
-            <h1 className="mt-3">
+            <h1 className={`${styles.title} mt-3`}>
               Trusted by
               <br />
               Millions of People
@@ -142,7 +152,9 @@ export default function HomeV2() {
               cupiditate. Dignissimos doloribus quam explicabo iusto.
             </p>
           </div>
-          <div className="map col-12 col-md-6"></div>
+          <div className="col-12 col-md-6">
+            <img src="/images/map-layout-600x290.jpg" alt="" />
+          </div>
         </div>
       </div>
       <AdvisorsVideo />

@@ -1,9 +1,9 @@
-import './RegisterForm.css';
+import '../../pages/myAccount/MyAccount.css';
 import { Link } from 'react-router-dom';
 
 export default function RegisterForm() {
   return (
-    <div className="form-wrapper">
+    <div className="formWrapper">
       <h3 className="mb-5">Register</h3>
       <form className="form" action="">
         <div className="input-group">

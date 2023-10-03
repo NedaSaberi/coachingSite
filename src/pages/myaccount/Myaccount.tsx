@@ -1,12 +1,11 @@
 import LoginForm from '../../components/loginForm/LoginForm';
 import RegisterForm from '../../components/registerForm/RegisterForm';
-import './MyAccount.css';
 
 export default function MyAccount() {
   return (
     <div className="myaccount">
-      <div className="first-view">
-        <div className="first-view-content bg-orange">
+      <div className="firstView">
+        <div className="firstViewContent bg-orange">
           <h1>My account</h1>
         </div>
       </div>

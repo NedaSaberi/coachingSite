@@ -1,18 +1,18 @@
 import Sidebar from "../../components/sidebar/Sidebar";
-import "./OneOnOneSession.css";
+import styles from './OneOnOneSession.module.css';
 
 export default function OneOnOneSession() {
   return (
-    <div className="oneononesession">
-      <div className="first-view">
-        <div className="first-view-content bg-orange">
+    <div>
+      <div className="firstView">
+        <div className="firstViewContent bg-orange">
           <h1>One-on-One Session</h1>
           <p>Excelling Your Professional Career</p>
         </div>
       </div>
-      <div className="body">
+      <div className={styles.body}>
         <div className="row">
-          <div className="col-12 col-lg-8 left">
+          <div className={`${styles.left} col-12 col-lg-8`}>
             <img src="/images/about-right.jpg" alt="" />
             <h1 className="my-5">One-on-One Session</h1>
             <p className="text-muted">
