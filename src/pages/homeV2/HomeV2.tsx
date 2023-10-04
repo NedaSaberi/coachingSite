@@ -3,7 +3,6 @@ import Elementor from "../../components/elementor/Elementor";
 import FreeConsulation from "../../components/freeCons/FreeConsulation";
 import Logoipsum from "../../components/logoipsum/Logoipsum";
 import PricesChart from "../../components/pricesChart/PricesChart";
-import Map from "../../components/map/Map";
 import styles from './homeV2.module.css';
 
 export default function HomeV2() {
