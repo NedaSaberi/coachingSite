@@ -10,7 +10,9 @@ a{
 li, ul{
     list-style: none;
 }
-
+/* Link{
+    text-decoration: none;
+} */
 /*  utilities */
 .h0{
     font-size: 55px;
@@ -29,7 +31,7 @@ li, ul{
     background-color: #9DA3A8;
 }
 .p-7{
-   padding: 70px;
+    padding: 70px;
 }
 .pt-7{
     padding-top: 70px;
@@ -43,6 +45,9 @@ li, ul{
 .py-7{
     padding-top: 70px;
     padding-bottom: 70px;
+}
+.mb-7{
+    margin-bottom: 70px;
 }
 .m-7{
     margin: 70px;

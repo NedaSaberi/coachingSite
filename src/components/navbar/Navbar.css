@@ -4,3 +4,15 @@
     height: 100px;
     z-index: 99;
 }
+.home-dropdown, .pages-dropdown, .shop-dropdown{
+    display: none;
+}
+.homeDrop:hover .home-dropdown{
+    display: block;
+} 
+.pagesDrop:hover .pages-dropdown{
+    display: block;
+}
+.shopDrop:hover .shop-dropdown{
+    display: block;
+}

@@ -1,0 +1,22 @@
+.formContainer{
+    background-color: #F1F4F6;
+}
+.topTitle{
+    font-weight: 500;
+}
+.title{
+    font-size: 35px;
+}
+
+.formContainer form input{
+    width: 75%;
+}
+.formContainer form *{
+    padding: 12px;
+    margin: 18px 0;
+    border: 1px solid #dfdddd;
+    font-size: 13px;
+}
+.formContainer form button{
+    width: 150px;
+}

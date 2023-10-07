@@ -1,12 +1,12 @@
-import './FreeConsulation.css'
+import styles from './FreeConsulation.module.css';
 
 export default function FreeConsulation() {
   return (
-    <div className="free-consulation bg-orange d-flex text-white p-7">
-      <h2 className="left">
+    <div className={`${styles.freeConsulationBox} bg-orange d-flex text-white`}>
+      <h2 className={styles.left}>
         Find Workable Solution which will Succeed within the Structure
       </h2>
-      <div className="right text-center">
+      <div className={`${styles.right} text-center`}>
         <button>FREE CONSULATION</button>
       </div>
     </div>

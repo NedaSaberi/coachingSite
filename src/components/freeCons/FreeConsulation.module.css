@@ -1,0 +1,16 @@
+.freeConsulationBox{
+    padding: 50px 100px;
+}
+.left{
+    width: 60%;
+}
+.right{
+    width: 40%;
+}
+.right button{
+    background-color: #41484E;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 15px 40px;
+}

@@ -1,0 +1,27 @@
+.topTitle{
+    font-weight: 500;
+}
+
+.contactBody p, .contactBody li{
+    color: #7e7d7d;
+    margin: 15px 0;
+}
+.contactBody li span{
+    margin: 10px;
+}
+.socialMedia span{
+    background-color: rgb(245, 242, 242);
+    border-radius: 50%;
+    margin: 8px;
+}
+.socialMedia span i{
+    margin: 9px;
+    font-size: 14px;
+    color: rgb(92, 91, 91);
+}
+.socialMedia span:hover{
+    background-color: rgb(92, 91, 91);
+}
+.socialMedia span:hover i{
+    color: rgb(245, 242, 242);
+}

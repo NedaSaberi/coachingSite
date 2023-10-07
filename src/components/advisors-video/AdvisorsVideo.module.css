@@ -1,0 +1,18 @@
+.advisorsVideo{
+    width: 100%;
+    padding: 12px;
+    height: 450px;
+    position: relative;
+    overflow: hidden;
+    display: block;
+}
+.advisorsVideo video{
+    width: 100%;
+    position: absolute;
+    top: -40%;
+}
+.context{
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

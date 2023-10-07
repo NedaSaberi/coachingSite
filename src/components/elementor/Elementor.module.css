@@ -1,0 +1,17 @@
+.elementorWrapper{
+    background-color: #ececec;
+    padding: 60px;
+}
+.elementor{
+    width: 90%;
+    min-height: 480px;
+    margin: 20px auto;
+}
+.elementorInside .icon{
+    margin: auto;
+    font-size: 25px;
+}
+.elementorInside .title{
+    font-size: 25px;
+    margin-bottom:8px;
+}

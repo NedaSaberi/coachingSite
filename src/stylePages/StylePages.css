@@ -1,0 +1,108 @@
+.firstView{
+    background-position: top center;
+    background-size: cover;
+    overflow: hidden;
+    background-image: url('/public/images/bg-top.jpg');
+}
+.firstViewContent{
+    min-height: 515px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.firstViewContent p{
+    color: #ffffffb3;
+}
+.free-consulation{
+    background-color:#D9945D;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 15px 40px;
+    border: none;
+}
+.link-no-underline{
+  text-decoration: none;
+}
+/* homes */
+
+
+.homeFirstView{
+    /* position: relative; */
+    background-position: top center;
+    background-size: cover;
+    width: 100%; /* Set the width according to your layout */
+    height: 100vh; /*Set the height according to your layout */
+    overflow: hidden;
+}
+ 
+.homeFirstView .row{
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* padding: 120px; */
+    align-items: center;
+    z-index: 0;
+    position: relative;
+}
+
+.homeFirstView .row .right{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    /* transition: all 2s ease;
+    opacity: 0; */
+    margin-left: -90px;
+    animation-name: comeLeft;
+    animation-duration: 3s;
+    /* animation-delay: 2s; */
+} 
+
+.homeFirstView .row .right i{
+    margin: 10px;    
+}
+
+.homeFirstView .row .left{
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+    /* transform: translateY(600px); */
+    /* transition: all 2s ease; */
+    /* opacity: 0; */
+
+    animation-name: comeUp;
+    animation-duration: 2s;
+}
+@keyframes comeUp{
+    0%{
+        transform: translateY(600px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes comeLeft{
+    0%{
+        margin-left: 100px;
+        opacity: 0;
+    }
+    70%{
+        margin-left: 0;
+        opacity: 0;
+    }
+    100%{
+        margin-left: -90px;
+        opacity: 1;
+    }
+}

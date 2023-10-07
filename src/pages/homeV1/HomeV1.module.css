@@ -1,0 +1,65 @@
+.homeFirstView{
+    background-image: url("/public/images/home-v1-top.jpg");
+}
+.homeSecondView{
+    width: 95%;
+    overflow: hidden;
+}
+.homeSecondView .row{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    z-index: 1;
+    /* overflow: hidden; */
+}
+.homeSecondView .left{
+    transform: translateX(-520px);
+    transition: all 1s ease-in-out;
+    /* overflow: hidden; */
+}
+.homeSecondView .right{
+    transform: translateX(520px);
+    transition: all 1s ease-in-out;
+    /* overflow: hidden; */
+}
+.homeSecondView .right .title{
+    color: #595959;
+}
+.homeSecondView .right .body{
+    color: #757474;
+}
+.homeSecondView .right ul li span{
+    color: #757474;
+    margin-left: 10px;
+}
+
+
+.excel .left{
+    padding: 0;
+    /* position: relative; */
+}
+
+.excel .right{
+    background-color: #585757;
+    padding: 70px 60px;
+}
+.excel .progress{
+    height: 7px;
+}
+.excel .progress .progressBar{
+    background-color: var(--orange);
+    
+}
+
+
+.lifeCoaching{
+    background-image: url("/public/images/life-coaching.jpg");
+    position: relative;
+    background-position: top center;
+    background-size: cover;
+    width: 100%; 
+    height: 90vh; 
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+}

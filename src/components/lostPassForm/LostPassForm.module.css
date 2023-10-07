@@ -1,0 +1,24 @@
+.formWrapper{
+    margin: 30px auto;
+    padding: 30px;
+    
+}
+.lostPassForm{
+    background-color:#efefef;
+    margin: 0 auto;
+    padding: 30px;
+    color: #767676;
+    font-size: 13px;
+}
+.lostPassForm input{
+    border: 1px solid #cfcfcf;
+    font-size: 14px;
+    padding: 8px;
+}
+.resetPass{
+    display: block;
+    margin-top: 40px;
+    border: none;
+    color: #fff;
+    padding: 8px 15px;
+}

@@ -1,0 +1,44 @@
+.homeFirstView{
+    background-image: url("/public/images/home-v2-top.jpg");
+}
+
+.introduction{
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px 130px;
+}
+.introduction .row .left{
+    border-right: 4px solid #D9945D;
+}
+.introduction .row .right{
+    padding-left: 50px;
+}
+.introduction ul li{
+    margin: 10px 0;
+}
+.introduction ul li i{
+    margin-right: 10px;
+}
+
+.pricingPlans{
+    width: 100%;
+    padding: 100px 12px;
+}
+.pricingPlans .wall{
+    background-image: url('/public/images/wallpaper.jpg');
+    min-height: 450px; 
+    width: 100%;
+    padding: 140px; 
+}
+.pricesChartWrapper{
+    margin-top: -220px;
+}
+.missionImg{
+    width: 150px;
+}
+.location{
+    background-color: rgb(244, 241, 252);
+}
+.location .title{
+    color: rgb(92, 92, 92);
+}

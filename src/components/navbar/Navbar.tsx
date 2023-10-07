@@ -1,19 +1,9 @@
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 import { useTheme } from "../../hooks/useTheme";
-import { useState } from "react";
 
 function Navbar() {
   const { color } = useTheme();
-
-  const [show, setShow] = useState(false);
-  const showDropdown = () => {
-    setShow(!show);
-  };
-  const hideDropdown = () => {
-    setShow(false);
-  };
-
   return (
     <nav
       className="navbar navbar-expand-lg navbar-light"
@@ -42,38 +32,27 @@ function Navbar() {
               id="navbarSupportedContent"
             >
               <ul className="navbar-nav d-flex justify-content-between w-100">
-                <li
-                  className={`nav-item dropdown ${show ? "show" : ""}`}
-                  onMouseEnter={showDropdown}
-                  onMouseLeave={hideDropdown}
-                >
+                <li className="nav-item dropdown homeDrop">
                   <Link
-                    to="/"
                     className="nav-link dropdown-toggle"
+                    to="/"
                     id="homeDropdown"
                     role="button"
-                    data-bs-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded={show}
                   >
                     Home
                   </Link>
-                  <ul
-                    className={`dropdown-menu ${show ? "show" : ""}`}
+                  <div
+                    className="dropdown-menu home-dropdown"
                     aria-labelledby="homeDropdown"
                   >
-                    <li>
-                      <a className="dropdown-item" href="/">
-                        Home V1
-                      </a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item" href="/home-v2">
-                        Home V2
-                      </a>
-                    </li>
-                  </ul>
-                </li> 
+                    <a className="dropdown-item" href="/">
+                      Home V1
+                    </a>
+                    <a className="dropdown-item" href="/home-v2">
+                      Home V2
+                    </a>
+                  </div>
+                </li>
                 <li className="nav-item active">
                   <Link to="/about" className="nav-link">
                     About
@@ -84,32 +63,37 @@ function Navbar() {
                     Coaching
                   </Link>
                 </li>
-                <li className="nav-item dropdown">
+                <li
+                  className="nav-item dropdown pagesDrop"
+                >
                   <Link
                     to="/pages"
                     className="nav-link dropdown-toggle"
-                    id="navbarDropdown"
+                    id="pagesDropdown"
                     role="button"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
                   >
                     Pages
                   </Link>
                   <div
-                    className="dropdown-menu"
-                    aria-labelledby="navbarDropdown"
+                    className="dropdown-menu pages-dropdown"
+                    aria-labelledby="pagesDropdown"
                   >
-                    <a className="dropdown-item" href="h">
-                      Action
-                    </a>
-                    <a className="dropdown-item" href="h">
-                      Another action
-                    </a>
-                    <div className="dropdown-divider"></div>
-                    <a className="dropdown-item" href="h">
-                      Something else here
-                    </a>
+                    
+                      <a className="dropdown-item" href="/about">
+                        About
+                      </a>
+                    
+                      <a className="dropdown-item" href="/aboutus">
+                        About us
+                      </a>
+                   
+                      <a className="dropdown-item" href="/coachingsingle">
+                        Coaching Single
+                      </a>
+                    
+                      <a className="dropdown-item" href="/pricingplans">
+                        Pricing Plans
+                      </a>
                   </div>
                 </li>
                 <li className="nav-item">
@@ -117,32 +101,32 @@ function Navbar() {
                     News
                   </Link>
                 </li>
-                <li className="nav-item dropdown">
+                <li
+                  className="nav-item dropdown shopDrop"
+                >
                   <Link
                     to="/shop"
                     className="nav-link dropdown-toggle"
-                    id="navbarDropdown"
+                    id="shopDropdown"
                     role="button"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
                   >
                     Shop
                   </Link>
                   <div
-                    className="dropdown-menu"
-                    aria-labelledby="navbarDropdown"
+                    className="dropdown-menu shop-dropdown"
+                    aria-labelledby="shopDropdown"
                   >
-                    <a className="dropdown-item" href="h">
-                      Action
-                    </a>
-                    <a className="dropdown-item" href="h">
-                      Another action
-                    </a>
-                    <div className="dropdown-divider"></div>
-                    <a className="dropdown-item" href="h">
-                      Something else here
-                    </a>
+                      <a className="dropdown-item" href="/myaccount">
+                        My account
+                      </a>
+                    
+                      <a className="dropdown-item" href="/cart">
+                        Cart
+                      </a>
+                    
+                      <a className="dropdown-item" href="/checkout">
+                        Checkout
+                      </a>
                   </div>
                 </li>
                 <li className="nav-item">
@@ -165,11 +149,6 @@ function Navbar() {
             </div>
           </div>
         </div>
-
-        {/* <form className="form-inline my-2 my-lg-0">
-                <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"/>
-                <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form> */}
       </div>
     </nav>
   );
