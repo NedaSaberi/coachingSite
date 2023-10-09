@@ -39,30 +39,32 @@ const HomeV1= ()=> {
     return (
       <div className={`home ${styles.v1}`}>
         <div className={`homeFirstView ${styles.homeFirstView}`}>
-          <div className="row">
-            <div className="left col-12 offset-0 col-lg-11 offset-lg-1">
-              <h5 className="text-orange">PROFESSIONAL LIFE COACH & ADVISOR</h5>
-              <div className="h0 my-5">
-                Life Coaching
-                <br />
-                with Meghdad
+          <div className="container">
+            <div className="row">
+              <div className="left col-7">
+                <h5 className="text-orange">PROFESSIONAL LIFE COACH & ADVISOR</h5>
+                <div className="h0 my-5">
+                  Life Coaching
+                  <br />
+                  with Meghdad
+                </div>
+                <button className="bg-orange text-white free-consulation">
+                  FREE CONSULATION
+                </button>
               </div>
-              <button className="bg-orange text-white free-consulation">
-                FREE CONSULATION
-              </button>
-            </div>
-            <div className="right">
-              <div className="text-end d-flex flex-column">
-                <i className="fa-brands fa-twitter"></i>
-                <i className="fa-brands fa-facebook"></i>
-                <i className="fa-brands fa-linkedin"></i>
-                <i className="fa-brands fa-instagram"></i>
+              <div className="right col-5">
+                <div className="text-end d-flex flex-column">
+                  <i className="fa-brands fa-twitter"></i>
+                  <i className="fa-brands fa-facebook"></i>
+                  <i className="fa-brands fa-linkedin"></i>
+                  <i className="fa-brands fa-instagram"></i>
+                </div>
               </div>
             </div>
           </div>
         </div>
         <div className={`${styles.homeSecondView} p-5 m-5`}>
-          <div className={styles.row}>
+          <div className={`${styles.row} row`}>
             <div className={`${styles.left} col-7 h-100`}>
               <div className={`${styles.row} h-100`}>
                 <img
