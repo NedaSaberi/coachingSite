@@ -39,20 +39,18 @@ const HomeV1= ()=> {
     return (
       <div className={`home ${styles.v1}`}>
         <div className={`homeFirstView ${styles.homeFirstView}`}>
-          <div className="container">
+          <div className="homeWrapper">
             <div className="row">
-              <div className="left col-7">
-                <h5 className="text-orange">PROFESSIONAL LIFE COACH & ADVISOR</h5>
-                <div className="h0 my-5">
-                  Life Coaching
-                  <br />
-                  with Meghdad
+              <div className="left col-9">
+                <h5 className="title text-orange">PROFESSIONAL LIFE COACH & ADVISOR</h5>
+                <div className="subTitle my-5">
+                  Life Coaching with Meghdad
                 </div>
                 <button className="bg-orange text-white free-consulation">
                   FREE CONSULATION
                 </button>
               </div>
-              <div className="right col-5">
+              <div className="right col-3">
                 <div className="text-end d-flex flex-column">
                   <i className="fa-brands fa-twitter"></i>
                   <i className="fa-brands fa-facebook"></i>
