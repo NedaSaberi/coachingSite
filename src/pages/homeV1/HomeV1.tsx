@@ -63,21 +63,21 @@ const HomeV1= ()=> {
         </div>
         <div className={`${styles.homeSecondView} p-5 m-5`}>
           <div className={`${styles.row} row`}>
-            <div className={`${styles.left} col-7 h-100`}>
+            <div className={`${styles.left} col-12 col-lg-7 h-100`}>
               <div className={`${styles.row} h-100`}>
                 <img
-                  className="col-6 p-2 h-100"
+                  className="col-12 col-md-6 p-2 h-100"
                   src="/images/home-1-sec-row(1).jpg"
                   alt=""
                 />
                 <img
-                  className="col-6 p-2 h-100"
+                  className="col-12 col-md-6 p-2 h-100"
                   src="/images/home-1-sec-row(2).jpg"
                   alt=""
                 />
               </div>
             </div>
-            <div className={`${styles.right} col-5`}>
+            <div className={`${styles.right} col-12 col-lg-5 h-100`}>
               <h6 className="text-orange">GET TO KNOW US</h6>
               <h2 className={`${styles.title} my-4`}>
                 Working Together for your Better Life!
@@ -110,10 +110,10 @@ const HomeV1= ()=> {
         <Specialties />
         <div className={styles.excel}>
           <div className={`${styles.row} row w-100`}>
-            <div className={`${styles.left} col-6`}>
-              <img className="w-100" src="/images/excel.jpg" alt="" />
+            <div className={`${styles.left} d-none d-md-block col-md-6`}>
+              <img className="w-100 h-100" src="/images/excel.jpg" alt="" />
             </div>
-            <div className={`${styles.right} col-6`}>
+            <div className={`${styles.right} col-12 col-md-6`}>
               <div className="text-orange">GET TO KNOW US</div>
               <h1 className="text-white my-3">We Can Help You Excel at Work</h1>
               <p className="text-gray">
@@ -148,12 +148,10 @@ const HomeV1= ()=> {
         </div>
         <Experts />
         <div className={`${styles.lifeCoaching} p-5`}>
-          <div className="col-5 m-7">
-            <h1>
-              Get Started Now with Life
-              <br />
-              Coaching
-            </h1>
+          <div className="col-12 col-md-5 m-7">
+            <div className={styles.title}>
+              Get Started Now with Life Coaching
+            </div>
             <p className="my-5 text-muted">
               Quisque porta nibh quis nibh scelerisque auctor. Vestibulum ante
               ipsum primis in faucibus orci luctus et ultrices posuere cubilia

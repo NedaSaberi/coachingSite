@@ -4,14 +4,14 @@ export default function Footer() {
   return (
     <div className="footer p-5">
       <div className="row mb-7 pb-7 border-bottom border-secondary">
-        <div className="left col-6 text-white p-5">
+        <div className="left col-12 col-md-6 text-white p-5">
           <h2>Lets Work Together to Improve Your Professional Life!</h2>
           <Link to="https://www.company.com/" className="text-orange">
             needhelp@company.com
           </Link>
           <div className="text-orange">(123)45678</div>
         </div>
-        <div className="middle col-3 px-4 py-5">
+        <div className="middle col-12 col-md-3 px-4 py-5">
           <ul>
             <h4 className="text-white mb-4">Coaching</h4>
             <li><Link to="">Career Mentoring</Link></li>
@@ -23,7 +23,7 @@ export default function Footer() {
           
           
         </div>
-        <div className="right col-3 px-4 py-5">
+        <div className="right col-12 col-md-3 px-4 py-5">
           <ul>
             <h4 className="text-white mb-4">About Meghdad</h4>
             <li><Link to="">About us</Link></li>

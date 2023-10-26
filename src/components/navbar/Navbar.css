@@ -3,6 +3,7 @@
     width: 100%;
     height: 100px;
     z-index: 99;
+    border-top: 5px solid #D9945D;
 }
 .home-dropdown, .pages-dropdown, .shop-dropdown{
     display: none;
@@ -15,4 +16,49 @@
 }
 .shopDrop:hover .shop-dropdown{
     display: block;
+}
+
+/*///////////// horizental menu ///////////// */
+.nav-list{
+    width: 600px;
+    /* margin: 0 ; */
+}
+.nav-list li Link{
+    color: #fff;
+}
+.cellWrapper{
+    width: 42px;
+    height: 42px;
+    background-color: #D9945D;
+    border-radius: 50%;
+    padding: 10px 13px;
+    margin-right: 20px;
+}
+.cellWrapper i{
+    font-size: 15px;
+}
+
+
+@media screen and (min-width: 1023px) {
+    .hamMenu{
+        display: none;
+    }
+    .callInfo{
+        display: flex;
+    }
+}
+@media screen and (max-width: 1023px) {
+    .hamMenu{
+        display: block;
+    }
+    .callInfo{
+        display: none;
+    }
+}
+.barWrapper{
+    width: 40px;
+    height: 40px;
+    background-color: #D9945D;
+    margin: 15px;
+    padding: 6px 12px;
 }

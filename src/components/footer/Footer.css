@@ -1,6 +1,6 @@
 .footer{
     background-color: #41484E;
-    height: 530px;
+    min-height: 530px;
 }
 .footer .social-media span{
     padding: 9px 13px;
