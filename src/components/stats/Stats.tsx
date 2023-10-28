@@ -59,43 +59,43 @@ export default function Stats() {
         >
           <div className={styles.numbers}>
             <div
-              className={`${styles.num} ${styles.numbers}`}
+              className={`${styles.num}`}
               data-number="26"
               ref={(el) => (numbersRefs.current[0] = el)}
             >
               0
             </div>
-            <div className="sub">test</div>
+            <div className={styles.sub}>Years of Working</div>
           </div>
           <div className={styles.numbers}>
             <div
-              className={`${styles.num} ${styles.numbers}`}
+              className={styles.num}
               data-number="30"
               ref={(el) => (numbersRefs.current[1] = el)}
             >
               0
             </div>
-            <div className="sub">test</div>
+            <div className={styles.sub}>Reliable Clients</div>
           </div>
           <div className={styles.numbers}>
             <div
-              className={`${styles.num} ${styles.numbers}`}
+              className={styles.num}
               data-number="48"
               ref={(el) => (numbersRefs.current[2] = el)}
             >
               0
             </div>
-            <div className="sub">test</div>
+            <div className={styles.sub}>Success Stories</div>
           </div>
           <div className={styles.numbers}>
             <div
-              className={`${styles.num} ${styles.numbers}`}
+              className={styles.num}
               data-number="12"
               ref={(el) => (numbersRefs.current[3] = el)}
             >
               0
             </div>
-            <div className="sub">test</div>
+            <div className={styles.sub}>Expert Advisors</div>
           </div>
         </div>
       </div>
