@@ -1,8 +1,10 @@
 import AdvisorsVideo from "../../components/advisors-video/AdvisorsVideo";
 import Elementor from "../../components/elementor/Elementor";
 import FreeConsulation from "../../components/freeCons/FreeConsulation";
+import Introduction from "../../components/introduction/Introduction";
 import Logoipsum from "../../components/logoipsum/Logoipsum";
 import PricesChart from "../../components/pricesChart/PricesChart";
+import Stats from "../../components/stats/Stats";
 import styles from './homeV2.module.css';
 
 export default function HomeV2() {
@@ -22,80 +24,35 @@ export default function HomeV2() {
   //   rightElement.style.opacity = "1";
   // }, 3000);
 
+  
   return (
-    <div className={styles.v2}>
+    <div className={`${styles.v2} v2`}>
       <div className={`homeFirstView ${styles.homeFirstView}`}>
-        <div className="row">
-          <div className="left text-center col-12">
-            <h5 className="text-orange">PROFESSIONAL LIFE COACH & ADVISOR</h5>
-            <div className="h0 my-5">
-              Helping You
-              <br />
-              Achieve Anything
+        <div className="homeWrapper">
+          <div className="row">
+            <div className="left text-center col-12">
+              <h5 className="title text-orange">PROFESSIONAL LIFE COACH & ADVISOR</h5>
+              <div className="subTitle my-5">
+                Helping You Achieve Anything
+              </div>
+              <button className="bg-orange text-white free-consulation">
+                FREE CONSULATION
+              </button>
             </div>
-            <button className="bg-orange text-white free-consulation">
-              FREE CONSULATION
-            </button>
-          </div>
-          <div className="right">
-            <div className="text-end h-100 d-flex flex-column justify-content-center">
-              <i className="fa-brands fa-twitter"></i>
-              <i className="fa-brands fa-facebook"></i>
-              <i className="fa-brands fa-linkedin"></i>
-              <i className="fa-brands fa-instagram"></i>
+            <div className="right">
+              <div className="text-end h-100 d-flex flex-column justify-content-center">
+                <i className="fa-brands fa-twitter"></i>
+                <i className="fa-brands fa-facebook"></i>
+                <i className="fa-brands fa-linkedin"></i>
+                <i className="fa-brands fa-instagram"></i>
+              </div>
             </div>
-          </div>
+            </div>
         </div>
       </div>
       <Elementor />
-      <div className={styles.introduction}>
-        <div className={`${styles.row} row`}>
-          <div className={`${styles.left} col-12 col-lg-6`}>
-            <div className="title text-orange">OUR INTRODUCTION</div>
-            <h1 className="my-4">
-              It's Time for a<br />
-              Change in your Life
-            </h1>
-            <p className="text-muted">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Deleniti, necessitatiam expedita maiores magnam provident? Aut
-              eligendi numquam perspiciatis voluptas.
-            </p>
-            <ul className="my-4">
-              <li>
-                <i className="fa-solid fa-check text-orange"></i>
-                <span className="text-muted">Nsectetur cing elit.</span>
-              </li>
-              <li>
-                <i className="fa-solid fa-check text-orange"></i>
-                <span className="text-muted">
-                  Suspe ndisse suscipit sagittis leo.
-                </span>
-              </li>
-              <li>
-                <i className="fa-solid fa-check text-orange"></i>
-                <span className="text-muted">
-                  Labore et dolore magna andhn.
-                </span>
-              </li>
-              <li>
-                <i className="fa-solid fa-check text-orange"></i>
-                <span className="text-muted">
-                  Entum estibulum dignissim posuere.
-                </span>
-              </li>
-            </ul>
-            <button className="free-consulation my-4">FREE CONSULATION</button>
-          </div>
-          <div className={`${styles.right} col-12 col-lg-6`}>
-            <img
-              className="w-100 h-100"
-              src="/images/businessman-and-businesswomen-working-on-business-S5PJZ55.jpg"
-              alt=""
-            />
-          </div>
-        </div>
-      </div>
+      <Introduction/>
+      <Stats/>
       <div className={styles.pricingPlans}>
         <div className={`${styles.wall} row text-white`}>
           {/* <div className="orange-cover"></div> */}
@@ -137,13 +94,11 @@ export default function HomeV2() {
           </div>
         </div>
         <div className={`${styles.location} row`}>
-          <div className="col-12 col-md-6 p-5">
-            <div className="text-orange">OUR LOCATION</div>
-            <h1 className={`${styles.title} mt-3`}>
-              Trusted by
-              <br />
-              Millions of People
-            </h1>
+          <div className={`${styles.left} col-12 col-md-7`}>
+            <div className={`${styles.title} text-orange`}>OUR LOCATION</div>
+            <div className={`${styles.subTitle} mt-3`}>
+              Trusted by<br/>Millions of People
+            </div>
             <p className="text-muted mt-4">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum
               minima, itaque consequatur laudantium natus exercitationem, quam
@@ -151,13 +106,13 @@ export default function HomeV2() {
               cupiditate. Dignissimos doloribus quam explicabo iusto.
             </p>
           </div>
-          <div className="col-12 col-md-6">
-            <img src="/images/map-layout-600x290.jpg" alt="" />
+          <div className="col-12 col-md-5">
+            <img className="w-100" src="/images/map-layout-600x290.jpg" alt="" />
           </div>
         </div>
       </div>
       <AdvisorsVideo />
-      <Logoipsum />
+      {/* <Logoipsum /> */}
       <FreeConsulation />
     </div>
   );

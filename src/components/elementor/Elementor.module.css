@@ -7,6 +7,37 @@
     min-height: 480px;
     margin: 20px auto;
 }
+.e{
+    opacity: 0;
+    animation-name: opc;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes opc{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+/* ترتیب روشن شدنش خطی باید باشه
+responsive ... //////////////////////////////////////////////////////*/
+.e1{
+    animation-delay: .3s;
+}
+.e2, .e4{
+    animation-delay: .7s;
+}
+.e3, .e5{
+    animation-delay: 1.1s;
+}
+.e6{
+    animation-delay: 1.5s;
+}
+
+
 .elementorInside .icon{
     margin: auto;
     font-size: 25px;

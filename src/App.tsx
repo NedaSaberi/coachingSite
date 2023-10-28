@@ -24,6 +24,8 @@ import Pricingplans from './pages/pricingPlans/PricingPlans';
 import Shop from './pages/shop/Shop';
 import Worklifebalance from './pages/workLifeBalance/WorkLifeBalance';
 import Footer from './components/footer/Footer';
+import "intersection-observer";
+
 
 function App() {
   return (

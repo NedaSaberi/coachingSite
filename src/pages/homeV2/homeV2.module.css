@@ -2,23 +2,7 @@
     background-image: url("/public/images/home-v2-top.jpg");
 }
 
-.introduction{
-    width: 100%;
-    min-height: 100vh;
-    padding: 100px 130px;
-}
-.introduction .row .left{
-    border-right: 4px solid #D9945D;
-}
-.introduction .row .right{
-    padding-left: 50px;
-}
-.introduction ul li{
-    margin: 10px 0;
-}
-.introduction ul li i{
-    margin-right: 10px;
-}
+
 
 .pricingPlans{
     width: 100%;
@@ -39,6 +23,56 @@
 .location{
     background-color: rgb(244, 241, 252);
 }
-.location .title{
-    color: rgb(92, 92, 92);
+
+.location .subTitle{
+    color: rgb(78, 78, 78);
+    font-size: 55px;
+    font-weight: 600;
 }
+.location .title{
+    font-size: 15px;
+    font-weight: 500;
+}
+.location .left{
+    padding-left: 30px;
+}
+@media screen and (min-width: 750px) and (max-width: 950px) {
+    .location .subTitle{
+        font-size: 35px;
+        font-weight: 500;
+    }
+    .location .title{
+        font-size: 15px;
+        font-weight: 500;
+    }
+    .location .left{
+        padding-left: 15px;
+    }
+}
+   
+    @media screen and (min-width: 600px) and (max-width: 750px) {
+        .location .subTitle{
+        font-size: 30px;
+        font-weight: 500;
+        }
+        .location .title{
+            font-size: 14px;
+            font-weight: 500;
+        }
+        .location .left{
+            padding-left: 15px;
+        }
+    }
+     @media screen and (max-width: 600px) {
+        .location .subTitle{
+        font-size: 25px;
+        font-weight: 400;
+        }
+        .location .title{
+            font-size: 12px;
+            font-weight: 500;
+        }
+        .location .left{
+            padding-left: 10px;
+        }
+    }

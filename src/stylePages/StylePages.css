@@ -51,6 +51,8 @@
     /* padding: 120px; */
     /* position: relative; */
     padding: 0 20px;
+    overflow: hidden;
+    position: relative;
 }
 .homeFirstView .homeWrapper .row{
     height: 100vh;
@@ -61,10 +63,10 @@
 }
 
 .homeFirstView .row .right{
-    /* position: absolute;
+    position: absolute;
     top: 50%;
-    left: 0; */
-    /* transform: translateY(-50%); */
+    left: 0;
+    transform: translate(0, -50%);
     /* transition: all 2s ease;
     opacity: 0; */
     /* margin-left: -90px; */
@@ -104,7 +106,10 @@
     .homeFirstView .left .subTitle{
         font-size: 60px;
         font-weight: 600;
-    }   
+    }  
+    .v2 .homeFirstView .right{
+        display: none;
+    } 
 }
 @media screen and (max-width: 650px) {
     .homeFirstView .left .title{
@@ -130,30 +135,34 @@
 }
 @keyframes comeLeft{
     0%{
-        transform: translateX(600px);
+        transform: translate(600px, -50%);
         opacity: 0;
     }
     70%{
-        transform: translateX(200px);
+        transform: translate(200px, -50%);
         opacity: 0;
     }
     100%{
-        transform: translateX(0);
+        transform: translate(0, -50%);
         opacity: 1;
     }
 }
 
 #hamMenu{
-    width: 100%;
+    width: 0;
     max-height: 0;
     overflow: hidden;
     transition:max-height 1.3s ease;
 }
 
 #hamMenu.show{
+    width: 100%;
     max-height: 1000px;
 }
 
+.hamMenu #close{
+    display: none;
+}
 .verMenu .items{
     background-color: #fff;
     border-bottom: 1px solid #d3d3d3;

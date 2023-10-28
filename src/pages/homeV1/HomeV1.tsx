@@ -41,16 +41,21 @@ const HomeV1= ()=> {
         <div className={`homeFirstView ${styles.homeFirstView}`}>
           <div className="homeWrapper">
             <div className="row">
-              <div className="left col-9">
-                <h5 className="title text-orange">PROFESSIONAL LIFE COACH & ADVISOR</h5>
-                <div className="subTitle my-5">
-                  Life Coaching with Meghdad
+              <div className="left col-12">
+                <div className="row">
+                  <div className="col-9">
+                    <h5 className="title text-orange">PROFESSIONAL LIFE COACH & ADVISOR</h5>
+                    <div className="subTitle my-5">
+                      Life Coaching with Meghdad
+                    </div>
+                    <button className="bg-orange text-white free-consulation">
+                      FREE CONSULATION
+                    </button>
+
+                  </div>
                 </div>
-                <button className="bg-orange text-white free-consulation">
-                  FREE CONSULATION
-                </button>
               </div>
-              <div className="right col-3">
+              <div className="right">
                 <div className="text-end d-flex flex-column">
                   <i className="fa-brands fa-twitter"></i>
                   <i className="fa-brands fa-facebook"></i>
@@ -106,7 +111,6 @@ const HomeV1= ()=> {
             </div>
           </div>
         </div>
-
         <Specialties />
         <div className={styles.excel}>
           <div className={`${styles.row} row w-100`}>

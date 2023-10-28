@@ -2,10 +2,17 @@ import { Link } from 'react-router-dom';
 import styles from './Elementor.module.css';
 
 export default function Elementor() {
+  // window.addEventListener("scroll", () => {
+  //   if (document.body.getBoundingClientRect().top < 0) {
+  //     let e = document.querySelector(`.${styles.e}`) as HTMLElement;
+  //     e.style.opacity = "1";
+  //   }
+  // });
+  
   return (
     <div className={`${styles.elementorWrapper} w-100 h-100`}>
       <div className={`${styles.elementor} row`}>
-        <div className="col-12 col-md-6 col-lg-4">
+        <div className={`${styles.e1} ${styles.e} e col-12 col-md-6 col-lg-4`}>
           <div className={`${styles.elementorInside} row bg-white p-3 m-1`}>
             <div className={`${styles.icon} col-3 text-orange`}>
               <i className="fa-solid fa-magnifying-glass"></i>
@@ -19,7 +26,7 @@ export default function Elementor() {
             </div>
           </div>
         </div>
-        <div className="col-12 col-md-6 col-lg-4">
+        <div className={`${styles.e2} ${styles.e} e col-12 col-md-6 col-lg-4`}>
           <div className={`${styles.elementorInside} row bg-white p-3 m-1`}>
             <div className={`${styles.icon} col-3 text-orange`}>
               <i className="fa-regular fa-circle-user"></i>
@@ -33,7 +40,7 @@ export default function Elementor() {
             </div>
           </div>
         </div>
-        <div className="col-12 col-md-6 col-lg-4">
+        <div className={`${styles.e3} ${styles.e} e col-12 col-md-6 col-lg-4`}>
           <div className={`${styles.elementorInside} row bg-white p-3 m-1`}>
             <div className={`${styles.icon} col-3 text-orange`}>
               <i className="fa-solid fa-graduation-cap"></i>
@@ -47,7 +54,7 @@ export default function Elementor() {
             </div>
           </div>
         </div>
-        <div className="col-12 col-md-6 col-lg-4">
+        <div className={`${styles.e4} ${styles.e} e col-12 col-md-6 col-lg-4`}>
           <div className={`${styles.elementorInside} row bg-white p-3 m-1`}>
             <div className={`${styles.icon} col-3 text-orange`}>
               <i className="fa-solid fa-user-secret"></i>
@@ -61,7 +68,7 @@ export default function Elementor() {
             </div>
           </div>
         </div>
-        <div className="col-12 col-md-6 col-lg-4">
+        <div className={`${styles.e5} ${styles.e} e col-12 col-md-6 col-lg-4`}>
           <div className={`${styles.elementorInside} row bg-white p-3 m-1`}>
             <div className={`${styles.icon} col-3 text-orange`}>
               <i className="fa-brands fa-space-awesome"></i>
@@ -75,7 +82,7 @@ export default function Elementor() {
             </div>
           </div>
         </div>
-        <div className="col-12 col-md-6 col-lg-4 mb-5">
+        <div className={`${styles.e6} ${styles.e} e col-12 col-md-6 col-lg-4 mb-5`}>
           <div className={`${styles.elementorInside} row bg-white p-3 m-1`}>
             <div className={`${styles.icon} col-3 text-orange`}>
               <i className="fa-brands fa-think-peaks"></i>
