@@ -2,7 +2,10 @@ import { Link } from "react-router-dom";
 
 export default function HorMenu() {
   return (
-    <div className="hor collapse navbar-collapse align-self-center" id="navbarSupportedContent">
+    <div
+      className="hor collapse navbar-collapse align-self-center"
+      id="navbarSupportedContent"
+    >
       <ul className="nav-list navbar-nav d-flex justify-content-between">
         <li className="nav-item dropdown homeDrop">
           <Link
@@ -26,19 +29,19 @@ export default function HorMenu() {
           </div>
         </li>
         <li className="nav-item active">
-          <Link to="/about" className="nav-link">
+          <Link to="/about" className="nav-link text-white">
             About
           </Link>
         </li>
         <li className="nav-item">
-          <Link to="/coaching" className="nav-link">
+          <Link to="/coaching" className="nav-link text-white">
             Coaching
           </Link>
         </li>
         <li className="nav-item dropdown pagesDrop">
           <Link
             to="/pages"
-            className="nav-link dropdown-toggle"
+            className="nav-link dropdown-toggle text-white"
             id="pagesDropdown"
             role="button"
           >
@@ -66,14 +69,14 @@ export default function HorMenu() {
           </div>
         </li>
         <li className="nav-item">
-          <Link to="/news" className="nav-link">
+          <Link to="/news" className="nav-link text-white">
             News
           </Link>
         </li>
         <li className="nav-item dropdown shopDrop">
           <Link
             to="/shop"
-            className="nav-link dropdown-toggle"
+            className="nav-link dropdown-toggle text-white"
             id="shopDropdown"
             role="button"
           >

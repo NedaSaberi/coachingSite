@@ -3,7 +3,7 @@ import styles from "./Stats.module.css";
 
 export default function Stats() {
   // const numbersRefs = useRef([]);
-  const numbersRefs = useRef<(HTMLDivElement | null)[]>([]); // Provide a type annotation
+  const numbersRefs = useRef<(HTMLDivElement | null)[]>([]); 
   useEffect(() => {
     const options = {
       threshold: 0.2, // Trigger the animation when 20% of the element is visible
@@ -17,7 +17,7 @@ export default function Stats() {
           if (dataNumber) {
             const targetNum = parseInt(dataNumber, 10);
             let currentNum = 0;
-            const duration = 2000; // Animation duration in milliseconds
+            const duration = 1000; // Animation duration in milliseconds
 
             const updateNumber = () => {
               const increment = targetNum / (duration / 10); // Increment step based on animation duration

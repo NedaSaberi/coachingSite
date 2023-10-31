@@ -1,30 +1,62 @@
 .elementorWrapper{
     background-color: #ececec;
     padding: 60px;
+    min-height: 100vh;
 }
 .elementor{
+    min-height: 520px;
+    width: 100%;
+}
+.elementor .items{
     width: 90%;
-    min-height: 480px;
     margin: 20px auto;
+    background-color: #ececec;
+    animation: fadeInRect 1.5s linear forwards;
+    margin-bottom: 50px;
+}
+.elementorWrapper .sub{
+    min-height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* .elementorWrapper::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ececec;
+    z-index: -1;
+    animation: fadeInRect 15s linear forwards;
+} */
+@keyframes fadeInRect{
+    0%{
+        opacity: 0;
+        clip-path: polygon(0% 0%, 0% 0%, 0% 0%, 0% 0%); 
+    }
+    100% {
+        opacity: 1;
+        clip-path: polygon(0% 0%, 300% 0%, 0% 300%, 0% 100%);
+  }
 }
 .e{
-    opacity: 0;
+    /* opacity: 0; 
     animation-name: opc;
     animation-duration: 1s;
     animation-iteration-count: 1;
-    animation-fill-mode: forwards;
+    animation-fill-mode: forwards; */
 }
-@keyframes opc{
+/* @keyframes opc{
     0%{
         opacity: 0;
     }
     100%{
         opacity: 1;
     }
-}
-/* ترتیب روشن شدنش خطی باید باشه
-responsive ... //////////////////////////////////////////////////////*/
-.e1{
+} */
+/* .e1{
     animation-delay: .3s;
 }
 .e2, .e4{
@@ -35,7 +67,7 @@ responsive ... //////////////////////////////////////////////////////*/
 }
 .e6{
     animation-delay: 1.5s;
-}
+} */
 
 
 .elementorInside .icon{

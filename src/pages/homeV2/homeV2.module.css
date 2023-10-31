@@ -10,13 +10,38 @@
 }
 .pricingPlans .wall{
     background-image: url('/public/images/wallpaper.jpg');
-    min-height: 450px; 
-    width: 100%;
-    padding: 140px; 
+    background-size: cover;
+    /* width: 100%; */
+    margin: 0 auto;
+    padding: 0 100px;
 }
+.pricingPlans .wall .title{
+    font-size: 14px;
+    font-weight: 400;
+}
+.pricingPlans .wall .subTitle{
+    font-size: 40px;
+    font-weight: 600;
+}
+@media screen and (max-width: 900px) {
+    .pricingPlans .wall .title{
+    font-size: 12px;
+    font-weight: 300;
+}
+.pricingPlans .wall .subTitle{
+    font-size: 30px;
+    font-weight: 600;
+}
+}
+ .pricingPlans .wall .right{
+    /* min-height: 250px; */
+    margin-bottom: 110px;
+ }
+
 .pricesChartWrapper{
-    margin-top: -220px;
+    margin-top: -160px;
 }
+
 .missionImg{
     width: 150px;
 }
@@ -35,6 +60,8 @@
 }
 .location .left{
     padding-left: 30px;
+    transform: translateX(-900px);
+    transition: transform 2s ease-in-out;
 }
 @media screen and (min-width: 750px) and (max-width: 950px) {
     .location .subTitle{
@@ -75,4 +102,8 @@
         .location .left{
             padding-left: 10px;
         }
+    }
+    .freeConsWrapper{
+        transform: translateY(200px);
+        transition: all 2s ease;
     }

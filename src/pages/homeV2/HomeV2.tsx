@@ -6,24 +6,25 @@ import Logoipsum from "../../components/logoipsum/Logoipsum";
 import PricesChart from "../../components/pricesChart/PricesChart";
 import Stats from "../../components/stats/Stats";
 import styles from './homeV2.module.css';
+import './PricesOpcItem.css';
 
 export default function HomeV2() {
-  // setTimeout(() => {
-  //   let leftElement = document.querySelector(
-  //     ".home-first-view .left"
-  //   ) as HTMLElement;
-  //   leftElement.style.transform = "translateY(0)";
-  //   leftElement.style.opacity = "1";
-  // }, 2000);
-
-  // setTimeout(() => {
-  //   let rightElement = document.querySelector(
-  //     ".home-first-view .right"
-  //   ) as HTMLElement;
-  //   rightElement.style.transform = "translate(-100px, -50%)";
-  //   rightElement.style.opacity = "1";
-  // }, 3000);
-
+  window.addEventListener("scroll", ()=>{
+    let pricesOpcItems = document.querySelectorAll(".pricesOpcItem");
+    pricesOpcItems.forEach((pricesOpcItem)=>{
+      if(pricesOpcItem instanceof HTMLElement && pricesOpcItem.getBoundingClientRect().top < window.innerHeight){
+          pricesOpcItem.style.opacity= "1";
+      }
+    })
+    let locationLeft = document.querySelector(`.${styles.location} .${styles.left}`);
+    if(locationLeft instanceof HTMLElement && locationLeft.getBoundingClientRect().top < window.innerHeight){
+      locationLeft.style.transform= "translateX(0)";
+    }
+    let freeCons = document.querySelector(`.${styles.freeConsWrapper}`);
+    if(freeCons instanceof HTMLElement && freeCons.getBoundingClientRect().top < window.innerHeight){
+      freeCons.style.transform= "translateY(0)";
+    }
+  })
   
   return (
     <div className={`${styles.v2} v2`}>
@@ -31,10 +32,10 @@ export default function HomeV2() {
         <div className="homeWrapper">
           <div className="row">
             <div className="left text-center col-12">
-              <h5 className="title text-orange">PROFESSIONAL LIFE COACH & ADVISOR</h5>
-              <div className="subTitle my-5">
-                Helping You Achieve Anything
-              </div>
+              <h5 className="title text-orange">
+                PROFESSIONAL LIFE COACH & ADVISOR
+              </h5>
+              <div className="subTitle my-5">Helping You Achieve Anything</div>
               <button className="bg-orange text-white free-consulation">
                 FREE CONSULATION
               </button>
@@ -47,20 +48,21 @@ export default function HomeV2() {
                 <i className="fa-brands fa-instagram"></i>
               </div>
             </div>
-            </div>
+          </div>
         </div>
       </div>
       <Elementor />
-      <Introduction/>
-      <Stats/>
+      <Introduction />
+      <Stats />
       <div className={styles.pricingPlans}>
-        <div className={`${styles.wall} row text-white`}>
-          {/* <div className="orange-cover"></div> */}
-          <div className="col-12 col-lg-5">
-            <div>WHAT WE OFFER</div>
-            <h2>Pricing Plans</h2>
+        <div
+          className={`${styles.wall} row text-white`}
+        >
+          <div className="pricesOpcItem col-12 col-lg-5 mt-5">
+            <div className={styles.title}>WHAT WE OFFER</div>
+            <div className={styles.subTitle}>Pricing Plans</div>
           </div>
-          <div className="col-12 col-lg-7">
+          <div className={`${styles.right} pricesOpcItem col-12 col-lg-7 mt-5`}>
             <p>
               There are many variations of passag of Lorem ipsum dolor sit amet,
               consectetur adipisicing elit. Quibusdam officiis voluptatem sunt
@@ -73,6 +75,7 @@ export default function HomeV2() {
         <div className={styles.pricesChartWrapper}>
           <PricesChart />
         </div>
+
         <div className="row p-5">
           <div className="col-12 col-md-8 mission d-flex flex-column justify-content-center border-top pt-5">
             <h3 className="mb-5">
@@ -97,7 +100,9 @@ export default function HomeV2() {
           <div className={`${styles.left} col-12 col-md-7`}>
             <div className={`${styles.title} text-orange`}>OUR LOCATION</div>
             <div className={`${styles.subTitle} mt-3`}>
-              Trusted by<br/>Millions of People
+              Trusted by
+              <br />
+              Millions of People
             </div>
             <p className="text-muted mt-4">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum
@@ -107,13 +112,21 @@ export default function HomeV2() {
             </p>
           </div>
           <div className="col-12 col-md-5">
-            <img className="w-100" src="/images/map-layout-600x290.jpg" alt="" />
+            <img
+              className="w-100"
+              src="/images/map-layout-600x290.jpg"
+              alt=""
+            />
           </div>
         </div>
       </div>
       <AdvisorsVideo />
-      {/* <Logoipsum /> */}
-      <FreeConsulation />
+      <Logoipsum />
+      <div className="overflow-hidden">
+        <div className={styles.freeConsWrapper}>
+          <FreeConsulation />
+        </div>
+      </div>
     </div>
   );
 }
