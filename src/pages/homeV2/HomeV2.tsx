@@ -27,7 +27,7 @@ export default function HomeV2() {
   })
   
   return (
-    <div className={`${styles.v2} v2`}>
+    <div className={`${styles.v2} home v2`}>
       <div className={`homeFirstView ${styles.homeFirstView}`}>
         <div className="homeWrapper">
           <div className="row">
@@ -41,7 +41,7 @@ export default function HomeV2() {
               </button>
             </div>
             <div className="right">
-              <div className="text-end h-100 d-flex flex-column justify-content-center">
+              <div className="socialWrapper text-end d-flex flex-column justify-content-between">
                 <i className="fa-brands fa-twitter"></i>
                 <i className="fa-brands fa-facebook"></i>
                 <i className="fa-brands fa-linkedin"></i>
@@ -55,9 +55,7 @@ export default function HomeV2() {
       <Introduction />
       <Stats />
       <div className={styles.pricingPlans}>
-        <div
-          className={`${styles.wall} row text-white`}
-        >
+        <div className={`${styles.wall} row text-white`}>
           <div className="pricesOpcItem col-12 col-lg-5 mt-5">
             <div className={styles.title}>WHAT WE OFFER</div>
             <div className={styles.subTitle}>Pricing Plans</div>

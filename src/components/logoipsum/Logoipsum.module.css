@@ -1,6 +1,7 @@
 .logoWrapper{
     width: 100%;
     justify-content: space-around;
+    overflow: hidden;
     /* height: 150px; */
 }
 .logoWrapper img{

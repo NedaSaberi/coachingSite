@@ -30,20 +30,16 @@ const HomeV1= ()=> {
           `.${styles.right}`
         ) as HTMLElement;
         rightElement.style.transform = "translateX(0)";
-        // let leftElement = document.querySelector(".homeSecondView .left") as HTMLElement;
-        // leftElement.style.transform = "translateX(0)";
-        // let rightElement = document.querySelector(".homeSecondView .right") as HTMLElement;
-        // rightElement.style.transform = "translateX(0)";
+        
       }
     })
     return (
-      <div className={`home ${styles.v1}`}>
+      <div className={`home ${styles.v1} w-100`}>
         <div className={`homeFirstView ${styles.homeFirstView}`}>
           <div className="homeWrapper">
             <div className="row">
               <div className="left col-12">
-                <div className="row">
-                  <div className="col-9">
+                  <div className="leftContent">
                     <h5 className="title text-orange">PROFESSIONAL LIFE COACH & ADVISOR</h5>
                     <div className="subTitle my-5">
                       Life Coaching with Meghdad
@@ -53,10 +49,9 @@ const HomeV1= ()=> {
                     </button>
 
                   </div>
-                </div>
               </div>
               <div className="right">
-                <div className="text-end d-flex flex-column">
+                <div className="socialWrapper text-end d-flex flex-column justify-content-between">
                   <i className="fa-brands fa-twitter"></i>
                   <i className="fa-brands fa-facebook"></i>
                   <i className="fa-brands fa-linkedin"></i>
@@ -66,7 +61,7 @@ const HomeV1= ()=> {
             </div>
           </div>
         </div>
-        <div className={`${styles.homeSecondView} p-5 m-5`}>
+        <div className={`${styles.homeSecondView}bg-warning p-5 m-5`}>
           <div className={`${styles.row} row`}>
             <div className={`${styles.left} col-12 col-lg-7 h-100`}>
               <div className={`${styles.row} h-100`}>
