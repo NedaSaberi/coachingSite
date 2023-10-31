@@ -39,16 +39,17 @@ const HomeV1= ()=> {
           <div className="homeWrapper">
             <div className="row">
               <div className="left col-12">
-                  <div className="leftContent">
-                    <h5 className="title text-orange">PROFESSIONAL LIFE COACH & ADVISOR</h5>
-                    <div className="subTitle my-5">
-                      Life Coaching with Meghdad
-                    </div>
-                    <button className="bg-orange text-white free-consulation">
-                      FREE CONSULATION
-                    </button>
-
+                <div className="leftContent">
+                  <h5 className="title text-orange">
+                    PROFESSIONAL LIFE COACH & ADVISOR
+                  </h5>
+                  <div className="subTitle my-5">
+                    Life Coaching with Meghdad
                   </div>
+                  <button className="bg-orange text-white free-consulation">
+                    FREE CONSULATION
+                  </button>
+                </div>
               </div>
               <div className="right">
                 <div className="socialWrapper text-end d-flex flex-column justify-content-between">
@@ -66,18 +67,18 @@ const HomeV1= ()=> {
             <div className={`${styles.left} col-12 col-lg-7 h-100`}>
               <div className={`${styles.row} h-100`}>
                 <img
-                  className="col-12 col-md-6 p-2 h-100"
-                  src="/images/home-1-sec-row(1).jpg"
+                  className="col-12 col-md-6 p-2"
+                  src="/images/home-v1-svl.jpg"
                   alt=""
                 />
                 <img
-                  className="col-12 col-md-6 p-2 h-100"
-                  src="/images/home-1-sec-row(2).jpg"
+                  className="col-12 col-md-6 p-2"
+                  src="/images/home-v1-svr.jpg"
                   alt=""
                 />
               </div>
             </div>
-            <div className={`${styles.right} col-12 col-lg-5 h-100`}>
+            <div className={`${styles.right} col-12 col-lg-5 h-100 py-4`}>
               <h6 className="text-orange">GET TO KNOW US</h6>
               <h2 className={`${styles.title} my-4`}>
                 Working Together for your Better Life!
