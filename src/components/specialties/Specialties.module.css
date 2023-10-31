@@ -12,10 +12,38 @@
     height: 440px;
     padding: 25px;
     text-align: center;
+    opacity: 0; 
+    animation: opcSpe 1s linear forwards;
+    animation-play-state: paused;
 }
-/* .specialtiesList .title{
-    margin: 200px 0;
-} */
+.spe0{
+    opacity: 0; 
+    animation: opcSpe 1s linear forwards;
+    animation-play-state: paused;
+}
+.spe0{
+    animation-delay: .3s;
+}
+.spe1{
+    animation-delay: .6s;
+}
+.spe2{
+    animation-delay: .9s;
+}
+.spe3{
+    animation-delay: 1.2s;
+}
+.spe4{
+    animation-delay: 1.5s;
+}
+@keyframes opcSpe{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+} 
 .title{
     font-size: 20px;
     font-weight: 450;
@@ -25,3 +53,6 @@
     margin: 50px 0;
     color: var(--gray);
 }
+/* .spe{
+    animation-name: opcSpe;
+} */
