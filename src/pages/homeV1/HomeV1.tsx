@@ -5,6 +5,8 @@ import Specialties from '../../components/specialties/Specialties';
 import Experts from "../../components/experts/Experts";
 import Autho from "../../components/autho/Autho";
 import Logoipsum from '../../components/logoipsum/Logoipsum';
+import Excel from '../../components/excel/Excel';
+import LifeCoaching from '../../components/lifeCoaching/LifeCoaching';
 
 const HomeV1= ()=> {
     
@@ -108,58 +110,9 @@ const HomeV1= ()=> {
           </div>
         </div>
         <Specialties />
-        <div className={styles.excel}>
-          <div className={`${styles.row} row w-100`}>
-            <div className={`${styles.left} d-none d-md-block col-md-6`}>
-              <img className="w-100 h-100" src="/images/excel.jpg" alt="" />
-            </div>
-            <div className={`${styles.right} col-12 col-md-6`}>
-              <div className="text-orange">GET TO KNOW US</div>
-              <h1 className="text-white my-3">We Can Help You Excel at Work</h1>
-              <p className="text-gray">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero
-                eos consequuntuste voluptates ratione aut ab suscipit error
-                quidem impedit recusandae labore. Non!
-              </p>
-              <h6 className="text-white mt-5">Mentorship</h6>
-              <div className={`${styles.progress} progress`}>
-                <div
-                  className={`${styles.progressBar} progress-bar`}
-                  role="progressbar"
-                  style={{ width: "92%" }}
-                  aria-valuenow={25}
-                  aria-valuemin={0}
-                  aria-valuemax={100}
-                ></div>
-              </div>
-              <h6 className="text-white mt-3">Education</h6>
-              <div className={`${styles.progress} progress`}>
-                <div
-                  className={`${styles.progressBar} progress-bar`}
-                  role="progressbar"
-                  style={{ width: "70%" }}
-                  aria-valuenow={25}
-                  aria-valuemin={0}
-                  aria-valuemax={100}
-                ></div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <Excel/>
         <Experts />
-        <div className={`${styles.lifeCoaching} p-5`}>
-          <div className="col-12 col-md-5 m-7">
-            <div className={styles.title}>
-              Get Started Now with Life Coaching
-            </div>
-            <p className="my-5 text-muted">
-              Quisque porta nibh quis nibh scelerisque auctor. Vestibulum ante
-              ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-              curae; Aenean sagittis eget neque ac consequat.
-            </p>
-            <button className="free-consulation">FREE CONSULATION</button>
-          </div>
-        </div>
+        <LifeCoaching/>
         <Logoipsum />
         <div>
           <Map />

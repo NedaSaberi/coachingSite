@@ -1,0 +1,30 @@
+
+
+.lifeCoaching{
+    width: 100%; 
+    height: 90vh; 
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+    overflow: hidden;
+}
+.context{
+    transform: translateX(-1000px);
+    transition: transform 1s ease-in-out;
+}
+.title{
+    font-size: 30px;
+    font-weight: 500;
+}
+@media screen and (min-width: 770px) {
+    .lifeCoaching{
+        background-image: url("/public/images/life-coaching.jpg");
+        position: relative;
+        background-position: top center;
+        background-size: cover;
+    }
+    .title{
+        font-size: 45px;
+        font-weight: 700;
+    }
+}

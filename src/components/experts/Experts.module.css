@@ -27,3 +27,28 @@
     margin: 0 5px;
     font-size: 12px;
 }
+.pic, .title{
+    opacity: 0;
+    animation: opcPic .5s linear forwards;
+    animation-play-state: paused;
+}
+.title{
+    animation-delay: .3s;
+}
+.pic1{
+    animation-delay:.6s;
+}
+.pic2{
+    animation-delay:.9s;
+}
+.pic3{
+    animation-delay:1.2s;
+}
+@keyframes opcPic{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

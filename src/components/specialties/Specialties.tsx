@@ -4,14 +4,12 @@ export default function Specialties() {
   window.addEventListener("scroll", () => {
     let elements = document.querySelectorAll(`.${styles.spe}, .${styles.spe0}`);
     elements.forEach((element) => {
-      console.log(element);
       if (
         element instanceof HTMLElement &&
         element.getBoundingClientRect().top < window.innerHeight
       ) {
         element.style.animationPlayState = "running";
-      }
-      
+      }      
     });
   });
   return (
@@ -21,7 +19,7 @@ export default function Specialties() {
         <h1>Our Specialties</h1>
       </div>
       <div className={`${styles.specialtiesList} row`}>
-        <div className={`${styles.spe} ${styles.spe1} col-6 col-md-3`}>
+        <div className={`${styles.spe} ${styles.spe1} col-12 col-md-3`}>
           <div className={styles.icon}>
             <img src="/images/icon-1-1.png" alt="" />
           </div>
@@ -35,7 +33,7 @@ export default function Specialties() {
           </div>
         </div>
         <div
-          className={`${styles.spe} ${styles.spe2} col-6 col-md-3 border-start`}
+          className={`${styles.spe} ${styles.spe2} col-12 col-md-3 border-start`}
         >
           <div className={styles.icon}>
             <img src="/images/icon-2-1.png" alt="" />
@@ -50,7 +48,7 @@ export default function Specialties() {
           </div>
         </div>
         <div
-          className={`${styles.spe} ${styles.spe3} border-start col-6 col-md-3`}
+          className={`${styles.spe} ${styles.spe3} border-start col-12 col-md-3`}
         >
           <div className={styles.icon}>
             <img src="/images/icon-3-1.png" alt="" />
@@ -65,7 +63,7 @@ export default function Specialties() {
           </div>
         </div>
         <div
-          className={`${styles.spe} ${styles.spe4} border-start col-6 col-md-3`}
+          className={`${styles.spe} ${styles.spe4} border-start col-12 col-md-3`}
         >
           <div className={styles.icon}>
             <img src="/images/icon-4-1.png" alt="" />
