@@ -2,14 +2,14 @@ import styles from './Testimonials.module.css';
 
 export default function Testimonials() {
   return (
-    <div className={`${styles.testimonials} p-5`}>
+    <div className={`${styles.testimonials} container p-5`}>
       <h5 className="text-orange my-3 text-center">OUR TESTIMONIALS</h5>
       <h1 className="text-center">What People Are Saying</h1>
-      <div className="d-flex justify-content-around my-5">
-        <div className={styles.people}>
+      <div className="row my-5">
+        <div className={`col-12 col-lg-4 ${styles.people}`}>
           <i className="fa-solid fa-quote-left text-orange"></i>
           <p>
-            Duis rhoncus orci utedn metus rhoncus, non is dictum purus bibendum.
+            hhhDuis rhoncus orci utedn metus rhoncus, non is dictum purus bibendum.
             Suspendisse id orci sit amet justo interdum hendrerit sagittis.
             Nulla semper pharetra lacinia. Maecenas gravida dapibus neque id
             dictum.
@@ -20,7 +20,7 @@ export default function Testimonials() {
             <div className={styles.position}>CEO</div>
           </div>
         </div>
-        <div className={styles.people}>
+        <div className={`col-12 col-lg-4 ${styles.people}`}>
           <i className="fa-solid fa-quote-left text-orange"></i>
           <p>
             Duis rhoncus orci utedn metus rhoncus, non is dictum purus bibendum.
@@ -34,7 +34,7 @@ export default function Testimonials() {
             <div className={styles.position}>Accountant</div>
           </div>
         </div>
-        <div className={styles.people}>
+        <div className={`col-12 col-lg-4 ${styles.people}`}>
           <i className="fa-solid fa-quote-left text-orange"></i>
           <p>
             Duis rhoncus orci utedn metus rhoncus, non is dictum purus bibendum.

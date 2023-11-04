@@ -1,20 +1,33 @@
-.numbersWrapper .numbers{
+.numbers{
     width: 20%;
     height:220px;
     background-color: #2f3f3c;
     padding: 25px;
+    margin: 10px 0;
 }
-.numbersWrapper .numbers .num{
+
+.num{
     color: #fff;
     font-size: 80px;
     font-weight: 600;
 }
-.numbersWrapper .numbers .sub{
+.sub{
     color: #a3a2a2;
 }
 .statsBack{
     height: 630px;
 }
 .statsFront{
-    background-color: rgba(0, 0, 0, 0.6);    
+    background-color: rgba(0, 0, 0, 0.6); 
+}
+@media screen and (max-width: 900px) {
+    .numbersWrapper{
+       flex-direction: column;
+    }
+    .numbers{
+        width: 100%;
+    }
+    .statsBack{
+        height: 1300px;
+    }
 }

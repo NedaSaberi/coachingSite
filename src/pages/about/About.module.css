@@ -1,5 +1,11 @@
 /* About.module.css */
-
+.title{
+    font-size: 15px;
+}
+.subTitle{
+    font-size: 45px;
+    font-weight: 600;
+}
 .aboutBody{
     max-width: 850px;
     margin: 0 auto;
@@ -15,7 +21,15 @@
     height: 100%;
 }
 
-.consulation{
+@media screen and (max-width: 900px) {
+    .subTitle{
+        font-size: 25px;
+    }
+    .aboutImages img{
+        width: 100%;
+    }
+}
+/* .consulation{
     background-image: url('/public/images/consulation.jpg');
     background-size: cover;
     width: 100%;
@@ -27,5 +41,8 @@
 }
 .consulation button:hover{
     background-color:#5f6161
-}
+} */
 
+.lifeCoaching .context{
+    transform: translateX(0);
+}
