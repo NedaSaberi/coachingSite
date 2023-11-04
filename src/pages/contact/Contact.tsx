@@ -13,7 +13,7 @@ export default function Contact() {
         </div>
       </div>
       <div className={`${styles.contactBody} row m-0 p-7`}>
-        <div className="col-12 col-sm-6 p-7">
+        <div className="col-12 col-lg-6 p-7">
           <div className={`text-orange ${styles.topTitle}`}>ADVISING & ASSISTANCE</div>
           <div className="fs-1">
             Do you Need Help? <br />
@@ -51,7 +51,7 @@ export default function Contact() {
             <span><i className="fa-brands fa-instagram"></i></span>
           </div>
         </div>
-        <div className="col-12 col-sm-6">
+        <div className="col-12 col-lg-6">
           <ContactForm />
         </div>
       </div>
