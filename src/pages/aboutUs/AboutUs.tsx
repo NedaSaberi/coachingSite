@@ -7,6 +7,19 @@ import AdvisorsVideo from "../../components/advisors-video/AdvisorsVideo";
 import FreeConsulation from "../../components/freeCons/FreeConsulation";
 
 export default function Aboutus() {
+  window.addEventListener("scroll", ()=>{
+    let pb1 = document.querySelector(`.${styles.pb1}`);
+    let pb2 = document.querySelector(`.${styles.pb2}`);
+      if (pb1 instanceof HTMLElement && pb2 instanceof HTMLElement && pb1.getBoundingClientRect().top < window.innerHeight
+      ) {
+        //  console.log("pb1 top position:", pb1.getBoundingClientRect().top);
+        //  console.log("pb2 top position:", pb2.getBoundingClientRect().top);
+         pb1.style.width = "92%";
+         pb2.style.width = "82%";
+      }
+    });
+  
+
   return (
     <div>
       <div className="firstView">
@@ -17,7 +30,7 @@ export default function Aboutus() {
       </div>
       <div className={styles.aboutCompany}>
         <div className="row p-7">
-          <div className={`col-12 col-lg-6 ${styles.left}`}>
+          <div className={`col-12 col-lg-6 ${styles.left} mb-5`}>
             <div className="text-orange">ABOUT OUR COMPANY</div>
             <h1 className="my-4">
               Get to Know About
@@ -33,9 +46,9 @@ export default function Aboutus() {
             <h5>Mentorship</h5>
             <div className={`progress ${styles.progress}`}>
               <div
-                className={`progress-bar ${styles.progressBar}`}
+                className={`progress-bar ${styles.progressBar} ${styles.pb1}`}
                 role="progressbar"
-                style={{ width: "92%" }}
+                style={{ width: "0" }}
                 aria-valuenow={25}
                 aria-valuemin={0}
                 aria-valuemax={100}
@@ -44,9 +57,9 @@ export default function Aboutus() {
             <h5 className="mt-3">Education</h5>
             <div className={`progress ${styles.progress}`}>
               <div
-                className={`progress-bar ${styles.progressBar}`}
+                className={`progress-bar ${styles.progressBar} ${styles.pb2}`}
                 role="progressbar"
-                style={{ width: "82%" }}
+                style={{ width: "0" }}
                 aria-valuenow={25}
                 aria-valuemin={0}
                 aria-valuemax={100}

@@ -1,5 +1,6 @@
 import '../../pages/myAccount/MyAccount.css';
 import { Link } from 'react-router-dom';
+import styles from './RegisterForm.module.css';
 
 export default function RegisterForm() {
   return (
@@ -21,7 +22,7 @@ export default function RegisterForm() {
           described in our <Link to="/" className='text-orange link'>privacy policy</Link>.
         </p>
         <div className="submit-group d-block my-2">
-          <button className="shop-btn bg-orange text-white">REGISTER</button>
+          <button className={`${styles.shopBtn} bg-orange text-white`}>REGISTER</button>
         </div>
       </form>
     </div>

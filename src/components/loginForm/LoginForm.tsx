@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import '../../pages/myAccount/MyAccount.css';
 import { Link } from 'react-router-dom';
+import styles from './LoginForm.module.css';
 
 export default function LoginForm() {
   const [showPassword, setShowPassword]= useState(false);
@@ -29,7 +30,7 @@ export default function LoginForm() {
             </div>
         </div>
         <div className="submit-group d-block my-3">
-            <button className='shop-btn bg-orange text-white'>LOG IN</button>
+            <button className={`${styles.shopBtn} bg-orange text-white`}>LOG IN</button>
             <input type="checkbox" />
             <span className='m-1'>
               Remember me

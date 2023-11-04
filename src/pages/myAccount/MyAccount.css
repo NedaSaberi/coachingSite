@@ -1,7 +1,10 @@
 .myaccount .forms{
-    padding: 80px 120px;
+    padding: 0 120px;
 }
-
+.myaccount .forms .left, .myaccount .forms .right{
+    margin-bottom: 80px;
+    margin-top: 80px;
+}
 .formWrapper{
     width: 100%;    
 }

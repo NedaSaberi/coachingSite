@@ -1,11 +1,13 @@
 .freeConsulationBox{
-    padding: 15px 30px;
+    padding: 0 15px;
 }
 .left{
+    padding: 15px 15px;
     /* width: 65%; */
     font-size: 18px;
 }
 .right{
+    padding: 15px 15px;
     /* width: 40%; */
 }
 .right button{
@@ -17,8 +19,8 @@
     white-space: nowrap;
 }
 @media screen and (min-width: 900px) {
-    .freeConsulationBox{
-    padding: 50px 100px;
+    .left, .right{
+    padding: 50px 25px;
 }
    .left{
     font-size: 35px;

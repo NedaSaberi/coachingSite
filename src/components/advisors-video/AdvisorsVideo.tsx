@@ -7,7 +7,7 @@ export default function AdvisorsVideo() {
           src="/videos/pexels-zen-chung-5530410 (2160p).mp4"
           autoPlay
         ></video>
-        <div className={`${styles.context} position-absolute text-center`}>
+        <div className={`${styles.context} position-absolute`}>
           <div className="text-white">
             Experienced Advisors
             <br />
