@@ -8,11 +8,11 @@ export default function AdvisorsVideo() {
           autoPlay
         ></video>
         <div className={`${styles.context} position-absolute text-center`}>
-          <h1 className="text-white">
+          <div className="text-white">
             Experienced Advisors
             <br />
             Committed to Your Life Goals
-          </h1>
+          </div>
         </div>
       </div>
   );
