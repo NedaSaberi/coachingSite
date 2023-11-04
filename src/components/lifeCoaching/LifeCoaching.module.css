@@ -8,7 +8,7 @@
     margin-top: 100px;
     overflow: hidden;
 }
-.lifecontext{
+.lifeContext{
     transform: translateX(-1000px);
     transition: transform 1s ease-in-out;
 }

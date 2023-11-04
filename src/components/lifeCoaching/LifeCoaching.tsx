@@ -4,7 +4,7 @@ export default function LifeCoaching() {
         window.addEventListener("scroll", () => {
             let element = document.querySelector(
             `.${styles.lifeContext}`
-            ) as HTMLBRElement;
+            );
             if (
             element instanceof HTMLElement &&
             element.getBoundingClientRect().top < window.innerHeight
