@@ -18,7 +18,7 @@ export default function PricingPlans() {
           <p>Excelling Your Professional Career</p>
         </div>
       </div>
-      <PricesChart />
+      <PricesChart transitionValue="" />
       <Logoipsum />
       <FreeConsulation />
     </div>

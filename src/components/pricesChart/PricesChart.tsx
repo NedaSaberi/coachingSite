@@ -1,7 +1,16 @@
 import styles from './PricesChart.module.css';
 
-export default function PricesChart() {
-   window.addEventListener("scroll", () => {
+export default function PricesChart(props: {transitionValue: string}) {
+  let tv = props.transitionValue;
+  console.log(tv);
+  window.addEventListener("scroll", () => {
+     let cards = document.querySelectorAll(`.${styles.card}`);
+     console.log(cards);
+     cards.forEach((card)=>{
+       if(card instanceof HTMLElement){
+         card.style.transition = tv;
+       }
+     })
     let leftElement = document.querySelector(
        `.${styles.left}`
      ) as HTMLElement;

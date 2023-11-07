@@ -13,12 +13,12 @@
     min-height: 350px;
     padding: 50px 0;
     /* align-items: center; */
-    color: #6c6c6c;
+    /* color: #6c6c6c; */
     border: 1px solid #e7e7e7;
     box-shadow: 0 0 3px 2px #efefef;
     background: linear-gradient(0deg, #f5f5f5, #ffffff);  
     border-radius: 1px;
-    transition: all 2s ease-in-out;
+    /* transition: all 2s ease-in-out; */
 }
 .title{
     font-size: 14px;

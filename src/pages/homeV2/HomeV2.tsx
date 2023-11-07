@@ -71,7 +71,7 @@ export default function HomeV2() {
           </div>
         </div>
         <div className={styles.pricesChartWrapper}>
-          <PricesChart />
+          <PricesChart transitionValue="all 2s ease-in-out" />
         </div>
 
         <div className="row p-5">

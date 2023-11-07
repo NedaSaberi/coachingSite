@@ -3,7 +3,7 @@ import styles from './Specialties.module.css';
 export default function Specialties() {
       
       window.addEventListener("scroll", () => {
-              let elements = document.querySelectorAll(`.${styles.items}`);
+        let elements = document.querySelectorAll(`.${styles.items}`);
 
         elements.forEach((element)=>{
           if (
