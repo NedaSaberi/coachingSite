@@ -13,7 +13,7 @@ export default function Coaching() {
           <p>Excelling Your Professional Career</p>
         </div>
       </div>
-      <Specialties />
+      <Specialties animateClass={false} />
       <Logoipsum />
       <FreeConsulation />
       <AdvisorsVideo />

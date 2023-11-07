@@ -1,19 +1,21 @@
 import styles from './Specialties.module.css';
 
-export default function Specialties() {
-      
-      window.addEventListener("scroll", () => {
-        let elements = document.querySelectorAll(`.${styles.items}`);
+export default function Specialties(props: { animateClass : boolean}) {
+  const anim = props.animateClass;
 
-        elements.forEach((element)=>{
-          if (
-            element instanceof HTMLElement &&
-            element.getBoundingClientRect().top < window.innerHeight
-            ) {
-              element.style.animationPlayState = "running";
-          }      
-        })
-      });
+  window.addEventListener("scroll", () => {
+    let elements = document.querySelectorAll(`.${styles.items}`);
+
+    elements.forEach((element) => {
+      if (
+        anim === true &&
+        element instanceof HTMLElement &&
+        element.getBoundingClientRect().top < window.innerHeight
+      ) {
+        element.classList.add(`${styles.animateClass}`);
+      }
+    });
+  });
 
   return (
     <div className={`${styles.speWrapper} py-7`}>
@@ -24,7 +26,9 @@ export default function Specialties() {
         <h1>Our Specialties</h1>
       </div>
       <div className={`${styles.specialtiesList} row`}>
-        <div className={`${styles.spe} ${styles.spe1} ${styles.items} col-12 col-md-3`}>
+        <div
+          className={`${styles.spe} ${styles.spe1} ${styles.items} col-12 col-md-3`}
+        >
           <div className={styles.icon}>
             <img src="/images/icon-1-1.png" alt="" />
           </div>

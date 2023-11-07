@@ -1,3 +1,4 @@
+
 .speWrapper{
     width: 100%;
     background-color: rgb(245, 245, 245);
@@ -14,10 +15,10 @@
     text-align: center;
     /* opacity: 0;  */
 }
-.items{
+
+.animateClass{
     opacity: 0; 
-    animation: opcSpe 1s linear forwards;
-    animation-play-state: paused;
+    animation: opcSpe 1s linear forwards;  
 }
 .spe0{
     animation-delay: .3s;

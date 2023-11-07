@@ -109,10 +109,10 @@ const HomeV1= ()=> {
             </div>
           </div>
         </div>
-        <Specialties />
-        <Excel/>
+        <Specialties animateClass= {true}/>
+        <Excel />
         <Experts />
-        <LifeCoaching/>
+        <LifeCoaching />
         <Logoipsum />
         <div>
           <Map />
