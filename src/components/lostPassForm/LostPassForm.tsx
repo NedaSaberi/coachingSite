@@ -4,7 +4,7 @@ import { useState } from "react";
 export default function LostPassForm() {
   const [user, setUser]= useState('');
 
-  const submitHandler = (e)=>{
+  const submitHandler = (e: React.FormEvent)=>{
     e.preventDefault();
     const lostInfo = {
       user: {user}
