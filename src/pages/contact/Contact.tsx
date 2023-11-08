@@ -14,10 +14,12 @@ export default function Contact() {
       </div>
       <div className={`${styles.contactBody} row m-0 p-7`}>
         <div className="col-12 col-lg-6 p-7">
-          <div className={`text-orange ${styles.topTitle}`}>ADVISING & ASSISTANCE</div>
+          <div className={`text-orange ${styles.topTitle}`}>
+            ADVISING & ASSISTANCE
+          </div>
           <div className="fs-1">
             Do you Need Help? <br />
-            Get in Touch with the <br/>
+            Get in Touch with the <br />
             Team
           </div>
           <p className="mt-4">
@@ -45,10 +47,18 @@ export default function Contact() {
             </li>
           </ul>
           <div className={`${styles.socialMedia} d-flex`}>
-            <span><i className="fa-brands fa-twitter"></i></span>
-            <span><i className="fa-brands fa-facebook"></i></span>
-            <span><i className="fa-brands fa-linkedin"></i></span>
-            <span><i className="fa-brands fa-instagram"></i></span>
+            <span>
+              <i className="fa-brands fa-twitter"></i>
+            </span>
+            <span>
+              <i className="fa-brands fa-facebook"></i>
+            </span>
+            <span>
+              <i className="fa-brands fa-linkedin"></i>
+            </span>
+            <span>
+              <i className="fa-brands fa-instagram"></i>
+            </span>
           </div>
         </div>
         <div className="col-12 col-lg-6">
@@ -56,7 +66,7 @@ export default function Contact() {
         </div>
       </div>
       <div>
-        <Map/>
+        <Map />
       </div>
     </>
   );
