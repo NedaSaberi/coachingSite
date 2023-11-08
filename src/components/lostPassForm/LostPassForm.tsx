@@ -7,7 +7,7 @@ export default function LostPassForm() {
   const submitHandler = (e: React.FormEvent)=>{
     e.preventDefault();
     const lostInfo = {
-      user: {user}
+      user: user
     }
     console.log(lostInfo);
   }
